@@ -3,7 +3,7 @@ body {
 }
 #header {
     text-align: center;
-    background-color: #006600;
+    background-color: #20d44f;
     color: white;
     margin-bottom: 0;
 }
@@ -12,7 +12,7 @@ body {
     margin-bottom: 16px;
 }
 #development {
-    background-color: #006600;
+    background-color: #20d44f;
     color: white;
     padding: 18px;
 }
@@ -47,8 +47,11 @@ body {
     width: 6rem;
 }
 #footer {
-    background-color: #006600;
+    background-color: #20d44f;
     color: white;
     padding: 20px;
     text-align: center;
+}
+.team {
+    height: 11rem;
 }
