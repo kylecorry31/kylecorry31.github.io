@@ -1,57 +1,62 @@
-body {
+html, body {
     font-family: sans-serif;
+    color: #353535;
 }
-#header {
-    text-align: center;
-    background-color: #20d44f;
+.container-fluid{
+    padding:1.5rem;
+}
+.top {
     color: white;
-    margin-bottom: 0;
+    height: 40rem;
+    background: #04be08;
 }
-.contentHeading {
-    text-align: center;
-    margin-bottom: 16px;
+.title {
+    font-size: 6rem;
+    font-weight: bold;
+    padding: 8rem;
+    margin: none;
 }
-#development {
-    background-color: #20d44f;
-    color: white;
-    padding: 18px;
+#about {
+    background: white;
+    min-height: 35rem;
 }
-.devIcon {
-    height: 11rem;
-    width: 11rem;
-    margin-bottom: 4px;
+#dev{
+    background: #f3f3f3;
+    min-height: 35rem;
 }
-#development h4,
-#teaching h4 {
-    font-size: 22px;
+#teaching{
+    background:white;
+    min-height: 35rem;
 }
-.developmentItm {
-    text-align: center;
+.sectTitle {
+    padding: 2rem;
+    font-size: 3.2rem;
 }
-#languages {
-    padding: 24px;
-    color: black;
-    text-align: center;
-    background-color: white
+.sectInfo {
+    padding: 1.5rem;
+    font-size: 2.4rem;
 }
-#languages h4 {
-    padding-bottom 8px;
-    font-size: 20px;
+#kyle{
+    height: 25rem;
+    width: 25rem;
+    margin:3rem;
 }
-#teaching {
-    background-color: white;
-    padding: 24px;
+#javaClass{
+    color:white;
+    background:#db191d;
+    min-height: 35rem;
+}
+#java{
+    margin: auto;
 }
 #googlePlus {
     height: 6rem;
     width: 6rem;
 }
-#footer {
-    background-color: #20d44f;
-    color: white;
-    padding: 20px;
-    text-align: center;
+a{
+    color: inherit;
+    text-decoration: none;
 }
-.team {
-    height: 11rem;
+a:hover{
+    text-decoration: none;
 }

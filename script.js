@@ -1,8 +1,8 @@
 $(function () {
     $('#googlePlus').mouseenter(function () {
-        $(this).attr("src", "gpInv.png");
+        $(this).attr("src", "gp.png");
     });
     $('#googlePlus').mouseleave(function () {
-        $(this).attr("src", "gp.png");
+        $(this).attr("src", "gpInv.png");
     });
 });
