@@ -59,7 +59,7 @@ $(function () {
                     var temp = getTemp();
                     var light = getLight();
                     $('#temp').text(temp);
-                    if (light) {
+                    if (light === "True") {
                         light = "Light";
                     } else {
                         light = "Dark";
