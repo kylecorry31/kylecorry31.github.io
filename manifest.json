@@ -8,7 +8,7 @@
       "density": "4.0"
     }
   ],
-  "start_url": "index.html",
+  "start_url": "pi.html",
   "display": "standalone",
   "orientation": "portrait"
 }
