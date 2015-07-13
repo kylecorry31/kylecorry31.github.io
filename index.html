@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -8,110 +8,210 @@
     <meta name="Description" content="Kyle Corry">
     <meta name="Keywords" content="Kyle, Kyle Corry, programming">
     <meta name="author" content="Kyle">
-    <link rel="icon" href="kyle_sm_logo.png" type="image/x-icon">
-    <link rel="shortcut icon" href="kyle_sm_logo.png" type="image/x-icon">
+    <link rel="icon" href="res/images/kyle_sm_logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="res/images/kyle_sm_logo.png" type="image/x-icon">
     <meta charset="utf-8">
     <meta name="theme-color" content="#4CAF50">
-    <!-- CSS  -->
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.green-blue.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css">
+    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+
+    <style>
+        .header-image {
+            background: url('res/images/washington.jpg') center center / cover;
+            background-repeat: no-repeat;
+            min-height: 40vh;
+        }
+        
+        .white {
+            color: white;
+        }
+        
+        .center {
+            text-align: center;
+        }
+        
+        .card-area .mdl-card__media img {
+            width: 100%;
+        }
+        
+        .card-area .mdl-card__title-text {
+            color: black;
+            height: auto;
+        }
+        
+        .card-area .mdl-card__supporting-text {
+            height: auto;
+            color: black;
+            padding-bottom: 48px;
+        }
+        
+        .card-area .mdl-card__title {
+            background: transparent;
+            height: auto;
+        }
+        
+        .card-area .mdl-card__media {
+            overflow: hidden;
+            background: transparent;
+        }
+        
+        .about-section {
+            padding: 80px 0;
+            max-width: 1044px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .icon_links a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .icon_links {
+            margin-bottom: 16px;
+        }
+        
+        span.mdl-navigation__link.mdl-navigation__link {
+            color: #4CAF50 !important;
+        }
+        
+        .drawer-separator {
+            height: 1px;
+            background-color: #dcdcdc;
+            margin: 8px 0;
+        }
+    </style>
 </head>
 
+<!--img - 760 x 528-->
+
 <body>
-    <nav class="green lighten-1" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Kyle Corry</a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="http://kylecorry31.github.io/phsjava">Java Class</a>
-                </li>
-                <li><a href="http://www.thegongoliers.com">Gongoliers</a>
-                </li>
-                <li><a href="http://www.fg.k12.ri.us/PonagansetHigh.cfm">PHS</a>
-                </li>
-            </ul>
-
-            <ul id="nav-mobile" class="side-nav">
-                <li><a href="http://kylecorry31.github.io/phsjava">Java Class</a>
-                </li>
-                <li><a href="http://www.thegongoliers.com">Gongoliers</a>
-                </li>
-                <li><a href="http://www.fg.k12.ri.us/PonagansetHigh.cfm">PHS</a>
-                </li>
-            </ul>
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-        </div>
-    </nav>
-    <div class="section no-pad-bot z-depth-1" id="index-banner">
-        <div class="container">
-            <br>
-            <br>
-            <h1 class="header center green-text">Kyle corry</h1>
-            <div class="row center">
-                <h5 class="header col s12 light green-text">&nbsp;</h5>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Kyle Corry</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a class="mdl-navigation__link" href="https://github.com/kylecorry31">Github</a>
+                    <a class="mdl-navigation__link" href="https://plus.google.com/+KyleCorry">Google+</a>
+                </nav>
             </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Kyle Corry</span>
+            <nav class="mdl-navigation">
 
+                <a class="mdl-navigation__link" href="https://github.com/kylecorry31">Github</a>
+                <a class="mdl-navigation__link" href="https://plus.google.com/+KyleCorry">Google+</a>
+                <!--Machine Learning-->
+                <div class="drawer-separator"></div>
+                <span class="mdl-navigation__link" href>Machine Learning</span>
+                <a class="mdl-navigation__link" href="https://github.com/kylecorry31/Kynet">Kynet</a>
+                <a class="mdl-navigation__link" href="https://github.com/kylecorry31/RaspberryPi-Electronics">Raspy</a>
+
+
+                <!--Android Development-->
+                <div class="drawer-separator"></div>
+                <span class="mdl-navigation__link" href>Android Apps</span>
+                <a class="mdl-navigation__link" href="https://play.google.com/store/apps/details?id=com.DKB.shutupdrive">Shut Up &amp; Drive!</a>
+                <a class="mdl-navigation__link" href="https://github.com/kylecorry31/InventoryApp">Inventory</a>
+
+                <!--websites-->
+                <div class="drawer-separator"></div>
+                <span class="mdl-navigation__link" href>Websites</span>
+                <a class="mdl-navigation__link" href="http://www.bioplane.us">Bioplane</a>
+                <a class="mdl-navigation__link" href="http://kylecorry31.github.io/phsjava">Java Class</a>
+                <a class="mdl-navigation__link" href="https://dkbsoftware.github.io">DKB Software</a>
+
+                <!--Other-->
+                <div class="drawer-separator"></div>
+                <span class="mdl-navigation__link" href>Other</span>
+                <a class="mdl-navigation__link" href="https://github.com/kylecorry31/KyPy">KyPy</a>
+                <a class="mdl-navigation__link" href="https://github.com/kylecorry31/MotionDetectionPython">Motion Detector</a>
+                <a class="mdl-navigation__link" href="https://github.com/kylecorry31/FRC-5112-Code-2015">2015 FRC 5112 Robot</a>
+                <a class="mdl-navigation__link" href="https://github.com/kylecorry31/stocks">Stock Portfolio Tracker</a>
+                <a class="mdl-navigation__link" href="https://github.com/kylecorry31/FRC-Frogger">FRC Frogger</a>
+
+
+            </nav>
         </div>
-    </div>
 
 
-    <div class="container">
-        <div class="section">
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <div class="header-image animated slideInDown mdl-shadow--3dp">
 
-            <!--   Icon Section   -->
-            <div class="row">
-                <div class="col s12 l4 m12">
-                    <div class="icon-block">
-                        <h2 class="center green-text"><i class="mdi-action-settings"></i></h2>
-                        <h5 class="center">Development</h5>
+                </div>
+                <div class="about-section">
 
-                        <p class="light">
-                            I develop for many platforms including Android, desktop and the web using languages such as Java, Python, JavaScript and HTML/CSS.
+                    <div class="mdl-grid card-area animated slideInUp">
+
+
+                        <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone mdl-cell--4-col-tablet mdl-card mdl-shadow--3dp">
+                            <div class="mdl-card__media"><img src="res/images/kynet.jpg">
+                            </div>
+                            <div class="mdl-card__title">
+                                <h4 class="mdl-card__title-text">Machine Learning</h4>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <span class="mdl-typography--font-light mdl-typography--subhead">
+                                   I have been working with machine learning since 2014; I have used many learning algorithms such as Naive Bayes, Linear Regression, SVM, and Artificial Neural Networks. I also created the <a href="https://github.com/kylecorry31/Kynet">Kynet</a> ANN library for Java.</span>
+                            </div>
+                        </div>
+
+                        <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone mdl-cell--4-col-tablet mdl-card mdl-shadow--3dp">
+                            <div class="mdl-card__media"><img src="res/images/ShutUpAndDrive.jpg">
+                            </div>
+                            <div class="mdl-card__title">
+                                <h4 class="mdl-card__title-text">Android Development</h4>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <span class="mdl-typography--font-light mdl-typography--subhead">I have been developing for Android since 2014. I am involved with a development group, <a href="https://dkbsoftware.github.io">DKB Software</a>, and I am the lead Android developer of <a href="https://play.google.com/store/apps/details?id=com.DKB.shutupdrive">Shut Up &amp; Drive!</a>.</span>
+                            </div>
+                        </div>
+
+                        <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone mdl-cell--4-col-tablet mdl-card mdl-shadow--3dp">
+                            <div class="mdl-card__media"><img src="res/images/bioplane.jpg">
+                            </div>
+                            <div class="mdl-card__title">
+                                <h4 class="mdl-card__title-text">Web Development</h4>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                <span class="mdl-typography--font-light mdl-typography--subhead">I started building webpages in 2013 and I am familiar with many frameworks such as Bootstrap and Material Design Lite. I also built <a href="http://www.bioplane.us">bioplane.us</a> for the Aero Energy Association.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="center footer">
+                        <div class="icon_links">
+                            <a href="https://github.com/kylecorry31">
+                                <img src="res/images/github-circle.png" alt="Github" />
+                            </a>
+                            &nbsp; &nbsp; &nbsp;
+                            <a href="https://plus.google.com/+KyleCorry">
+                                <img src="res/images/google-plus.png" alt="Github" />
+                            </a>
+                        </div>
+                        <p class="mdl-typography--font-light animated fadeIn">
+                            Contact me at <a href="mailto:kylecorry31@gmail.com">kylecorry31@gmail.com</a>
                         </p>
-                    </div>
-                </div>
+                        <p class="mdl-typography--font-light animated fadeIn">Copyright &copy; 2015 Kyle Corry</p>
 
-                <div class="col s12 l4 m12">
-                    <div class="icon-block">
-                        <h2 class="center green-text"><i class="mdi-social-school"></i></h2>
-
-                        <h5 class="center">FRC and PHS</h5>
-
-                        <p class="light">I am a student at Ponaganset High School and a member of it's FIRST Robotics team, The Gongoliers (5112). I am the director of programming and controls for the team. </p>
-                    </div>
-                </div>
-
-                <div class="col s12 l4 m12">
-                    <div class="icon-block">
-                        <h2 class="center green-text"><i class="mdi-social-people"></i></h2>
-                        <!--mdi-action-settings-->
-                        <h5 class="center">Teaching</h5>
-
-                        <p class="light">I am currently the teacher of an after school Java class, which I use to teach and inspire the next generation of programmers.</p>
                     </div>
                 </div>
             </div>
-
-        </div>
-        <br>
-        <br>
-
-        <div class="section center flow-text">
-            <h3 class="center green-text"><a href="http://plus.google.com/+KyleCorry" class="linkNoStyle"><img class="img-responsive circle btn-floating btn-large waves-effect waves-light" src="gp.png" id="gp"/></a></h3>
-            <span id="credit">Image: Mount Washington</span>
-        </div>
+        </main>
     </div>
-
-
-
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
 
 </body>
 
