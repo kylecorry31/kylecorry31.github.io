@@ -1,0 +1,64 @@
+.header-image {
+    background: url('../images/washington.jpg') center center / cover;
+    background-repeat: no-repeat;
+    min-height: 40vh;
+}
+
+.white {
+    color: white;
+}
+
+.center {
+    text-align: center;
+}
+
+.card-area .mdl-card__media img {
+    width: 100%;
+}
+
+.card-area .mdl-card__title-text {
+    color: black;
+    height: auto;
+}
+
+.card-area .mdl-card__supporting-text {
+    height: auto;
+    color: black;
+    padding-bottom: 48px;
+}
+
+.card-area .mdl-card__title {
+    background: transparent;
+    height: auto;
+}
+
+.card-area .mdl-card__media {
+    overflow: hidden;
+    background: transparent;
+}
+
+.about-section {
+    padding: 80px 0;
+    max-width: 1044px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon_links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon_links {
+    margin-bottom: 16px;
+}
+
+span.mdl-navigation__link.mdl-navigation__link {
+    color: #4CAF50 !important;
+}
+
+.drawer-separator {
+    height: 1px;
+    background-color: #dcdcdc;
+    margin: 8px 0;
+}
