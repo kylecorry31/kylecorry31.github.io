@@ -4,6 +4,28 @@
     min-height: 40vh;
 }
 
+#profile {
+  margin: 0 !important;
+  text-align: center;
+  min-height: 40vh;
+  color: white;
+  font-size: 2rem;
+}
+
+.center {
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+}
+
+.img-circle {
+  height: 7.5rem;
+  border: 5px solid white;
+  width: auto;
+  border-radius: 100%;
+}
+
 .white {
     color: white;
 }
