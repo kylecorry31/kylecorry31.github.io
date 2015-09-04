@@ -4,6 +4,11 @@
     min-height: 40vh;
 }
 
+.center-all {
+  height: 100%;
+  margin: auto;
+}
+
 #profile {
   margin: 0 !important;
   text-align: center;
