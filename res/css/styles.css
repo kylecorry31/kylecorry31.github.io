@@ -1,7 +1,7 @@
 .header-image {
-    background: url('../images/washington.jpg') center center / cover;
+    background: url('../images/desk.jpg') center center / cover;
     background-repeat: no-repeat;
-    min-height: 40vh;
+    min-height: 50vh;
 }
 
 .center-all {
