@@ -2,6 +2,8 @@
     background: url('../images/desk.jpg') center center / cover;
     background-repeat: no-repeat;
     min-height: 50vh;
+    transition: transform 0.3s;
+    will-change: transform;
 }
 
 .center-all {
