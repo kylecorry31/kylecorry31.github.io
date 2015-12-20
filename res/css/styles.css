@@ -1,3 +1,14 @@
+header {
+  background-color: #0BB12B !important;
+  color: white !important;
+}
+.mdl-layout--large-screen-only .mdl-navigation__link {
+  color: white;
+}
+.mdl-layout__drawer-button i{
+  color: white;
+}
+
 .header-image {
     background: url('../images/desk.jpg') center center / cover;
     background-repeat: no-repeat;
@@ -83,7 +94,7 @@
 }
 
 span.mdl-navigation__link.mdl-navigation__link {
-    color: #4CAF50 !important;
+    color: #0BB12B !important;
 }
 
 .drawer-separator {
