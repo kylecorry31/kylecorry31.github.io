@@ -5,25 +5,7 @@ html, body {
 }
 #logo img {
   padding: 32px;
-  display: none;
-}
-@media (max-width: 900px) {
-  #logo .img-small {
-    display: inherit;
-    height: 75px;
-  }
-}
-@media (min-width: 901px) and (max-width: 1080px) {
-  #logo .img-med {
-    display: inherit;
-    height: 90px;
-  }
-}
-@media (min-width: 1081px) {
-  #logo .img-large {
-    display: inherit;
-    height: 150px;
-  }
+  height: 120px;
 }
 header table {
   width: 100%;
