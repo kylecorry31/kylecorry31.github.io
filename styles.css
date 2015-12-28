@@ -2,10 +2,10 @@ html, body {
   padding: 0;
   margin: 0;
   font-family: 'Open Sans', sans-serif !important;
+  color: black !important;
 }
 #logo img {
   padding: 32px;
-  height: 150px;
 }
 header table {
   width: 100%;
@@ -106,7 +106,6 @@ header table {
 footer {
   color: darkgray;
   padding: 32px;
-  margin-top: 64px;
 }
 .icon_links a {
   text-decoration: none;
@@ -114,4 +113,37 @@ footer {
 }
 .icon_links {
   margin-bottom: 16px;
+}
+button.button.button-transparent, a.button.button-transparent {
+  font-weight: 400;
+  background: transparent;
+  border: 1px solid #000;
+  color: #000;
+}
+button.button, a.button {
+  display: inline-block;
+  padding: 11.25px 15px 10.5px 15px;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border-radius: 2px;
+  margin: 64px;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+button.button, a.button {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+button.button.button-transparent:hover, a.button.button-transparent:hover {
+  background: #000;
+  color: #fff;
+  text-decoration: none;
 }
