@@ -1,150 +1,46 @@
 html, body {
-  padding: 0;
-  margin: 0;
-  font-family: 'Open Sans', sans-serif !important;
-  color: black !important;
+  font-family: 'Open Sans', arial, sans-serif !important;
 }
-#logo img {
-  padding: 32px;
-}
-header table {
-  width: 100%;
-  padding: 0 32px;
-}
-.active a {
-  color: #0BB12B !important;
-  background-color: inherit !important;
-}
-#banner-image {
-  background-image: url(desk.jpg);
+#main-image {
+  background-image: url('images/winter.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center 55%;
-  height: 40rem;
+  background-position: center center;
+  height: 75vh;
 }
-.nav {
-  margin-bottom: 5px !important;
+#main-image h1 {
+  color: white;
+  font-size: 64px;
+  margin: 0;
+  padding: 0;
+  line-height: 75vh;
+  vertical-align: middle;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
-.nav li {
-  border-left: 1px solid #b2b6ba;
-  border-radius: 0;
-  box-sizing: border-box;
+#about-image {
+  background-image: url('images/backup_camera.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 60vh;
 }
-.nav:first-child {
-  border-left: none;
+section h1 {
+  text-align: center;
+  padding: 32px;
+  padding-top: 64px;
 }
-.nav li a {
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 100;
-  padding: 32px !important;
-  width: 100%;
-  color: #b2b6ba;
+section h4 {
+  font-size: 24px;
+}
+section p {
   font-size: 16px;
-}
-.nav li a:hover {
-  color: #0BB12B;
-  background-color: inherit !important;
-}
-.img-overlay .desc {
-  background-color: #0BB12B;
-  bottom: 0;
-  top: 0;
-  right: 0;
-  color: #fff;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0.3s, opacity 0.3s ease;
-}
-.img-overlay img {
-  margin: auto;
-  max-height: 25rem;
-}
-.img-overlay .desc h3 {
-  text-align: center;
-  font-size: 50px;
-  margin: auto;
-}
-.img-overlay:hover .desc {
-  visibility: visible;
-  opacity: 1;
-}
-.img-overlay {
-  width: 100%;
-  padding: 0px;
-  height: 30rem;
-  display: flex;
-  align-items: center;
-}
-.edu {
-  height: 30rem;
-}
-.edu img {
-  height: 20rem;
-}
-.container .sub-title {
-  font-size: 28px;
-  color: #0BB12B;
-}
-.container .title {
-  font-size: 32px;
-  color: #0BB12B;
-  text-align: center;
-}
-.container div p {
-  font-size: 20px;
-  text-align: justify;
-}
-.text-center img {
-  margin: auto;
+  padding-bottom: 64px;
 }
 footer {
   color: darkgray;
   padding: 32px;
-  text-align:center;
+  text-align: center;
 }
-.icon_links a {
-  text-decoration: none;
-  color: inherit;
-}
-.icon_links {
-  margin-bottom: 16px;
-}
-button.button.button-transparent, a.button.button-transparent {
-  font-weight: 400;
-  background: transparent;
-  border: 1px solid #000;
-  color: #000;
-}
-button.button, a.button {
-  display: inline-block;
-  padding: 11.25px 15px 10.5px 15px;
-  border: none;
-  outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  border-radius: 2px;
-  margin: 64px;
-  font-family: 'Roboto', Helvetica, sans-serif;
-  font-size: 16px;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-button.button, a.button {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-button.button.button-transparent:hover, a.button.button-transparent:hover {
-  background: #000;
-  color: #fff;
+footer a:hover {
   text-decoration: none;
 }
