@@ -1,0 +1,138 @@
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+$navbar-height: 72px;
+$navbar-title-font: 'Lobster', sans-serif;
+$text-color: black;
+$nav-text-alpha: 0.5;
+$drawer-width: 65vw;
+$drawer-alpha: 1 - 0.98;
+$translation-duration: 0.3s;
+$nav-alpha: 0.15;
+$nav-gutter: $gutter;
+$nav-title-font-size: 24px;
+$nav-title-alpha: 1 - 0.6;
+$nav-link-font-size: 16px;
+$nav-font-stack: 'Roboto', sans-serif;
+$nav-selected-color: $color-primary-green;
+$nav-minimize-width: 1180px;
+$drawer-divider-color: rgba(86, 86, 86, 0.25);
+
+#ky-nav {
+    @extend .shadow-2dp;
+    height: $navbar-height;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparentize(white, $nav-alpha);
+}
+
+#ky-nav-title {
+    line-height: $navbar-height;
+    vertical-align: middle;
+    margin-left: 2 * $nav-gutter;
+    float: left;
+    font-size: $nav-title-font-size;
+    color: transparentize($text-color, $nav-title-alpha);
+    text-decoration: none;
+    font-family: $navbar-title-font;
+}
+
+#ky-nav-links {
+    text-transform: uppercase;
+    color: transparentize($text-color, $nav-text-alpha);
+    float: right;
+    padding: 0 $nav-gutter / 2;
+    font-size: $nav-link-font-size;
+}
+
+#ky-menu-btn {
+    color: transparentize($text-color, $nav-text-alpha);
+    float: right;
+    cursor: pointer;
+    font-size: $nav-title-font-size;
+    line-height: $navbar-height;
+    margin-right: 2 * $nav-gutter;
+}
+
+#ky-nav-links a {
+    color: transparentize($text-color, $nav-text-alpha);
+    margin-right: $nav-gutter;
+    line-height: $navbar-height;
+    text-decoration: none;
+    font-family: $nav-font-stack;
+
+    &:last-child {
+        margin-right: $nav-gutter + $nav-gutter / 2;
+    }
+
+    &:hover {
+        color: $nav-selected-color;
+    }
+}
+
+.ky-current {
+    color: $nav-selected-color!important;
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+#ky-drawer {
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: $drawer-width;
+    height: 100%;
+    overflow: scroll;
+    background: transparentize(white, $drawer-alpha);
+    transition: transform $translation-duration;
+    will-change: transform;
+}
+
+#ky-drawer a {
+    border-bottom: 1px solid $drawer-divider-color;
+    text-transform: uppercase;
+    color: transparentize($text-color, $nav-text-alpha);
+    padding-bottom: $nav-gutter;
+    padding-top: $nav-gutter;
+    text-decoration: none;
+    display: list-item;
+    padding-left: $nav-gutter;
+    width: 100%;
+    list-style: none;
+    font-family: $nav-font-stack;
+}
+
+#ky-drawer .ky-current {
+    color: $nav-selected-color;
+}
+
+#ky-drawer a:hover {
+    color: $nav-selected-color;
+}
+
+#ky-drawer.visible {
+    @extend .shadow-3dp;
+    transform: translateX(-$drawer-width);
+}
+
+#ky-close {
+    font-size: $nav-title-font-size;
+    padding: $nav-gutter;
+    cursor: pointer;
+    color: transparentize($text-color, $nav-text-alpha);
+    font-family: $nav-font-stack;
+}
+@media (max-width: $nav-minimize-width) {
+    #ky-nav-links {
+        display: none;
+    }
+}
+@media (min-width: $nav-minimize-width) {
+    #ky-menu-btn {
+        display: none;
+    }
+}
