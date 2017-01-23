@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Kyle Corry - Coordinate Frames</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+
+    <ky-nav class="hidden">
+        <ky-title>Kyle Corry</ky-title>
+        <a href="../index.html">Home</a>
+        <a href="https://github.com/kylecorry31" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/kyle-corry" target="_blank">LinkedIn</a>
+
+    </ky-nav>
+    <div class="content-area">
+        <div class="pane">
+            <div class="header">
+                Transformations and Coordinate Frames
+            </div>
+            <div class="article">
+                <h3 class="text-center">COORDINATE FRAMES ARE EVERYWHERE</h3>
+                <p class="article-text">Coordinate frames are all around us, and are an essential part of our day to day life, but what are they? Let’s start with an example: you are giving directions to the market and you say “the market is 3 kilometers south of the post office
+                    which is 100 meters east and a kilometer south of us”. That makes sense, but how far is the market from you? Well it is 4 kilometers south and 100 meters east from your current position. That’s essentially a coordinate frame transformation.
+                    You started at your current coordinate frame (your current position) and said how to get to the post office. Then you looked at the post office’s coordinate frame (the location of the post office) and gave the position of the market
+                    relative to that. Then to get the location of the market relative to you, you combined the relative position of the market to the post office with the relative position of the post office to you.</p>
+                <p class="article-text">Did you know your brain automatically calculates coordinate frame transformations for essentially every point on your body? How else would you be able to pick up the pencil on your desk and write if you couldn’t transform the position
+                    of the pencil as seen from your eyes to the position of your hands? The answer is you probably couldn’t.</p>
+                <p class="article-text">So, a coordinate frame is just a point which has things defined relative to it. From the coordinate frame of your eyes you can see that the pencil is about half a meter away, but from the coordinate frame of your hands, the pencil is at
+                    the origin, or in your hands. A coordinate frame transformation occurs when you convert a point in a coordinate frame into another coordinate frame.</p>
+                <h3 class="text-center">THE COORDINATE FRAME SYSTEM OF A ROBOT</h3>
+
+                <p class="article-text">So now you know what a coordinate frame is and how they apply to real life, but let’s look at the robot for example. For a coordinate frame map to exist we first need to start with a point that everything is relative to, let’s call it
+                    the origin. The origin is normally the center of the robot, but in some more advanced applications there may be something called the world frame, which is defined as a point in the world that the robot is relative to. In FRC the world
+                    frame may or may not be useful, so I will set the origin to the robot center, or robot frame.<sup>1</sup> Since the center of the robot is the “absolute” coordinate frame as the origin may be thought of, any movement of the robot will
+                    not change the relative position of the robot frame – the center will always remain centered. This simplifies the problem of robot movement a good deal because you do not need to know your position or orientation in the world, but
+                    some applications may need that, and therefore a world frame may be necessary.</p>
+                <p class="article-text">So, we have an origin, but it doesn’t know anything else yet – we need to add relative points or frames to make it useful. First, we can think of every point on the robot as having its own frame – in other words, you can define something
+                    relative to any point on the robot. We may not need every point, and adding every point would be impossible, so let’s be selective. Our robot has a camera and a shooter; the camera is on the front right of the robot and the shooter
+                    is centered horizontally in the front. We can start by defining the camera’s position relative to the origin. The camera is 0.25 meters to the right and 0.3 meters to the front. We can also think about this another way, using the Cartesian
+                    coordinate system (or XY plane). Coordinate frames usually have a way that is considered front, that will be called the positive Y axis. The positive X axis will be 90 degrees to the right of the positive Y axis. The negative axes
+                    will be in the opposite direction as their positive versions. Now we can define the camera as having position (0.25, 0.3), which simplifies and clarifies the position. Now we can define the shooter as being at position (0, 0.3) in
+                    the origin coordinate frame.</p>
+                <p class="article-text">The camera is able to detect a target which reads at a position of (-4, 5) with respect to the camera’s coordinate frame. This means that from the camera, the target is 4 meters to the left and 5 meters in front. We now want to shoot at
+                    the target, but we only know where the target is with respect to the camera (notice how I mention that something is with respect to something else many times, well that is convention and by using it you will minimize errors due to
+                    misidentified coordinate frames). To get the position of the target with respect to the shooter, we can apply a transformation. The transformation will take the position from the camera and change it to the position from the shooter.
+                    Applying the transformation, we get that the target is at position (-3.75, 5) from the shooter.</p>
+                <h3 class="text-center">DEALING WITH ROTATIONS</h3>
+                <p class="article-text">It would be nice if everything on the robot faced the same direction, but that isn’t always the case. Some things may have their front rotated to face away from the front of the robot (therefore its Y axis will not be facing in the same
+                    direction as the Y axis of the origin). Let’s say our camera was mounted so it is rotated 90 degrees to the left at the origin this time. This brings us into a new type of location descriptor called pose. Pose is like position except
+                    it also contains an orientation.<sup>2</sup> The pose for the camera (defining 90 degrees to the left as a positive rotation) would be (0, 0, 90 degrees). The camera sees the target again at (1, 0) from its coordinate frame. The is
+                    1 meter to the right with respect to the camera frame, but because the camera is rotated the target is 1 meter in front of the origin. Transforming this point to the origin from the camera will give you the position of the target at
+                    (0, 1) with respect to the robot frame.</p>
+                <h3 class="text-center">THE IMPORTANCE OF COORDINATE FRAMES</h3>
+                <p class="article-text">FRC Team 5112 was a third-year team in the 2015-2016 season, but it was the first time that we used sensors on our robot. We went all out on our sensors, and decided to do vision processing with a camera. The only issue was that we could
+                    not mount our camera in the center of the robot, and therefore mounted it on the right side of our robot. On top of this, our shooter was centered in the robot, and not aligned with the camera. Our mission was to shoot accurately into
+                    the high goal, but it didn’t work out too well for us. We were rotating to the right angle and shooting at the right speed for the distance (so we thought), but we always ended up missing by just a little bit, and constantly had to
+                    tune the offset angle that was subtracted from the rotation angle. What we needed that year was knowledge of coordinate frames. If we had thought of the problem as the target being located from the perspective of the camera and needing
+                    to be transformed to the perspective of the shooter we would have been much more accurate. This problem that we had (which I didn’t realize until I was introduced to coordinate frames through NASA’s Space Robotics Challenge at WPI)
+                    inspired me to write this paper as well as create a library for simple transformations – modeled after ROS’s tf library. The library is currently packaged within the Library of Gongolierium as the TF class (can be found in our GitHub)
+                    and on my personal GitHub, as a standalone library.</p>
+                <br>
+                <p class="article-text">I hope your team gains this valuable knowledge of coordinate frames, and has better luck with accuracy than we had in Stronghold!</p>
+                <hr style="border-bottom: 1px solid rgba(0, 0, 0, 0.15);">
+                <p><sup>1</sup> It is convention to refer to each frame as the name of the frame followed by the word “frame”. For example, the coordinate frame of the robot is called “robot frame” and the coordinate frame of the camera is called “camera frame”.</p>
+                <p><sup>2</sup> Pose is defined as a position in 3D space and a quaternion. A quaternion can be defined using an angle of rotation around a vector, or in most cases an axis. Most FRC applications will only deal with 2D rotations around a single axis, such as the Z axis.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../ky-nav.js" charset="utf-8"></script>
+</body>
+
+</html>
