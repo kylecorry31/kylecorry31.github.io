@@ -81,6 +81,11 @@ $text-header-alpha: 0.4;
     color: transparentize(black, $text-alpha);
 }
 
+.article ul li {
+  @extend .article-text;
+  font-size: $text-size-small - 2;
+}
+
 .article header,
 .article-title {
     @extend .default-gutter;

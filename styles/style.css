@@ -199,10 +199,14 @@
   border: none; }
 
 .article p,
-.article-text {
+.article-text,
+.article ul li {
   font-size: 18px;
   text-align: justify;
   color: rgba(0, 0, 0, 0.5); }
+
+.article ul li {
+  font-size: 16px; }
 
 .article header,
 .article-title {
@@ -229,7 +233,8 @@ body {
 
 .default-gutter, .pane, .article-header, .article img,
 .article-image, .article p,
-.article-text, .article header,
+.article-text,
+.article ul li, .article header,
 .article-title, .article-title-non-uppercase {
   padding: 8px; }
 
