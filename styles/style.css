@@ -221,6 +221,13 @@
   margin: 0;
   font-size: 22px; }
 
+code {
+  padding: 16px;
+  background-color: #eeeeee;
+  color: black;
+  margin: 8px;
+  display: inline-block; }
+
 body {
   background: url("../mountains.jpg") no-repeat 100% 0 fixed;
   background-position: 50% 50%;

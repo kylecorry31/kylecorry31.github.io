@@ -102,3 +102,11 @@ $text-header-alpha: 0.4;
     margin: 0;
     font-size: $text-size-medium;
 }
+
+code {
+  padding: $gutter;
+  background-color: #eeeeee;
+  color: black;
+  margin: $gutter / 2;
+  display: inline-block;
+}
