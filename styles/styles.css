@@ -1,0 +1,29 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --mdc-theme-primary: #0bb12b;
+    --mdc-theme-accent: rgba(11, 177, 43, 0.54);
+}
+
+.hero {
+    background-image: url('../mountains.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    /*background-color: rgba(0, 0, 0, 0.05);*/
+    min-height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-flow: column;
+}
+
+.content {
+    margin: 24px;
+    padding: 24px;
+}

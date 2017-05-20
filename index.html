@@ -5,55 +5,84 @@
     <meta charset="utf-8">
     <title>Kyle Corry</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
-
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    <!-- <link rel="stylesheet" href="btn-rounded.css"> -->
+    <!-- <link rel="stylesheet" href="material.css"> -->
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css" />
 </head>
 
 <body>
 
-    <ky-nav class="hidden">
+    <main>
+        <nav class="mdc-tab-bar mdc-tab-bar--icons-with-text">
+            <a class="mdc-tab mdc-tab--with-icon-and-text mdc-tab--active" href="#">
+                <i class="material-icons mdc-tab__icon" aria-hidden="true">home</i>
+                <span class="mdc-tab__icon-text">HOME</span>
+            </a>
+            <a class="mdc-tab mdc-tab--with-icon-and-text" href="#portfolio">
+                <i class="material-icons mdc-tab__icon" aria-hidden="true">code</i>
+                <span class="mdc-tab__icon-text">Portfolio</span>
+            </a>
+            <a class="mdc-tab mdc-tab--with-icon-and-text" href="#blog">
+                <i class="material-icons mdc-tab__icon" aria-hidden="true">library_books</i>
+                <span class="mdc-tab__icon-text">Blog</span>
+            </a>
+            <a class="mdc-tab mdc-tab--with-icon-and-text" target="_blank" href="https://users.wpi.edu/~greenteam">
+                <i class="material-icons mdc-tab__icon" aria-hidden="true">wb_sunny</i>
+                <span class="mdc-tab__icon-text">WPI Green Team</span>
+            </a>
+            <a class="mdc-tab mdc-tab--with-icon-and-text" href="#contact">
+                <i class="material-icons mdc-tab__icon" aria-hidden="true">contact_mail</i>
+                <span class="mdc-tab__icon-text">Contact me</span>
+            </a>
+            <span class="mdc-tab-bar__indicator"></span>
+        </nav>
+        <!-- Header image -->
+        <section class="hero">
+            <h2 class="mdc-typography--display4">Kyle Corry</h2>
+        </section>
+
+        <!-- <ky-nav class="hidden">
         <ky-title>Kyle Corry</ky-title>
         <a href="https://github.com/kylecorry31" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/in/kyle-corry" target="_blank">LinkedIn</a>
 
-    </ky-nav>
-    <div class="content-area">
-        <div class="pane">
-            <div class="header">
-                About me
+    </ky-nav> -->
+
+        <!-- Content -->
+        <section class="mdc-typography content">
+          <h1 class="mdc-typography--title mdc-typography--adjust-margin">About me</h1>
+            <p class="mdc-typography--body1 mdc-typography--adjust-margin">I am a computer science major at Worcester Polytechnic Institute in my Sophomore year.</p>
+            <br>
+            <p class="mdc-typography--body1 mdc-typography--adjust-margin"> I am a frontend web designer / developer based in Chepachet, RI and have created several websites including one for <a target="_blank" href="http://bioplane.us">Coast to Coast Bioflight</a> and <a target="_blank" href="https://users.wpi.edu/~greenteam">WPI Green Team</a>. I primarily do volunteer work with websites for causes that I am passionate about. If you are interested in my work, and believe
+                I may be passionate about your cause, contact me at <a href="mailto:kncorry@wpi.edu" target="_blank">kncorry@wpi.edu</a> and I will be happy to work with you.</p>
+            <br>
+            <p class="mdc-typography--body1 mdc-typography--adjust-margin">I also develop for the Android platform and have created two applications that are on the Play Store. The first being <a href="https://play.google.com/store/apps/details?id=com.DKB.shutupdrive" target="_blank">Shut Up &amp; Drive!</a> and
+                the other being <a href="https://play.google.com/store/apps/details?id=com.teamwifi.kkatwifi" target="_blank">KKAT WiFi</a>.</p>
+            <br>
+            <p class="mdc-typography--body1 mdc-typography--adjust-margin">Finally, I am a mentor for FRC Team 5112 as the lead Programming and Controls mentor. I maintain the codebase for the <a href="https://github.com/Gongoliers/Library-of-Gongolierium" target="_blank">Library of Gongolierium</a> and the
+                <a href="https://github.com/kylecorry31/Robot-Vision-API" target="_blank">Robot Vision API</a>.</p>
+        </section>
+
+
+        <!-- <div class="content-area">
+            <div class="pane">
+                <div class="header">
+                    My posts
+                </div>
+                <div class="article">
+                    <p class="article-text">1-22-2017: <a href="posts/coordinateFrames.html">Transformations and Coordinate Frames</a></p>
+                    <p class="article-text">1-25-2017: <a href="posts/trello.html">Trello for an Organized Team</a></p>
+                    <p class="article-text">1-27-2017: <a href="posts/architecture.html">Abstraction Through Robot Software Architecture</a></p>
+                    <p class="article-text">2-05-2017: <a href="posts/robotVision.html">Using the Robot Vision API</a></p>
+                    <p class="article-text">5-06-2017: <a href="posts/softwareEngineering.html">Software Engineering Workshop</a></p>
+                </div>
             </div>
-            <div class="article">
+        </div> -->
 
-                <p class="article-text">I am a computer science major at Worcester Polytechnic Institute in my Freshman year.</p>
-                <p class="article-text">I am a frontend web designer / developer based in Chepachet, RI and have created several websites including one for <a target="_blank" href="http://bioplane.us">Coast to Coast Bioflight</a> and <a target="_blank" href="https://users.wpi.edu/~greenteam">WPI Green Team</a>.
-                    I primarily do volunteer work with websites for causes that I am passionate about. If you are interested in my work, and believe I may be passionate about your cause, contact me at <a href="mailto:kncorry@wpi.edu" target="_blank">kncorry@wpi.edu</a>                    and I will be happy to work with you.</p>
-                <p class="article-text">I also develop for the Android platform and have created two applications that are on the Play Store. The first being <a href="https://play.google.com/store/apps/details?id=com.DKB.shutupdrive" target="_blank">Shut Up &amp; Drive!</a> and the other being <a href="https://play.google.com/store/apps/details?id=com.teamwifi.kkatwifi" target="_blank">KKAT WiFi</a>.</p>
-                <p class="article-text">Finally, I am a mentor for FRC Team 5112 as the lead Programming and Controls mentor. I maintain the codebase for the <a href="https://github.com/Gongoliers/Library-of-Gongolierium" target="_blank">Library of Gongolierium</a> and the <a href="https://github.com/kylecorry31/Robot-Vision-API" target="_blank">Robot Vision API</a>.</p>
-              </div>
-        </div>
-        <div class="pane">
-            <div class="header">
-                My posts
-            </div>
-            <div class="article">
-              <p class="article-text">1-22-2017: <a href="posts/coordinateFrames.html">Transformations and Coordinate Frames</a></p>
-              <p class="article-text">1-25-2017: <a href="posts/trello.html">Trello for an Organized Team</a></p>
-              <p class="article-text">1-27-2017: <a href="posts/architecture.html">Abstraction Through Robot Software Architecture</a></p>
-              <p class="article-text">2-05-2017: <a href="posts/robotVision.html">Using the Robot Vision API</a></p>
-              <p class="article-text">5-06-2017: <a href="posts/softwareEngineering.html">Software Engineering Workshop</a></p>
-              </div>
-        </div>
-    </div>
-
-
-    <script src="ky-nav.js" charset="utf-8"></script>
 </body>
 
 </html>
