@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
@@ -45,13 +46,13 @@ html, body {
 }
 
 .img-centered {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .img-responsive {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .portfolio-entries {
@@ -73,4 +74,32 @@ code {
     color: white;
     padding: 16px;
     margin-bottom: 16px;
+}
+
+img {
+    animation: colorize 3s ease-out, transOpacity 2s 0s ease-out;
+    background: transparent;
+    border: 10px solid rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    display: block;
+}
+
+@keyframes transOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes colorize {
+    0% {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+    100% {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
 }
