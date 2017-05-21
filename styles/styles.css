@@ -9,7 +9,6 @@ html, body {
 }
 
 .hero {
-    background-image: url('../mountains.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -20,10 +19,58 @@ html, body {
     align-items: center;
     justify-content: center;
     color: white;
-    flex-flow: column;
+    flex-flow: row nowrap;
+    /*flex-flow: column;*/
+}
+
+#blog-hero {
+    background-image: url('../backgrounds/barn.jpg');
+}
+
+#home-hero {
+    background-image: url('../backgrounds/sunrise.jpg');
+}
+
+#portfolio-hero {
+    background-image: url('../backgrounds/fall.jpg');
+}
+
+#contact-hero {
+    background-image: url('../backgrounds/mountains.jpg');
 }
 
 .content {
     margin: 24px;
     padding: 24px;
+}
+
+.img-centered {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.img-responsive {
+  max-width: 100%;
+}
+
+.portfolio-entries {
+    --mdc-layout-grid-margin: 0px;
+    --mdc-layout-grid-gutter: 32px;
+}
+
+.portfolio-entry {
+    display: inline-block;
+}
+
+.portfolio-entry a img {
+    max-width: 100%;
+}
+
+code {
+    background-color: #212121;
+    display: block;
+    color: white;
+    padding: 16px;
+    margin-bottom: 16px;
 }

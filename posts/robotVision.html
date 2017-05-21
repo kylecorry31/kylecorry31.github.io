@@ -3,85 +3,81 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Kyle Corry - Robot Vision API</title>
+    <title>Robot Vision API</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
-
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    <link rel='shortcut icon' href='../kcLogoSmall.png' type='image/x-icon' />
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css" />
 </head>
 
 <body>
 
-    <ky-nav class="hidden">
-        <ky-title>Kyle Corry</ky-title>
-        <a href="../index.html">Home</a>
-        <a href="https://github.com/kylecorry31" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/kyle-corry" target="_blank">LinkedIn</a>
-
-    </ky-nav>
-    <div class="content-area">
-        <div class="pane">
-            <div class="header">
-                Using the Robot Vision API
-            </div>
-            <div class="article">
-                <h3 class="text-center">Why use the Robot Vision API?</h3>
-                <p class="article-text">The Robot Vision API provides a higher level of abstraction to the problem of target identification. This API will allow your team to focus more on solving higher level problems such as alignment with the target instead of lower level
-                    computer vision code. The Robot Vision API functions either synchronously, meaning you can immediately access the location of the most probably targets, or asynchronously, which means a provided method will be called (the processor)
-                    to allow you to work with the found targets at a set interval, in the background.</p>
-                <p class="article-text">This was built using several of the new features provided to teams in the 2017 WPILib release, which includes the CameraServer, OpenCV framework, and cscore library. </p>
-                <h3 class="text-center">Simple Target Detection</h3>
-                <p class="article-text">The following program creates a CameraSource for a USB camera and allows for the detection of a target which was created using the TargetSpecs interface.</p>
-                <code>
-                  package com.kylecorry.frc.robot;<br>
-
-                  <br>import com.kylecorry.frc.vision.CameraSource;<br>
-                  import com.kylecorry.frc.vision.TargetDetector;<br>
-                  import com.kylecorry.frc.vision.Target;<br>
-                  import edu.wpi.first.wpilibj.IterativeRobot;<br>
-                  import java.util.List;<br>
-
-                  <br>public class Robot extends IterativeRobot {<br>
-<br>
-                      &emsp;TargetDetector highGoalDetector;<br>
-                      &emsp;CameraSource camera;<br>
-
-                      <br>&emsp;public void robotInit() {<br>
-                  	&emsp;&emsp;/* Note, the following code is for a single target, if a group of targets is needed, use the TargetGroupDetector, which also requires the setTargetGroupSpecs method to be called */
-                          <br><br>&emsp;&emsp;highGoalDetector = new TargetDetector.Builder()<br>
-                      		&emsp;&emsp;&emsp;.setTargetSpecs(new HighGoalSpecs())<br>
-                      		&emsp;&emsp;&emsp;.build();<br>
-
-                  	<br>&emsp;&emsp;camera = new CameraSource.Builder(highGoalDetector)<br>
-                      		&emsp;&emsp;&emsp;.setType(CameraSource.Type.USB)<br>
-                      		&emsp;&emsp;&emsp;.build();<br>
-                    &emsp;}<br>
-
-                      <br>&emsp;public void autonomousPeriodic() {<br>
-                  	&emsp;&emsp;List<Target> targets = highGoalDetector.detect(camera.getPicture());<br>
-                  	&emsp;&emsp;if(!targets.isEmpty()){<br>
-                  		&emsp;&emsp;&emsp;Target highGoal = targets.get(0);<br>
-                  		&emsp;&emsp;&emsp;// do something with target<br>
-                  	&emsp;&emsp;}<br>
-                      &emsp;}<br>
-                  }
-
-                </code>
-                <p class="article-text">This is a very simple tutorial, but for a more detailed description of the API, and examples of asynchronous detection of targets, see the README on GitHub at <a href="https://github.com/kylecorry31/Robot-Vision-API">Robot Vision API</a>.</p>
-                <p class="article-text">Below is an example of the Robot Vision API being used to detect the 2017 peg target using with a non exact distance as the view angle was not calibrated yet.</p>
-                <img src="robotVisionImages\visionExample.png" alt="Vision Example"/>
-            </div>
-        </div>
-    </div>
+    <main>
+        <!-- Header image -->
+        <section class="hero" style="background-image: url('robotVisionImages/background.jpg');">
+            <h2 class="mdc-typography--display3">Robot Vision API</h2>
+        </section>
 
 
-    <script src="../ky-nav.js" charset="utf-8"></script>
+        <!-- Content -->
+        <section class="mdc-typography content">
+            <h1 class="mdc-typography--title mdc-typography--adjust-margin">Why use the Robot Vision API?</h1>
+            <p class="mdc-typography--body1 mdc-typography--adjust-margin">The Robot Vision API provides a higher level of abstraction to the problem of target identification. This API will allow your team to focus more on solving higher level problems such as alignment with the target instead of lower level computer
+                vision code. The Robot Vision API functions either synchronously, meaning you can immediately access the location of the most probably targets, or asynchronously, which means a provided method will be called (the processor) to allow you
+                to work with the found targets at a set interval, in the background.</p>
+            <p class="mdc-typography--body1 mdc-typography--adjust-margin">This was built using several of the new features provided to teams in the 2017 WPILib release, which includes the CameraServer, OpenCV framework, and cscore library.</p>
+
+            <h1 class="mdc-typography--title mdc-typography--adjust-margin">Simple target detection</h1>
+            <p class="mdc-typography--body1 mdc-typography--adjust-margin">The following program creates a CameraSource for a USB camera and allows for the detection of a target which was created using the TargetSpecs interface.</p>
+
+            <code>
+              package com.kylecorry.frc.robot;<br>
+
+              <br>import com.kylecorry.frc.vision.CameraSource;<br>
+              import com.kylecorry.frc.vision.TargetDetector;<br>
+              import com.kylecorry.frc.vision.Target;<br>
+              import edu.wpi.first.wpilibj.IterativeRobot;<br>
+              import java.util.List;<br>
+
+              <br>public class Robot extends IterativeRobot {<br>
+                <br>
+                  &emsp;TargetDetector highGoalDetector;<br>
+                  &emsp;CameraSource camera;<br>
+
+                  <br>&emsp;public void robotInit() {<br>
+                &emsp;&emsp;/* Note, the following code is for a single target, if a group of targets is needed, use the TargetGroupDetector, which also requires the setTargetGroupSpecs method to be called */
+                      <br><br>&emsp;&emsp;highGoalDetector = new TargetDetector.Builder()<br>
+                      &emsp;&emsp;&emsp;.setTargetSpecs(new HighGoalSpecs())<br>
+                      &emsp;&emsp;&emsp;.build();<br>
+
+                <br>&emsp;&emsp;camera = new CameraSource.Builder(highGoalDetector)<br>
+                      &emsp;&emsp;&emsp;.setType(CameraSource.Type.USB)<br>
+                      &emsp;&emsp;&emsp;.build();<br>
+                &emsp;}<br>
+
+                  <br>&emsp;public void autonomousPeriodic() {<br>
+                &emsp;&emsp;List<Target> targets = highGoalDetector.detect(camera.getPicture());<br>
+                &emsp;&emsp;if(!targets.isEmpty()){<br>
+                  &emsp;&emsp;&emsp;Target highGoal = targets.get(0);<br>
+                  &emsp;&emsp;&emsp;// do something with target<br>
+                &emsp;&emsp;}<br>
+                  &emsp;}<br>
+              }
+            </code>
+
+            <p class="mdc-typography--body1 mdc-typography--adjust-margin">This is a very simple tutorial, but for a more detailed description of the API, and examples of asynchronous detection of targets, see the README on GitHub at <a href="https://github.com/kylecorry31/Robot-Vision-API">Robot Vision API</a>.</p>
+            <p class="mdc-typography--body1 mdc-typography--adjust-margin">Below is an example of the Robot Vision API being used to detect the 2017 peg target using with a non exact distance as the view angle was not calibrated yet.</p>
+            <img src="robotVisionImages\visionExample.png" alt="Vision Example" class="img-centered img-responsive"/>
+
+            <!-- Footer -->
+            <br>
+            <br>
+            <p class="mdc-typography--caption" style="text-align: center;"><a href="../blog.html">See more blog posts</a></p>
+        </section>
+
+
 </body>
 
 </html>
