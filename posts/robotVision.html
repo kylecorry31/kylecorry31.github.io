@@ -24,9 +24,7 @@
         <!-- Content -->
         <section class="mdc-typography content">
             <h1 class="mdc-typography--title mdc-typography--adjust-margin">Why use the Robot Vision API?</h1>
-            <p class="mdc-typography--body1 mdc-typography--adjust-margin">The Robot Vision API provides a higher level of abstraction to the problem of target identification. This API will allow your team to focus more on solving higher level problems such as alignment with the target instead of lower level computer
-                vision code. The Robot Vision API functions either synchronously, meaning you can immediately access the location of the most probably targets, or asynchronously, which means a provided method will be called (the processor) to allow you
-                to work with the found targets at a set interval, in the background.</p>
+            <p class="mdc-typography--body1 mdc-typography--adjust-margin">The Robot Vision API provides a higher level of abstraction to the problem of target identification. This API will allow your team to focus more on solving higher level problems such as alignment with the target instead of lower level computer vision code. The Robot Vision API functions either synchronously, meaning you can immediately access the location of the most probably targets, or asynchronously, which means a provided method will be called (the processor) to allow you to work with the found targets at a set interval, in the background.</p>
             <p class="mdc-typography--body1 mdc-typography--adjust-margin">This was built using several of the new features provided to teams in the 2017 WPILib release, which includes the CameraServer, OpenCV framework, and cscore library.</p>
 
             <h1 class="mdc-typography--title mdc-typography--adjust-margin">Simple target detection</h1>
@@ -58,7 +56,7 @@
                 &emsp;}<br>
 
                   <br>&emsp;public void autonomousPeriodic() {<br>
-                &emsp;&emsp;List<Target> targets = highGoalDetector.detect(camera.getPicture());<br>
+                &emsp;&emsp;List&lt;Target&gt; targets = highGoalDetector.detect(camera.getPicture());<br>
                 &emsp;&emsp;if(!targets.isEmpty()){<br>
                   &emsp;&emsp;&emsp;Target highGoal = targets.get(0);<br>
                   &emsp;&emsp;&emsp;// do something with target<br>
@@ -69,14 +67,14 @@
 
             <p class="mdc-typography--body1 mdc-typography--adjust-margin">This is a very simple tutorial, but for a more detailed description of the API, and examples of asynchronous detection of targets, see the README on GitHub at <a href="https://github.com/kylecorry31/Robot-Vision-API">Robot Vision API</a>.</p>
             <p class="mdc-typography--body1 mdc-typography--adjust-margin">Below is an example of the Robot Vision API being used to detect the 2017 peg target using with a non exact distance as the view angle was not calibrated yet.</p>
-            <img src="robotVisionImages\visionExample.png" alt="Vision Example" class="img-centered img-responsive"/>
+            <img src="robotVisionImages\visionExample.png" alt="Vision Example" class="img-centered img-responsive" />
 
             <!-- Footer -->
             <br>
             <br>
             <p class="mdc-typography--caption" style="text-align: center;"><a href="../blog.html">See more blog posts</a></p>
         </section>
-
+    </main>
 
 </body>
 
