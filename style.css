@@ -20,7 +20,6 @@
 }
 
 a {
-    color: #44696C;
     text-decoration: none;
 }
 
@@ -29,7 +28,7 @@ a:hover {
 }
 
 .normal-button {
-    background: #FFCE07;
+    background: #0BB12B;
     font-size: 14px;
     font-weight: 900;
     text-align: center;
@@ -40,14 +39,14 @@ a:hover {
 }
 
 .normal-button:hover {
-    background: #2B4D86;
+    background: #009010;
     -webkit-transform: scale(1.02);
     transform: scale(1.02);
     text-decoration: none;
 }
 
 .pane {
-    background-color: rgba(255, 253, 245, 0.75);
+    background-color: rgba(255, 255, 255, 0.85);
     border-radius: 5px;
     padding: 30px;
     margin: 32px auto;
@@ -144,21 +143,20 @@ body {
     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.22);
 }
 
-
-@media (max-width: 800px){
-    .section__layout, .section--even .section__layout {
+@media (max-width: 800px) {
+    .section__layout,
+    .section--even .section__layout {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    
     .section__layout__item {
         width: 100%;
     }
 }
 
 .post-date {
-        font-size: 13px;
+    font-size: 13px;
     line-height: 18px;
     font-weight: bold;
 }
