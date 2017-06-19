@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -35,56 +36,124 @@
             <span class="mdc-tab-bar__indicator"></span>
         </nav>
         <!-- Header image -->
-        <section class="hero" id="portfolio-hero">
-            <h2 class="mdc-typography--display4">Portfolio</h2>
+        <section class="hero" style="background-image: url('backgrounds/barn.jpg');">
+            <h1 class="page-title">Portfolio</h1>
         </section>
 
+
+
+        <div class="section section--even" style="background-image: url('backgrounds/bioplane-background.jpg');">
+            <div class="section__layout">
+                <div class="section__layout__item">
+                    <div class="section__content">
+                        <div class="section__title">Bioplane</div>
+                        <div class="section__body">This website was built for the Coast to Coast Bioflight which was a project about a small plane powered by biodeisel which was going to fly from Rhode Island to California in 2016. The flight was successfully completed!</div>
+                        <br>
+                        <a href="http://bioplane.us/" class="button important-button normal-button">Visit</a>
+                    </div>
+                </div>
+                <div class="section__layout__item">
+                    <div class="section__image"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section" style="background-image: url('backgrounds/green-team-background.jpg');">
+            <div class="section__layout">
+                <div class="section__layout__item">
+                    <div class="section__content">
+                        <div class="section__title">WPI Green Team</div>
+                        <div class="section__body">The Green Team is a sustainability club at WPI which raises awareness of environmental issues and promotes sustainable actions throughout the campus. I joined the Green Team my freshman year and later became the president.</div>
+                        <br>
+                        <a href="http://greenteam.wpi.edu" class="button important-button normal-button">Visit</a>
+                    </div>
+                </div>
+                <div class="section__layout__item">
+                    <div class="section__image"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section section--even" style="background-image: url('backgrounds/src-background.jpg');">
+            <div class="section__layout">
+                <div class="section__layout__item">
+                    <div class="section__content">
+                        <div class="section__title">WPI Space Robotics Challenge</div>
+                        <div class="section__body">The WPI Space Robotics Challenge team was a NASA robotics competition team which competed by programming a virtual humanoid robot to conduct important tasks for the future of space exploration. I joined the team during my freshman year. The team did really good by the way!</div>
+                        <br>
+                        <a href="http://src.wpi.edu/" class="button important-button normal-button">Visit</a>
+                    </div>
+                </div>
+                <div class="section__layout__item">
+                    <div class="section__image"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section" style="background-image: url('backgrounds/sffc-background.jpg');">
+            <div class="section__layout">
+                <div class="section__layout__item">
+                    <div class="section__content">
+                        <div class="section__title">South Foster Fire Company (Prototype)</div>
+                        <div class="section__body">The South Foster Fire Company is a volunteer fire department in Rhode Island. I built a prototype website for them, but they decided to go with Squarespace so their members could easily change the design of the website when needed.</div>
+                        <br>
+                        <a href="http://src.wpi.edu/" class="button important-button normal-button">Visit</a>
+                    </div>
+                </div>
+                <div class="section__layout__item">
+                    <div class="section__image"></div>
+                </div>
+            </div>
+        </div>
+        
+
+
         <!-- Content -->
-        <section class="content">
-            <h1 class="mdc-typography--title mdc-typography--adjust-margin" id="websites">Websites</h1>
+<!--
+        <section class="content pane">
+            <h1 id="websites">Websites</h1>
             <div class="mdc-layout-grid portfolio-entries">
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 portfolio-entry">
-                    <a href="http://bioplane.us/"  target="_blank">
+                    <a href="http://bioplane.us/" target="_blank">
                         <img src="portfolio/bioplane.png" alt="Bioplane Website">
                     </a>
                     <div class="mdc-typography">
-                        <h1 class="mdc-typography--subheading2">Bioplane</h1>
-                        <p class="mdc-typography--caption mdc-typography--adjust-margin">This website was built for the Coast to Coast Bioflight which was a project about a small plane powered by biodeisel which was going to fly from Rhode Island to California in 2016. The flight was successfully completed!</p>
+                        <h1>Bioplane</h1>
+                        <p>This website was built for the Coast to Coast Bioflight which was a project about a small plane powered by biodeisel which was going to fly from Rhode Island to California in 2016. The flight was successfully completed!</p>
                     </div>
                 </div>
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 portfolio-entry">
-                    <a href="http://greenteam.wpi.edu"  target="_blank">
+                    <a href="http://greenteam.wpi.edu" target="_blank">
                         <img src="portfolio/greenteam.png" alt="Green Team Website">
                     </a>
                     <div class="mdc-typography">
-                        <h1 class="mdc-typography--subheading2">WPI Green Team</h1>
-                        <p class="mdc-typography--caption mdc-typography--adjust-margin">The Green Team is a sustainability club at WPI which raises awareness of environmental issues and promotes sustainable actions throughout the campus. I joined the Green Team my freshman year and later became the president.</p>
+                        <h1>WPI Green Team</h1>
+                        <p>The Green Team is a sustainability club at WPI which raises awareness of environmental issues and promotes sustainable actions throughout the campus. I joined the Green Team my freshman year and later became the president.</p>
                     </div>
                 </div>
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 portfolio-entry">
-                    <a href="http://src.wpi.edu/"  target="_blank">
+                    <a href="http://src.wpi.edu/" target="_blank">
                         <img src="portfolio/src.png" alt="Green Team Website">
                     </a>
                     <div class="mdc-typography">
-                        <h1 class="mdc-typography--subheading2">WPI Space Robotics Challenge</h1>
-                        <p class="mdc-typography--caption mdc-typography--adjust-margin">The WPI Space Robotics Challenge team was a NASA robotics competition team which competed by programming a virtual humanoid robot to conduct important tasks for the future of space exploration. I joined the team during my freshman year. The team did really good by the way!</p>
+                        <h1>WPI Space Robotics Challenge</h1>
+                        <p>The WPI Space Robotics Challenge team was a NASA robotics competition team which competed by programming a virtual humanoid robot to conduct important tasks for the future of space exploration. I joined the team during my freshman year. The team did really good by the way!</p>
                     </div>
                 </div>
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-6 portfolio-entry">
-                    <a href="http://kylecorry31.github.io/SouthFosterFire"  target="_blank">
+                    <a href="http://kylecorry31.github.io/SouthFosterFire" target="_blank">
                         <img src="portfolio/sffc.png" alt="South Foster Fire">
                     </a>
                     <div class="mdc-typography">
-                        <h1 class="mdc-typography--subheading2">South Foster Fire Company (Prototype)</h1>
-                        <p class="mdc-typography--caption mdc-typography--adjust-margin">The South Foster Fire Company is a volunteer fire department in Rhode Island. I built a prototype website for them, but they decided to go with Squarespace so their members could easily change the design of the website when needed.</p>
+                        <h1>South Foster Fire Company (Prototype)</h1>
+                        <p>The South Foster Fire Company is a volunteer fire department in Rhode Island. I built a prototype website for them, but they decided to go with Squarespace so their members could easily change the design of the website when needed.</p>
                     </div>
                 </div>
             </div>
 
-            <h1 class="mdc-typography--title mdc-typography--adjust-margin"><a href="https://www.linkedin.com/in/kyle-corry">LinkedIn</a></h1>
-            <h1 class="mdc-typography--title mdc-typography--adjust-margin"><a href="https://github.com/kylecorry31">GitHub</a></h1>
+            <a class="button important-button normal-button" href="https://www.linkedin.com/in/kyle-corry">LinkedIn</a>
+            <br><br>
+            <a class="button important-button normal-button" href="https://github.com/kylecorry31">GitHub</a>
 
         </section>
+-->
     </main>
 </body>
 

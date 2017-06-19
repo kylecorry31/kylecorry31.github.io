@@ -58,14 +58,17 @@ body {
 .portfolio-entries {
     --mdc-layout-grid-margin: 0px;
     --mdc-layout-grid-gutter: 32px;
+    padding: 0;
 }
 
 .portfolio-entry {
     display: inline-block;
+    margin-bottom: 32px;
 }
 
 .portfolio-entry a img {
     max-width: 100%;
+    margin-bottom: 16px;
 }
 
 code {
@@ -77,29 +80,5 @@ code {
 }
 
 img {
-    animation: colorize 3s ease-out, transOpacity 2s 0s ease-out;
-    background: transparent;
-    border: 10px solid rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
     display: block;
-}
-
-@keyframes transOpacity {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes colorize {
-    0% {
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-    }
-    100% {
-        -webkit-filter: grayscale(0%);
-        filter: grayscale(0%);
-    }
 }
