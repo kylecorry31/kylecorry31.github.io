@@ -9,10 +9,13 @@
     <link rel='shortcut icon' href='kcLogoSmall.png' type='image/x-icon' />
     <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body id="blog-hero">
 
     <main>
         <nav class="mdc-tab-bar mdc-tab-bar--icons-with-text">
@@ -35,20 +38,22 @@
             <span class="mdc-tab-bar__indicator"></span>
         </nav>
         <!-- Header image -->
-        <section class="hero" id="blog-hero">
-            <h2 class="mdc-typography--display4">Blog</h2>
+        <section class="hero">
+            <h1 class="page-title">Blog</h1>
         </section>
 
 
         <!-- Content -->
-        <section class="mdc-typography content">
-            <h1 class="mdc-typography--title mdc-typography--adjust-margin">Recent posts</h1>
-            <p class="mdc-typography--body1 mdc-typography--adjust-margin">1-22-2017: <a href="posts/coordinateFrames.html">Transformations and Coordinate Frames</a></p>
-            <p class="mdc-typography--body1 mdc-typography--adjust-margin">1-25-2017: <a href="posts/trello.html">Trello for an Organized Team</a></p>
-            <p class="mdc-typography--body1 mdc-typography--adjust-margin">1-27-2017: <a href="posts/architecture.html">Abstraction Through Robot Software Architecture</a></p>
-            <p class="mdc-typography--body1 mdc-typography--adjust-margin">2-05-2017: <a href="posts/robotVision.html">Using the Robot Vision API</a></p>
-            <p class="mdc-typography--body1 mdc-typography--adjust-margin">5-06-2017: <a href="posts/softwareEngineering.html">Software Engineering Workshop</a></p>
-        </section>
+        <div class="container">
+            <section class="pane">
+                <h1>Recent posts</h1>
+                <p><span class="post-date">1-22-2017</span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="posts/coordinateFrames.html">Transformations and Coordinate Frames</a></p>
+                <p><span class="post-date">1-25-2017</span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="posts/trello.html">Trello for an Organized Team</a></p>
+                <p><span class="post-date">1-27-2017</span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="posts/architecture.html">Abstraction Through Robot Software Architecture</a></p>
+                <p><span class="post-date">2-05-2017</span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="posts/robotVision.html">Using the Robot Vision API</a></p>
+                <p><span class="post-date">5-06-2017</span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="posts/softwareEngineering.html">Software Engineering Workshop</a></p>
+            </section>
+        </div>
     </main>
 </body>
 

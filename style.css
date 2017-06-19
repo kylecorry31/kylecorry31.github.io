@@ -50,8 +50,7 @@ a:hover {
     background-color: rgba(255, 253, 245, 0.75);
     border-radius: 5px;
     padding: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 32px auto;
 }
 
 p {
@@ -156,4 +155,10 @@ body {
     .section__layout__item {
         width: 100%;
     }
+}
+
+.post-date {
+        font-size: 13px;
+    line-height: 18px;
+    font-weight: bold;
 }
