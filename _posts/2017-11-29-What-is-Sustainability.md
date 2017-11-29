@@ -7,7 +7,7 @@ Sustainability is a very broad term, one with many definitions. The United Natio
 
 So essentially sustainability means that you are able to solve a current problem without making it harder or impossible to solve problems in the future.
 
-Sustianability can be broken into three "pillars" - environmental, economical, and social. Each pillar has its own needs and the intersection between the three is considered sustainable. 
+Sustainability can be broken into three "pillars" - environmental, economical, and social. Each pillar has its own needs and the intersection between the three is considered sustainable. 
 
 # Environmental
 Environmental sustainability means that the solution considers the environment as an actor in the problem and realizes that the solution may affect nature. Looking at sustainability through an environmental focus will reveal the effects that humans have on their natural surrounding. An example of this might be developing a new building. Environmental aspects of this might be the loss of habitats from cutting down the trees, the pollution generated via the construction and operation of the building, and the way the building changes some of the wind dynamics of the area. 
