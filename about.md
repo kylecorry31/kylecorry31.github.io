@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
 
-### More Information
+# About Me
 
-A place to include any other types of information that you'd like to include about yourself.
+I am a computer science major at Worcester Polytechnic Institute in my Sophomore year.
 
-### Contact me
+I am a frontend web designer / developer based in Chepachet, RI and have built many different websites with varying styles. I enjoy building sites with good causes such as humanitarian or environmental.
 
-[email@domain.com](mailto:email@domain.com)
+I also develop for the Android platform and have created several applications on the Play Store. I primarily use Java for all of my programs besides web design.
+
+Finally, I am the lead Programming and Controls mentor for FRC Team 5112. I maintain the codebase for several FRC libraries which can help any team program their robots faster with more advanced features.
