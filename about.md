@@ -5,8 +5,6 @@ permalink: /about/
 ---
 
 
-# About Me
-
 I am a computer science major at Worcester Polytechnic Institute in my Sophomore year.
 
 I am a frontend web designer / developer based in Chepachet, RI and have built many different websites with varying styles. I enjoy building sites with good causes such as humanitarian or environmental.
