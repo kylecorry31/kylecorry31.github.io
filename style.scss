@@ -17,10 +17,30 @@ html {
   font-size: 100%;
 }
 
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
+	background: $blue;
+  background-image: url("images/mountain.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  font: 18px/1.4 'Open Sans', sans-serif;
   color: $darkGray;
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
 }
 
 .container {
@@ -30,29 +50,77 @@ body {
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
 
-  line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
-
-  @include mobile {
-    line-height: 1.4;
-  }
+#main {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  margin-bottom: 24px;
 }
 
-h1 {
+
+
+#main p, .date{
+  color: #6f6b64;
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+#main li {
+  color: #6f6b64;
+  font-size: 15px;
+}
+
+// h1, h2, h3, h4, h5, h6 {
+//   font-family: $helveticaNeue;
+//   color: $darkerGray;
+//   font-weight: bold;
+//
+//   line-height: 1.7;
+//   margin: 1em 0 15px;
+//   padding: 0;
+//
+//   @include mobile {
+//     line-height: 1.4;
+//   }
+// }
+//
+#main h1 {
   font-size: 30px;
+  padding-top: 20px;
+  color: #616161;
+  letter-spacing: .15em;
+  font-weight: 700;
+  line-height: 1.4em;
+  max-width: 640px;
+  margin: 0 auto 20px;
+  text-align: center;
   a {
     color: inherit;
   }
 }
 
+#main .post-title {
+  color:#555;
+  font-weight:bold;
+  font-size:16px;
+  padding-top: 0;
+  margin-top:0;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  line-height: 1em;
+  max-width: 100%;
+}
+
 h2 {
-  font-size: 24px;
+  margin-top: 30px;
+  text-align: left;
+  padding: 0;
+  letter-spacing: .05em;
+  color:#555;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 h3 {
@@ -117,7 +185,7 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  margin-bottom: 0;
 }
 
 // Specify the color of the selection
@@ -200,6 +268,10 @@ img {
   letter-spacing: 1px;
 }
 
+.site-name a {
+  color: $darkGray;
+}
+
 .site-description {
   margin: -5px 0 0 0;
   color: $gray;
@@ -242,12 +314,14 @@ nav {
 //
 
 .posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+margin-bottom: 20px;
+border-bottom: 1px solid rgba(86, 86, 86, 0.25);
+padding-bottom: 20px;
 }
 
 .posts > .post:last-child {
-  padding-bottom: 1em;
+  padding-bottom: 0;
+  margin-bottom: 0;
   border-bottom: none;
 }
 
@@ -266,8 +340,15 @@ nav {
   }
 
   .read-more {
+    padding: 2px 8px 4px 8px;
+    font-size: 13px;
+    margin: 5px auto 0;
+    display: inline-block;
     text-transform: uppercase;
-    font-size: 15px;
+    background: #0dcb15;
+    border: 1px solid transparent;
+    color: rgba(255,255,255,.83);
+    text-shadow: 0 0 7px #cf9120;
   }
 }
 
@@ -276,6 +357,10 @@ nav {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   background-color: $lightGray;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 footer {
