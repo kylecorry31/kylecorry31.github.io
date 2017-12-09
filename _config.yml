@@ -3,10 +3,10 @@
 #
 
 # Name of your site (displayed in the header)
-name: Topics in Sustainability
+name: Kyle Corry
 
 # Short bio or description (displayed in the header)
-description: By Kyle Corry
+description: Sustainability and CS blog
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://lh3.googleusercontent.com/yG_oAV4Fr3HOQlTxep-gln2bk7w3baQozN7_0w8NWp9uIRH4PN__kHSA4v5-jxZdCZaa1gAjB2PNBtwM6CRy5psycgixsXSgd0yqox7n38v-3MlBFIXRCQes4fpeM9az8KZ-4qs0MqHzNZCtMWk4c61YP3gcqzMW-dXfEHn3FBnMdZidFlUusppKW5PjFS6J7xrydzIiLK9jnDA0-6QVdQJ9nzgOKAnxDWrC2IdmZk523cP3RHld2D_wHEjUEqvqpSTGYyAsgnKS1V8uWsAg56WB-Ly_uPeOgTCVNvF6LayzhzKkpb5JkSP76Wmoc1oJl85-kBzjCGNog2oXqI_X_ejj_daPjiZJ4GkJVkAJzUztPhyDsNckKPOy--XVfRLZegCumVZOXKoxH0egoe5JACejVpJGwqKJCWptvA3hNnjibvnhnyjDcL6TldbYfwY2_hDPJ8_DRRQQcApC8mGA-aC5xPurTpKqYfd-8PNGIIh3Kq9OD7sWrFR54vrgCQkBuu1Q6MbK_7PkGloS5ki_Ye9f3UNoF5zY004wC8uD99B9GuE8PB4IB8zwnQT7DlHPUlL42KHqm_28ZcEnvXV74oh-DKGMeEGXimLPPBT52i4=w1176-h882-no
@@ -26,7 +26,7 @@ footer-links:
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: 
+  twitter:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
@@ -47,7 +47,7 @@ url:
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: "/topics-in-sustainability"
+baseurl:
 
 #
 # !! You don't need to change any of the configuration flags below !!
