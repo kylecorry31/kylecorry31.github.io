@@ -166,13 +166,6 @@ hr {
 	transition: 0.5s ease all;
 }
 
-.polaroid:hover {
-	filter: none;
-	box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
-	transform: scale(2);
-	z-index: 100;
-}
-
 .polaroid .polaroid-image {
 	width: 200px;
 	height: 200px;
@@ -197,4 +190,54 @@ hr {
     height: 18px !important;
     font-size: 16px !important;
     vertical-align: middle !important;
+}
+
+.polaroid {
+  -webkit-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+}
+ 
+/* Rotate all even images 2 degrees */
+.polaroid:nth-child(even) {
+  -webkit-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+ 
+/* Don't rotate every third image, but offset its position */
+.polaroid:nth-child(3n) {
+  -webkit-transform: none;
+  transform: none;
+  position: relative;
+  top: -5px;
+}
+ 
+/* Rotate every fifth image by 5 degrees and offset it */
+.polaroid:nth-child(5n) {
+  -webkit-transform: rotate(5deg);
+  transform: rotate(5deg);
+  position: relative;
+  right: 5px;
+}
+ 
+/* Keep default rotate for every eighth, but offset it */
+.polaroid:nth-child(8n) {
+  position: relative;
+  top: 8px;
+  right: 5px;
+}
+ 
+/* Keep default rotate for every eleventh, but offset it */
+.polaroid:nth-child(11n) {
+  position: relative;
+  top: 3px;
+  left: -5px;
+}
+
+.polaroid:hover {
+	filter: none;
+	box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	z-index: 100;
+	position: relative;
 }
