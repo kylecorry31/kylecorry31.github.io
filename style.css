@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Monoton');
+
 html, body {
 	margin: 0;
 	padding: 0;
@@ -99,10 +101,12 @@ body {
 	color: white;
 	font-size: 48px;
 	line-height: 1.2;
-	text-shadow: 3px 3px 0 rgba(255,255,255,0.24);
+	/*text-shadow: 3px 3px 0 rgba(255,255,255,0.24);*/
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	font-family: sans-serif;
+    font-family: 'Monoton', cursive;
+    /*font-family: 'Bungee Shade', cursive;*/
+    font-weight: lighter;
 }
 
 #content {
