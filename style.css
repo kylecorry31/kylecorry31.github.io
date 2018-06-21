@@ -69,6 +69,7 @@ body {
 	flex-direction: row;
 	justify-content: flex-end;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 #right-navbar {
@@ -77,6 +78,7 @@ body {
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 #header {
@@ -240,4 +242,53 @@ hr {
 	transform: scale(1.5);
 	z-index: 100;
 	position: relative;
+}
+
+.book {
+	width: 200px;
+	height: auto;
+	box-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	margin: 8px;
+	padding: 0;
+	display: inline-block;
+	transition: 0.5s ease all;
+}
+
+.book a {
+	margin: 0;
+	padding: 0;	
+	width: 200px;
+	height: 100%;
+	line-height: 0;
+	display: block;
+}
+
+.book img {
+	width: 200px;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+
+.book p {
+	color: white;
+	font-size: 12px !important;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 16px;
+	text-align: center;
+	margin: 0;
+	width: calc(100% - 32px); 
+	display: none;
+}	
+
+.book:hover {
+	transform: scale(1.25);
+	z-index: 100;
+}
+
+.book:hover p {
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: 0;
 }
