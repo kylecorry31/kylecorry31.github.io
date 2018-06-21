@@ -111,20 +111,7 @@ body {
 	padding: 32px;
 }
 
-#content h2 {
-	/*font-family: sans-serif;
-	text-transform: uppercase;
-	font-size: 20px;*/
-}
-
-#content h3 {
-/*	font-family: sans-serif;
-	font-size: 12px;
-	color: rgba(0, 0, 0, 0.6);*/
-}
-
 #content p {
-	font-family: sans-serif;
 	line-height: 1.5;
 	font-size: 16px;
 }
@@ -311,7 +298,7 @@ hr {
 .newspaper h2 {
 	letter-spacing: 2px;
 	font-family: serif !important;
-	text-align: justify;
+	text-align: left;
 	font-weight: bold;
 	font-size: 32px !important;
 }
