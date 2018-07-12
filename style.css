@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Monoton');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@font-face {
+    font-family: "Grunge";
+    src: url("fonts/hard grunge.ttf");
+}
 
 html, body {
 	margin: 0;
@@ -11,6 +16,7 @@ body {
 	background-position: 0 0;
 	background-repeat: repeat;*/
 	background: #f3f1e9;
+	font-family: 'Open Sans', sans-serif;
 }
 
 #navbar {
@@ -30,7 +36,7 @@ body {
 	text-decoration: none;
 	margin: 16px;
 	color: rgba(255, 255, 255, 0.85);
-	font-family: sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	letter-spacing: 1px;
 	border-bottom: 2px solid transparent;
@@ -100,14 +106,13 @@ body {
 #header h1 {
 	margin: 0;
 	color: white;
-	font-size: 48px;
+	font-size: 64px;
 	line-height: 1.2;
 	/*text-shadow: 3px 3px 0 rgba(255,255,255,0.24);*/
 	text-transform: uppercase;
 	letter-spacing: 1px;
-    font-family: 'Monoton', cursive;
-    /*font-family: 'Bungee Shade', cursive;*/
-    font-weight: lighter;
+    font-family: 'Grunge', sans-serif;
+    font-weight: 500;
 }
 
 #content {
@@ -116,20 +121,24 @@ body {
 	padding: 32px;
 }
 
+#content h2 {
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-weight: lighter;
+}
+
 #content p {
 	line-height: 1.5;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 #content a {
 	text-decoration: none;
-	font-family: sans-serif;
 	font-size: 16px;
 }
 
 #content li {
 	line-height: 1.5;
-	font-family: sans-serif;
 }
 
 hr {
@@ -156,7 +165,7 @@ hr {
 	margin: 8px;
 	display: inline-block;
 	filter: grayscale(100%);
-	transition: 0.5s ease all;
+	transition: 0.1s ease all;
 }
 
 .polaroid .polaroid-image {
@@ -242,7 +251,7 @@ hr {
 	margin: 8px;
 	padding: 0;
 	display: inline-block;
-	transition: 0.5s ease all;
+	transition: 0.1s ease all;
 }
 
 .book a {
