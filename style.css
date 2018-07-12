@@ -15,7 +15,8 @@ body {
 	background-attachment: scroll;
 	background-position: 0 0;
 	background-repeat: repeat;*/
-	background: #f3f1e9;
+	background: #052436;
+	color: white;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -90,7 +91,7 @@ body {
 }
 
 #header {
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/bee.JPG);
+	background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(images/mountain-background-2.png);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -187,6 +188,7 @@ hr {
     text-overflow: ellipsis;
 	width: 200px;
 	margin: 0;
+	color: black;
     font-family: cursive !important;
     line-height: 18px !important;
     height: 18px !important;
@@ -295,6 +297,7 @@ hr {
 
 .newspaper {
 	background-color: #f4f4f4;
+	color: black;
 	padding: 16px;
 	margin-bottom: 16px;
 	border-bottom-left-radius: 4px;
