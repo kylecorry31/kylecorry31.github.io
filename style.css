@@ -53,8 +53,8 @@ body {
 }
 
 .night #navbar a:hover {
-	border-bottom: 2px solid white
-	color: black;
+	border-bottom: 2px solid white;
+	color: white;
 }
 
 #navbar-logo {
