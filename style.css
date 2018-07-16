@@ -365,18 +365,124 @@ hr {
 }
 
 .circle-image {
-  border-radius: 50%;
-  width: 220px;
+  border-radius: 4px;
+  width: 450px;
   height: 220px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  box-shadow: inset 0 0 0 0px #fff;
+  box-shadow: inset 0 0 0 15px #fff;
   transition: 0.1s ease all;
   display: block;
   margin-bottom: 15px;
 }
 
 .circle-image:hover {
-  box-shadow: inset 0 0 0 15px #fff;
+  width: 450px;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 0px #fff;
+}
+
+
+.website-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.website {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.website:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.website img {
+  width: 45%;
+  padding: 2.5%;
+  height: auto;
+}
+
+.website-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100%;
+  width: 45%;
+  padding: 2.5%;
+}
+
+@media (max-width: 750px)  {
+  .website {
+    flex-direction: column;
+  }
+
+  .website:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .website img {
+    width: 100%;
+    padding: 0;
+  }
+
+  .website-details {
+    width: 100%;
+    padding: 0;
+    margin-top: 16px;
+  }
+}
+
+.website-details h1 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.website-details .caption {
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.website-details hr {
+  width: 80%;
+  border-color: white;
+}
+
+.website-details h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+.website-details p {
+  text-align: left;
+}
+
+.website-details .live {
+  border: 1px solid #fdb813;
+  padding: 12px 16px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  transition: 0.3s ease all;
+}
+
+.website-details .live:hover {
+  text-decoration: none !important;
+  color: #052436 !important;
+  background-color: #fdb813;
 }
