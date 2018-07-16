@@ -69,7 +69,7 @@ function NightMode() {
     // Night will be after 6 and before 7
     var hour = time.getHours();
 
-    return hour >= 18 || hour <= 7;
+    return hour >= 18 || hour <= 6;
   };
 }
 
