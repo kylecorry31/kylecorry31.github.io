@@ -147,7 +147,7 @@ body {
 
 #content p {
   line-height: 1.5;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 #content a {
@@ -407,8 +407,7 @@ hr {
 }
 
 .website img {
-  width: 45%;
-  padding: 2.5%;
+  width: 47.5%;
   height: auto;
 }
 
@@ -418,9 +417,7 @@ hr {
   align-items: flex-start;
   justify-content: flex-start;
   height: 100%;
-  width: 45%;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
+  width: 47.5%;
 }
 
 @media (max-width: 750px)  {
