@@ -88,21 +88,7 @@
    }
  }
 
- /* BANNER IMAGE */
-
- .banner-image {
-   background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url(photos/background2.jpg);
-   background-size: cover;
-   background-attachment: scroll;
-   background-repeat: no-repeat;
-   background-position: center;
-   height: calc(75vh - 98px);
-   /* height: 0; */
-   width: 100%;
- }
-
  /* MAIN */
-
  .content {
    padding-right: 1.5vw;
    padding-left: 1.5vw;
@@ -298,11 +284,7 @@
    text-decoration: underline;
  }
 
- .bold {
-   font-weight: bold;
- }
-
- .center {
+.center {
    text-align: center;
  }
 
