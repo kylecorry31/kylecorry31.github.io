@@ -3,6 +3,7 @@
    padding: 0;
    margin: 0;
    font-family: 'Open Sans', sans-serif;
+   background: white;
  }
 
  /* NAVBAR */
@@ -276,7 +277,7 @@
  }
 
  .content a, footer a {
-   color: rgba(60, 60, 60);
+   color: rgb(60, 60, 60);
    text-decoration: none;
  }
 
