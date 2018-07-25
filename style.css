@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Pacifico');
 
 body,
 html {
@@ -12,51 +12,41 @@ html {
 
 .navbar {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 78px;
+    height: auto;
     padding: 10px 1.5vw 10px 1.5vw;
     max-width: 100%;
     font-size: 15px;
     background-color: white;
 }
 
-.navbar .navbar-left {
+.navbar .navbar-logo {
     display: flex;
-    flex: 1 1 0;
+    flex: auto;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
 }
 
-.navbar .navbar-center {
+.navbar .navbar-logo a {
+    text-transform: capitalize;
+    font-family: "Pacifico",cursive;
+    font-size: 20px;
+}
+
+.navbar .navbar-links {
     display: flex;
-    flex: 1 1 0;
+    flex: auto;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
-.navbar .navbar-right {
-    display: flex;
-    flex: 1 1 0;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.navbar img {
-    width: auto;
-    height: auto;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    max-height: 62px;
-    max-width: 100%;
-}
-
 .navbar a {
-    margin-left: 45px;
+    margin: 16px 24px 16px 24px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -69,33 +59,8 @@ html {
     transition: color 140ms cubic-bezier(.33,0,.2,1);
 }
 
-.navbar a:first-child {
-    margin: 0;
-}
-
-.navbar a.active {
+.navbar a.active, .navbar a:hover {
     color: rgb(130, 130, 130);
-}
-
-.navbar a:hover {
-    color: rgb(130, 130, 130);
-}
-
-@media(max-width:800px) {
-    .navbar {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .navbar .navbar-left {
-      flex: auto;
-    }
-
-    .navbar .navbar-center {
-      padding-top: 16px;
-      padding-bottom: 16px;
-      flex: auto;
-    }
 }
 
 /* CONTENT */
@@ -103,7 +68,7 @@ html {
 .content {
     margin-right: auto;
     margin-left: auto;
-    padding: 32px 1.5vw 68px 1.5vw;
+    padding: 32px 16px 68px 16px;
     max-width: 1080px;
     background: white;
 }
