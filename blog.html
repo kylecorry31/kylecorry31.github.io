@@ -1,66 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122716673-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-122716673-1');
-	</script>
-	<title>Kyle Corry</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="utf-8">
-	<script type="text/javascript" src="night-mode.js"></script>
-	<script src="reading_time.js" charset="utf-8"></script>
+  <meta charset="utf-8">
+  <title>Blog - Kyle Corry</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <div class="navbar">
+    <div class="navbar-left">
+      <a href="#">
+            <img src="logo.png" alt="Logo">
+          </a>
+    </div>
+    <div class="navbar-center">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="work.html">Work</a>
+      <a href="#" class="active">Blog</a>
+      <a href="books.html">Books</a>
+    </div>
+    <div class="navbar-right">
 
-	<div id="navbar">
-		<div id="left-navbar">
-			<a href="blog.html">Blog</a>
-			<a href="publications.html">Publications</a>
-		</div>
-		<div id="navbar-logo">
-			<a href="index.html">
-				<img src="images/logo.png">
-			</a>
-		</div>
-		<div id="right-navbar">
-			<a href="photography.html">Photography</a>
-			<a href="websites.html">Websites</a>
-		</div>
-	</div>
+    </div>
+  </div>
 
-	<div id="header">
-		<h1>Blog</h1>
-	</div>
+  <div class="content">
+    <h1>Embracing Minimalism</h1>
+    <h3>7-25-2018</h3>
+    <p>How and why I became a minimalist and how my life has changed since.</p>
+    <a href="posts/minimalism.html" class="book-download">Read More</a>
 
-	<div id="content">
-		<div class="blog-post">
-			<h2>What is Sustainability?</h2>
-			<div class="blog-post-content">
-				<h3>12-9-2017</h3>
-				<h3>Reading time: <span><script>document.write(formatReadingTime(getReadingTime(2816)));</script></span></h3>
-				<p>Sustainability is a very broad term, one with many definitions. The United Nations defines sustainable development as "development that meets the needs of the present without compromising the ability of future generations to meet their own needs"
-					(<a href="http://www.un.org/en/ga/president/65/issues/sustdev.shtml">United Nations</a>). That definition can be extended to sustainability in general to mean what is done will meet the needs of the present and not compromise the ability for people
-					in the future to meet their own needs.</p>
-				<p>...</p>
-			</div>
-			<a href="posts/what-is-sustainability.html" class="read-more">Read More</a>
-		</div>
+  </div>
 
-		<!-- <hr> -->
+  <footer>
 
-	</div>
+    <p>Powered by <a href="https://pages.github.com/">Github Pages</a></p>
+
+  </footer>
 
 </body>
 
