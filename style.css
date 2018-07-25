@@ -90,6 +90,7 @@
  }
 
  /* CONTENT */
+
  .content {
    padding-right: 1.5vw;
    padding-left: 1.5vw;
@@ -135,7 +136,7 @@
    text-rendering: optimizeLegibility;
  }
 
-/* GALLERY */
+ /* GALLERY */
 
  .gallery {
    width: 100%;
@@ -229,7 +230,7 @@
    text-decoration: underline;
  }
 
-.center {
+ .center {
    text-align: center;
  }
 
@@ -252,13 +253,13 @@
    text-decoration: none !important;
  }
 
-.profile-section {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
+ .profile-section {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+ }
 
  .profile {
    max-width: 100%;
