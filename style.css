@@ -73,6 +73,10 @@ html {
     background: white;
 }
 
+.blog-content {
+    max-width: 520px;
+}
+
 h1 {
     margin: 0;
     text-transform: none;
@@ -103,7 +107,7 @@ p {
     font-weight: 300;
     line-height: 2em;
     letter-spacing: .06em;
-    color: rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, .6);
     text-rendering: optimizeLegibility;
 }
 
@@ -195,7 +199,7 @@ footer {
 .content a,
 footer a {
     text-decoration: none;
-    color: rgb(60, 60, 60);
+    color: rgb(40, 40, 40);
 }
 
 .content a:hover,
