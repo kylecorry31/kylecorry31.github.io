@@ -195,6 +195,37 @@ li, p {
     opacity: 0.95;
 }
 
+#logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#github-logo, #linkedin-logo {
+  text-decoration: none;
+  border: none;
+  margin-bottom: 16px;
+  filter: contrast(20%);
+}
+
+#github-logo:hover, #linkedin-logo:hover {
+  filter: contrast(100%);
+}
+
+#github-logo img {
+  width: 40px;
+  height: 40px;
+}
+
+#linkedin-logo img {
+  width: 80px;
+  height: auto;
+}
+
 footer {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
