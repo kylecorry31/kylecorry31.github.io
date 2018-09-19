@@ -1,0 +1,68 @@
+{
+  "projects": [
+    {
+      "name": "Robot Vision API",
+      "url": "https://github.com/kylecorry31/Robot-Vision-API",
+      "description": "The Robot Vision API allows for easy detection and filtering of color based targets, designed with the FIRST Robotics Competition in mind.",
+      "type": "library"
+    }, {
+      "name": "Screen Time",
+      "url": "https://github.com/kylecorry31/ScreenTime",
+      "description": "A screen time tracker and viewer for Linux to see how much you use your computer.",
+      "type": "application",
+      "image": "https://github.com/kylecorry31/ScreenTime/blob/master/screenshots/today%20-%201.1.png"
+    }, {
+      "name": "Machine Learning For Kids AppInventor Extension",
+      "url": "https://github.com/kylecorry31/ML4K-AI-Extension",
+      "description": "Use machine learning in AppInventor, with easy training using text, images, or numbers through the Machine Learning for Kids website.",
+      "type": "library"
+    }, {
+      "name": "Stargazer",
+      "url": "https://github.com/kylecorry31/Stargazer",
+      "description": "Create high resolution astrophotography with your smartphone.",
+      "type": "application",
+      "image": ""
+    }, {
+      "name": "Lightweight Artificial Neural Network Library (LANN)",
+      "url": "https://github.com/kylecorry31/LANN",
+      "description": "LANN is a lightweight artificial neural network implementation for Java. This library can be used to add simple machine learning models to your program.",
+      "type": "library"
+    }, {
+      "name": "Adaptive Brightness",
+      "url": "https://github.com/kylecorry31/AdaptiveBrightness",
+      "description": "A personalized experience for screen brightness, built with ML algorithms that learn your brightness preferences in different surroundings, even if you don't have a light sensor. Adds adaptive brightness to a computer without a light sensor by using your camera (just put a post-it note over it to diffuse the light).",
+      "type": "application",
+      "image": ""
+    }, {
+      "name": "Do Not Disturb GNOME Shell Extension",
+      "url": "https://github.com/kylecorry31/gnome-shell-extension-do-not-disturb",
+      "description": "Enable or disable do not disturb mode. Designed for Pop!_OS with System76.",
+      "type": "application",
+      "image": ""
+    }, {
+      "name": "CS3733 COLA Prototype",
+      "url": "https://github.com/kylecorry31/CS3733-COLA",
+      "description": "A project for WPI's CS 3733 for alcohol label submissions and searches.",
+      "type": "application",
+      "image": ""
+    }, {
+      "name": "KKAT Wi-Fi",
+      "url": "https://github.com/kylecorry31/KKATWiFi",
+      "description": "An Android application to assist with the placement of a router in a home.",
+      "type": "application",
+      "image": ""
+    }, {
+      "name": "Notifications",
+      "url": "https://github.com/kylecorry31/Notifications",
+      "description": "A simple library in JavaScript to create notifications within a webpage.",
+      "type": "library"
+    }, {
+      "name": "Christmas",
+      "url": "https://github.com/kylecorry31/Christmas",
+      "description": "A web app which plays Christmas music and has sprites which react to the frequency of the music being played.",
+      "type": "application",
+      "image": ""
+    }
+
+  ]
+}
