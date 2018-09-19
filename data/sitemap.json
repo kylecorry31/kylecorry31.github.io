@@ -1,0 +1,20 @@
+{
+  "pages": [
+    {
+      "title": "About",
+      "url": "index.html"
+    }, {
+      "title": "Portfolio",
+      "url": "work.html"
+    }, {
+      "title": "Blog",
+      "url": "blog.html"
+    }, {
+      "title": "Books",
+      "url": "books.html"
+    }, {
+      "title": "Resume",
+      "url": "resume.pdf"
+    }
+  ]
+}
