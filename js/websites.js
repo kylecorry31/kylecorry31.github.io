@@ -1,13 +1,47 @@
-var xhr = new XMLHttpRequest();
-xhr.onreadystatechange = function(){
-	if (this.readyState !== 4) return;
-	if (this.status !== 200){
-		console.error("Could not load websites");
-	}
-  loadWebsites(JSON.parse(this.responseText));
-};
-xhr.open("GET", "/data/websites.json");
-xhr.send();
+getWebsites();
+getProjects();
+
+function getWebsites(){
+	var xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function(){
+		if (this.readyState !== 4) return;
+		if (this.status !== 200){
+			console.error("Could not load websites");
+		}
+	  loadWebsites(JSON.parse(this.responseText));
+	};
+	xhr.open("GET", "/data/websites.json");
+	xhr.send();
+}
+
+function getProjects(){
+	var xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function(){
+		if (this.readyState !== 4) return;
+		if (this.status !== 200){
+			console.error("Could not load projects");
+		}
+	  loadProjects(JSON.parse(this.responseText));
+	};
+	xhr.open("GET", "/data/github.json");
+	xhr.send();
+}
+
+function loadProjects(projects){
+	var projectGallery = id("project-gallery");
+
+	projectGallery.innerHTML = "<h1 class=\"center\">Projects</h1>" + 	projects.projects.map(function(project){
+		return `
+			<div class="project">
+				<h2>${project.name}</h2>
+				<h4>Type: ${project.type}</h4>
+				<p>${project.description}</p>
+				<p><a href="${project.url}" class="book-download">View on GitHub</a></p>
+			</div>
+		`
+	}).join('')
+
+}
 
 
 function loadWebsites(websites){

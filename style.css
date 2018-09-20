@@ -241,7 +241,8 @@ footer {
 }
 
 .content a,
-footer a {
+footer a,
+.project a {
     border-width: 0 0 1px 0;
     border-style: none none solid none;
     border-color: #c0c0c0;
@@ -250,7 +251,8 @@ footer a {
 }
 
 .content a:hover,
-footer a:hover {
+footer a:hover,
+.project a:hover {
     text-decoration: none;
     color: rgba(0, 0, 0, .6);
 }
@@ -294,4 +296,17 @@ footer a:hover {
 
 .bold {
     font-weight: bold;
+}
+
+.project {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.project h4 {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
