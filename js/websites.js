@@ -1,5 +1,5 @@
 getWebsites();
-getProjects();
+// getProjects();
 
 function getWebsites(){
 	var xhr = new XMLHttpRequest();
