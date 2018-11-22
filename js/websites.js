@@ -1,4 +1,5 @@
 getWebsites();
+getPhotos();
 // getProjects();
 
 function getWebsites(){
@@ -14,6 +15,19 @@ function getWebsites(){
 	xhr.send();
 }
 
+function getPhotos(){
+	var xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function(){
+		if (this.readyState !== 4) return;
+		if (this.status !== 200){
+			console.error("Could not load photos");
+		}
+	  loadPhotos(JSON.parse(this.responseText));
+	};
+	xhr.open("GET", "/data/photos.json");
+	xhr.send();
+}
+
 function getProjects(){
 	var xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function(){
@@ -25,6 +39,19 @@ function getProjects(){
 	};
 	xhr.open("GET", "/data/github.json");
 	xhr.send();
+}
+
+function loadPhotos(photos){
+	var photoGallery = id("photo-gallery");
+
+	photoGallery.innerHTML = "<h1 class=\"center\" style=\"width: 100%;\">Photos</h1>" + 	photos.photos.map(function(photo){
+		return `
+		<div class="gallery-image">
+			<img src="${photo}">
+		</div>
+		`
+	}).join('')
+
 }
 
 function loadProjects(projects){
