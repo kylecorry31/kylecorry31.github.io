@@ -1,10 +1,39 @@
 {
   "photos": [
-    "photos/balloons.jpg",
-    "photos/waterfall.jpg",
-    "photos/mountains.jpg",
-    "photos/train.jpg",
-    "photos/sunset.jpg",
-    "photos/starfish.jpg"
+    {
+      "title": "Hot Air Balloons Over the Woods",
+      "url": "https://500px.com/photo/267131773/hot-air-balloons-over-the-woods-by-kyle-corry",
+      "image": "photos/balloons.jpg"
+    },
+    {
+      "title": "Waterfall",
+      "url": "https://500px.com/photo/268298447/waterfall-by-kyle-corry",
+      "image": "photos/waterfall.jpg"
+    },
+    {
+      "title": "Mountain Trail",
+      "url": "https://500px.com/photo/268447679/mountain-trail-by-kyle-corry",
+      "image": "photos/mountains.jpg"
+    },
+    {
+      "title": "Chickadee on the Bird Feeder",
+      "url": "https://500px.com/photo/283905931/chickadee-on-the-bird-feeder-by-kyle-corry",
+      "image": "photos/bird.jpg"
+    },
+    {
+      "title": "Cog Railroad on Mount Washington",
+      "url": "https://www.shutterstock.com/image-photo/cog-railroad-train-on-mount-washington-1240132621",
+      "image": "photos/train.jpg"
+    },
+    {
+      "title": "Starfish",
+      "url": "https://www.shutterstock.com/image-photo/purple-starfish-on-rock-1150737317",
+      "image": "photos/starfish.jpg"
+    },
+    {
+      "title": "Sunset in NH",
+      "url": "https://www.shutterstock.com/image-photo/sun-setting-behind-mountains-pemigewasset-overlook-1149542558",
+      "image": "photos/sunset.jpg"
+    }
   ]
 }
