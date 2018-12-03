@@ -34,6 +34,11 @@
       "title": "Sunset in NH",
       "url": "https://www.shutterstock.com/image-photo/sun-setting-behind-mountains-pemigewasset-overlook-1149542558",
       "image": "photos/sunset.jpg"
+    },
+    {
+      "title": "Dead Beehive",
+      "url": "#",
+      "image": "photos/beehive.jpg"
     }
   ]
 }
