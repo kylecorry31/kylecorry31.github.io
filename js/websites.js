@@ -46,13 +46,9 @@ function loadPhotos(photos){
 
 	photoGallery.innerHTML = "<h1 class=\"center\" style=\"width: 100%;\">Photos</h1>" + 	photos.photos.map(function(photo){
 		return `
-		<div class="gallery-image">
-			<a href="${photo.url}">
-				<div class="title">${photo.title}</div>
-			</a>
-			<img src="${photo.image}">
-		</div>
+		<gallery-image img="${photo.image}" url="${photo.url}" title="${photo.title}"></gallery-image>
 		`
+
 	}).join('')
 
 }
