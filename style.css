@@ -191,7 +191,7 @@ li, p {
     text-rendering: optimizeLegibility;
 }
 
-.gallery-image .title:hover {
+.gallery-image .title:hover, .gallery-image a:focus .title {
     opacity: 0.95;
 }
 
