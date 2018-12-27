@@ -1,24 +1,24 @@
 {
-  "websites": [
+  "items": [
     {
       "title": "bioplane.us",
       "url": "http://bioplane.us/",
-      "image": "bioplane.us.png"
+      "image": "websites/bioplane.us.png"
     },
     {
       "title": "greenteam.wpi.edu",
       "url": "http://greenteam.wpi.edu",
-      "image": "greenteam.wpi.edu.jpg"
+      "image": "websites/greenteam.wpi.edu.jpg"
     },
     {
       "title": "www.rossmccurdy.com",
       "url": "https://www.rossmccurdy.com",
-      "image": "rossmccurdy.com.jpg"
+      "image": "websites/rossmccurdy.com.jpg"
     },
     {
       "title": "wpi.edu/+sustainability",
       "url": "https://www.wpi.edu/offices/sustainability",
-      "image": "wpi.edu_sustainability.jpg"
+      "image": "websites/wpi.edu_sustainability.jpg"
     }
   ]
 }

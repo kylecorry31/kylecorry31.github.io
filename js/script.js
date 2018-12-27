@@ -23,8 +23,12 @@ class GalleryImage extends HTMLElement {
   constructor(){
     super();
 
-    let tmpl = document.createElement('template');
-    tmpl.innerHTML = `
+    this._shadow = this.attachShadow({mode: 'open'});
+  }
+
+
+  connectedCallback(){
+    this._shadow.innerHTML = `
     <style>
     :host {
       position: relative;
@@ -92,12 +96,43 @@ class GalleryImage extends HTMLElement {
       </a>
       <img src="${this.getAttribute('img')}">
     `;
-
-    let shadowRoot = this.attachShadow({mode: 'open'});
-    shadowRoot.appendChild(tmpl.content.cloneNode(true));
-
-    this.setAttribute('here', '')
   }
+
+}
+
+
+class FeaturedGallery extends HTMLElement {
+  constructor(){
+    super();
+    this._shadow = this.attachShadow({mode: 'open'});
+  }
+
+
+  connectedCallback(){
+
+    fetch(this.getAttribute('data-url'))
+  		.then((res) => res.json())
+  		.then((data) => {
+  			this._shadow.innerHTML = `<style>
+          :host {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 100%;
+          }
+
+        </style>`
+        + data.items.map(function(item){
+      		return `
+      		<gallery-image img="${item.image}" url="${item.url}" title="${item.title}"></gallery-image>
+      		`
+      	}).join('');
+  		});
+  }
+
 }
 
 window.customElements.define('gallery-image', GalleryImage);
+window.customElements.define('featured-gallery', FeaturedGallery);
