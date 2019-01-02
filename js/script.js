@@ -210,7 +210,7 @@ class DownloadableContent extends HTMLElement {
           text-decoration: none;
       }
 
-      #download-btn:hover {
+      #download-btn:hover, #download-btn:focus {
           text-decoration: none !important;
           color: white !important;
           background-color: black;
@@ -221,7 +221,7 @@ class DownloadableContent extends HTMLElement {
 
       <h1>${this.getAttribute('header') || ''}</h1>
       <p><slot></slot></p>
-      <a href="${this.getAttribute('src') || '#'}" id="download-btn">${this.getAttribute('download-label') || 'Download'}</a>
+      <a href="${this.getAttribute('src') || '#'}" id="download-btn" role="button">${this.getAttribute('download-label') || 'Download'}</a>
     `;
   }
 }
