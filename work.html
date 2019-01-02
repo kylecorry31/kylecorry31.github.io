@@ -13,7 +13,7 @@
           Kyle Corry
         </a>
       </div>
-      <div class="navbar-links" id="navigation"></div>
+      <navigation-bar current="work.html" sitemap="data/sitemap.json"></navigation-bar>
     </div>
     <div class="content">
       <h1 class="center">My Work</h1>
@@ -22,18 +22,14 @@
       <div class="" id="project-gallery"></div>
     </div>
     <h1 class="center">Websites</h1>
-    <div class="gallery" id="website-gallery"></div>
+    <featured-gallery data-url="data/websites.json"></featured-gallery>
 
     <br>
     <br>
-    <div class="gallery" id="photo-gallery"></div>
-    <footer>
-      <p>Powered by <a href="https://pages.github.com/">Github Pages</a></p>
-    </footer>
+
+    <h1 class="center">Photos</h1>
+    <featured-gallery data-url="data/photos.json"></featured-gallery>
+
   </body>
-  <script src="js/websites.js"></script>
   <script src="js/script.js" charset="utf-8"></script>
-  <script type="text/javascript">
-    loadNavigationBar('work.html');
-  </script>
 </html>
