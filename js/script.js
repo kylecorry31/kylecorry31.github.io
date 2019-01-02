@@ -184,7 +184,50 @@ class NavigationBar extends HTMLElement {
 
 }
 
+class DownloadableContent extends HTMLElement {
+  constructor(){
+    super();
+    this._shadow = this.attachShadow({ mode: 'open' });
+  }
+
+  connectedCallback(){
+    this._shadow.innerHTML = `
+
+      <style>
+      @import "style.css";
+
+      #download-btn {
+          display: inline-block;
+          margin-bottom: 32px;
+          padding: 8px 16px;
+          min-width: 80px;
+          border: 2px solid black !important;
+          text-align: center;
+          text-transform: uppercase;
+          color: black !important;
+          background-color: white;
+          transition: 0.1s ease all;
+          text-decoration: none;
+      }
+
+      #download-btn:hover {
+          text-decoration: none !important;
+          color: white !important;
+          background-color: black;
+      }
+
+
+      </style>
+
+      <h1>${this.getAttribute('header') || ''}</h1>
+      <p><slot></slot></p>
+      <a href="${this.getAttribute('src') || '#'}" id="download-btn">${this.getAttribute('download-label') || 'Download'}</a>
+    `;
+  }
+}
+
 
 window.customElements.define('gallery-image', GalleryImage);
 window.customElements.define('featured-gallery', FeaturedGallery);
 window.customElements.define('navigation-bar', NavigationBar);
+window.customElements.define('downloadable-content', DownloadableContent);
