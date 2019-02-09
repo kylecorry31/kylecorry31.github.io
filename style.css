@@ -103,11 +103,10 @@ h2 {
 
 h3 {
     margin: .3em auto .3em;
-    text-transform: uppercase;
     font-family: "Raleway",sans-serif;
     font-size: 15px;
+    font-weight: bold;
     font-style: normal;
-    font-weight: 300;
     line-height: 1.4em;
     letter-spacing: .05em;
     color: rgba(28, 28, 28, .8);
