@@ -8,6 +8,11 @@ html {
     background: white;
 }
 
+@font-face {
+    font-family: "2ProngTree";
+    src: url("./2ProngTree.TTF");
+}
+
 /* NAVBAR */
 
 .navbar {
@@ -32,7 +37,7 @@ html {
 
 .navbar .navbar-logo a {
     text-transform: capitalize;
-    font-family: "Pacifico",cursive;
+    font-family: "2ProngTree", sans-serif;
     font-size: 20px;
 }
 
