@@ -4,14 +4,11 @@
       "title": "About",
       "url": "index.html"
     }, {
-      "title": "Portfolio",
+      "title": "My Work",
       "url": "work.html"
     }, {
-      "title": "Publications",
-      "url": "books.html"
-    }, {
-      "title": "Resume",
-      "url": "resume.pdf"
+      "title": "Blog",
+      "url": "blog.html"
     }
   ]
 }
