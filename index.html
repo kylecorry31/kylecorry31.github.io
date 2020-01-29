@@ -1,38 +1,25 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>About - Kyle Corry</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-    <div class="navbar">
-      <div class="navbar-logo">
-        <a href="index.html">
-          Kyle Corry
-        </a>
-      </div>
-      <navigation-bar current="index.html" sitemap="data/sitemap.json"></navigation-bar>
-    </div>
-    <div class="content">
-      <div class="profile-section">
-        <img src="profile.jpg" alt="Profile" class="profile">
-      </div>
-      <p>My name is Kyle Corry, I live in Rhode Island and I am a software developer with a focus on code quality and well tested products.</p>
-      <p>I am currently and Application Developer / Analyst at FM Global.</p>
-      <p>My hobbies include <a href="https://500px.com/kylecorry31">nature photography</a>, Krav Maga, wilderness survival, hiking, and archery.</p>
-      <p>I can be contacted at <a href="mailto:kylecorry31@gmail.com">kylecorry31@gmail.com</a></p>
-      <div id="logos">
-        <a href="https://github.com/kylecorry31" id="github-logo">
-          <img src="github.png" alt="GitHub Logo">
-        </a>
-        <a href="https://www.linkedin.com/in/kyle-corry/" id="linkedin-logo">
-          <img src="linkedin.png" alt="Linkedin Logo">
-        </a>
-      </div>
-    </div>
-  </body>
-  <script src="js/script.js" charset="utf-8"></script>
+---
+title: Kyle Corry
+layout: default
+---
 
-</html>
+<div class="profile-section">
+    <img src="assets/images/profile.jpg" alt="Profile" class="profile">
+</div>
+
+<p>My name is Kyle Corry, I live in Rhode Island and I am a software developer with a focus on code quality and well tested products.</p>
+<p>I am currently and Application Developer / Analyst at FM Global.</p>
+<p>My hobbies include <a href="https://500px.com/kylecorry31">nature photography</a>, Krav Maga, wilderness survival, hiking, archery, and <a href="https://github.com/kylecorry31">open source software development</a>.</p>
+
+<div class="spacer"></div>
+
+<h2>Posts</h2>
+
+<ul>
+  {% for post in site.posts %}
+    <li class="post">
+        <h3><a href="{{ post.url }}">{{ post.title }}</a> <span class="category">{{ post.category }}</span></h3>
+        <p>{{ post.excerpt }}</p>
+    </li>
+  {% endfor %}
+</ul>
