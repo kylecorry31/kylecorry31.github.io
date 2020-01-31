@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Farmhouse Veggie Burger"
-date:   2020-01-29 17:13:59 -0500
-category: recipe
+date:   2018-12-24 8:00:00 -0500
+tags: recipe
 ---
 
 The farmhouse veggie burger can be adapted to many different types of veggie burgers by just adding or removing the kinds of vegetables. This was inspired by the veggie burger at Elizabeth’s Farmhouse.

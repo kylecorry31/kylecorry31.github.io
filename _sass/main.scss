@@ -23,13 +23,13 @@ html {
     font-style: normal;
     font-weight: 400;
     letter-spacing: .14em;
-    color: rgba(130, 130, 130, .57);
+    color: rgba(130, 130, 130, .8);
     text-decoration: none;
     transition: color 140ms cubic-bezier(.33,0,.2,1);
 }
 
 #title a.active, #title a:hover {
-    color: rgb(130, 130, 130);
+    color: rgb(100, 100, 100);
 }
 
 /* CONTENT */
@@ -38,8 +38,7 @@ html {
     margin-right: auto;
     margin-left: auto;
     padding: 16px;
-    max-width: 520px;
-    background: white;
+    max-width: 550px;
 }
 
 h1 {
@@ -112,16 +111,21 @@ li, p {
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.8);
     padding: 0px 4px;
-    margin-left: 16px;
     font-size: 10px;
     color: white;
     text-transform: uppercase;
     border-radius: 2px;
+    margin: 0 4px 0 0;
 }
 
 .category-recipe {
     color: white;
     background-color: #ff9800;
+}
+
+.category-research {
+    color: white;
+    background-color: #3700b3;
 }
 
 img {

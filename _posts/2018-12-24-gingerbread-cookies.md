@@ -2,7 +2,7 @@
 layout: post
 title:  "Gingerbread Cookies"
 date:   2018-12-24 14:00:00 -0500
-category: recipe
+tags: recipe
 ---
 
 A classic gingerbread holiday recipe from [Tasty](https://www.youtube.com/watch?v=t5REhShQVt0&t=39s).

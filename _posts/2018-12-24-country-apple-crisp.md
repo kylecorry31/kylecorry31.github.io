@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Country Apple Crisp"
-date:   2020-01-29 17:13:59 -0500
-category: recipe
+date:   2018-12-24 8:00:00 -0500
+tags: recipe
 ---
 
 Country apple crisp is one of my favorite dessert foods, and it is really simple to make. You can substitute the type of apple, or make it into the pie (put it into a pie crust and don't make the crumbs). It is best served with vanilla ice cream.
