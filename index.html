@@ -18,7 +18,7 @@ layout: default
 <ul>
   {% for post in site.posts %}
     <li class="post">
-        <h3><a href="{{ post.url }}">{{ post.title }}</a> <span class="category">{{ post.category }}</span></h3>
+        <h3><a href="{{ post.url }}">{{ post.title }}</a> <span class="category category-{{ post.category }}">{{ post.category }}</span></h3>
         <p>{{ post.excerpt }}</p>
     </li>
   {% endfor %}
