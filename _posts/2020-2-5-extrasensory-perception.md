@@ -62,6 +62,4 @@ The initial prototype can be seen here, with the vibration motors taped to my ar
 **More coming soon!**
 
 ## Code
-The code and schematic for the barometric sense can be found [here](https://github.com/kylecorry31/pressure-sense).
-
-The code and schematic for the magnetoreception can be found [here](https://github.com/kylecorry31/north-sense).
+The code and schematic for this project can be found [here](https://github.com/kylecorry31/extrasensory-perception).
