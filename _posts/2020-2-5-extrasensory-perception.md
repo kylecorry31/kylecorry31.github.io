@@ -2,7 +2,7 @@
 layout: post
 title:  "Extrasensory Perception"
 date:   2020-2-5 19:30:00 -0500
-categories: research
+categories: research maker
 ---
 
 Human perception has always been limited to our biological senses, but what if we could change that? And no, I am not talking about the fantasy or science fiction version of ESP. In nature, there are animals with the ability to sense magnetic fields, barometric pressure, ambient electricity, and thermal radiation. With this project, I explored what it would feel like for a human (AKA me) to have new senses, powered by modern technology. For the scope of this research, I experimented with magnetoreception and barometric pressure sensing. I used an Arduino Nano with an inexpensive magnetometer and barometer for sensors and coin vibration motors for feedback devices. I embedded the magnetoreception device into a muscle shirt, and I explored different form factors for the barometric sense such as a wrist band and shoe. 
