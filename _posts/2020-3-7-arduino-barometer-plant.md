@@ -4,6 +4,7 @@ title:  "Arduino Barometer Plant"
 date:   2020-3-7 11:00:00 -0500
 categories: maker
 ---
+An Arduino powered desk "plant" which responds to barometric pressure.
 
 I wanted a unique bioluminescent plant as a decoration for my desk at work that changed color based on the barometric pressure. This post shows how I built this "plant".
 

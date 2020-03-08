@@ -5,6 +5,8 @@ date:   2020-3-8 11:00:00 -0500
 categories: maker
 ---
 
+An Arduino powered belt that vibrates toward North.
+
 Human perception has always been limited to our biological senses, but what if we could change that? And no, I am not talking about the fantasy or science fiction. In nature, there are animals with the ability to sense magnetic fields, barometric pressure, ambient electricity, and thermal radiation. With this project, I explored what it would feel like for a human (AKA me) to have new senses, powered by modern technology. For the scope of this research, I experimented with magnetoreception. I used an Arduino Nano with an inexpensive magnetometer and coin vibration motors for feedback devices. I embedded the device into a belt and combined it with a battery pack to make it portable. 
 
 ![Belt](/assets/images/posts/compass-belt/belt-prototype-1.jpg)
