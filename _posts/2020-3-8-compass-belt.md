@@ -23,6 +23,10 @@ Human perception has always been limited to our biological senses, but what if w
 - Hot glue
 - Soldering kit
 
+## Libraries Required
+- [Bolderflight MPU9250](https://github.com/bolderflight/MPU9250)
+- [Kalman Filter](https://github.com/kylecorry31/kalman-filter)
+
 ## Instructions
 1. While wearing the belt, make a mark on it every 45 degrees starting with directly in front of you. This is where the motors will be placed. The Arduino, magnetometer, and button will be placed between the motor directly behind you (S) and the one to the right or left of it (SE or SW). I will refer to all motors by their cardinal direction, assuming the North is the front of the belt.
 
@@ -37,14 +41,14 @@ Human perception has always been limited to our biological senses, but what if w
 
 6. Wrap the circuit in electrical tape. For the best results, get electrical tape with equal width as the belt and wrap the whole belt, leaving just a USB cable exposed for the Arduino.
 
-7. Upload [this sketch](https://github.com/kylecorry31/compass-belt) to the Arduino.
+7. Upload [this sketch](https://github.com/kylecorry31/compass-belt) to the Arduino after installing the required libraries.
 
 8. Attach the battery pack to the Arduino's USB and store in a pocket or secure it to the belt.
 
 9. Press the button to toggle between discrete mode (small pulse toward North only when direction changes) or always on mode (always vibrate toward North). 
 
 ## Theory
-This project was heavily inspired by the work of [David Eagleman](https://www.ncbi.nlm.nih.gov/pubmed/26080756). The quick summary of this article is that vibration motors can be placed on the skin and coded sensor information can be used to turn them on in a specific pattern which will eventually be subconsciously perceived by the wearer. 
+This project was heavily inspired by the work of [David Eagleman](https://www.ncbi.nlm.nih.gov/pubmed/26080756). The quick summary of this article is that vibration motors can be placed on the skin and coded sensor information can be used to turn them on in a specific pattern which will eventually be subconsciously perceived by the wearer.  
 
 ## Code
 The code and schematic for this project can be found [here](https://github.com/kylecorry31/compass-belt).
