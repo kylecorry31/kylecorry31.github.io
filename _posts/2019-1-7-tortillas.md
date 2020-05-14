@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Tortillas"
-date:   2019-1-7 8:00:00 -0500
+title: "Tortillas"
+date: 2019-1-7 8:00:00 -0500
 categories: recipe
+image: /assets/images/posts/placeholder.jpg
 ---
 
 Homemade tortillas are really simple to make and taste great (plus they have much fewer ingredients than the store bought variety).
@@ -14,6 +15,7 @@ Homemade tortillas are really simple to make and taste great (plus they have muc
 **Serves:** 12
 
 ## Ingredients
+
 - 3 cups flour
 - 1 1/2 teaspoons baking powder
 - 2 teaspoons salt
@@ -21,6 +23,7 @@ Homemade tortillas are really simple to make and taste great (plus they have muc
 - 1 cup hot water
 
 ## Directions
+
 1. In a large mixing bowl, combine dry ingredients with shortening until crumbly
 2. Slowly mix in hot water until dough sticks together and retains its shape (may not need full cup)
 3. Knead the dough for 10 minutes

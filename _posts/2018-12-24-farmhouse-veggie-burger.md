@@ -1,13 +1,15 @@
 ---
 layout: post
-title:  "Farmhouse Veggie Burger"
-date:   2018-12-24 8:00:00 -0500
+title: "Farmhouse Veggie Burger"
+date: 2018-12-24 8:00:00 -0500
 categories: recipe
+image: /assets/images/posts/placeholder.jpg
 ---
 
 The farmhouse veggie burger can be adapted to many different types of veggie burgers by just adding or removing the kinds of vegetables. This was inspired by the veggie burger at Elizabeth’s Farmhouse.
 
 ## Ingredients
+
 - 1-2 shoots of kale
 - 1-2 packages of quinoa
 - 2 sweet potatoes
@@ -23,6 +25,7 @@ The farmhouse veggie burger can be adapted to many different types of veggie bur
 - A pinch of garlic powder
 
 ## Directions
+
 1. Preheat oven to 400 degrees
 2. Follow directions on quinoa to cook it in microwave
 3. Using a fork, poke holes in the sweet potatoes and cover them with plastic wrap and microwave for 5 minutes

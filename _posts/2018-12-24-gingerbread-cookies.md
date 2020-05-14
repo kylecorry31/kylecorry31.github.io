@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Gingerbread Cookies"
-date:   2018-12-24 14:00:00 -0500
+title: "Gingerbread Cookies"
+date: 2018-12-24 14:00:00 -0500
 categories: recipe
+image: /assets/images/posts/gingerbread-cookies.jpg
 ---
 
 A classic gingerbread holiday recipe from [Tasty](https://www.youtube.com/watch?v=t5REhShQVt0&t=39s).
@@ -10,6 +11,7 @@ A classic gingerbread holiday recipe from [Tasty](https://www.youtube.com/watch?
 ![Gingerbread Cookies](/assets/images/posts/gingerbread-cookies.jpg)
 
 ## Ingredients
+
 - 3 cups flour
 - 2 tsp cinnamon
 - 1/4 tsp nutmeg
@@ -26,6 +28,7 @@ A classic gingerbread holiday recipe from [Tasty](https://www.youtube.com/watch?
 - 1 beaten egg
 
 ## Directions
+
 1. Mix dry ingredients in a bowl (except brown sugar and lemon zest)
 2. Melt butter on stove
 3. Add molasses and brown sugar to butter and mix well

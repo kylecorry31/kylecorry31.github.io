@@ -3,88 +3,63 @@ title: Kyle Corry
 layout: default
 ---
 
-<div class="profile-section">
-  <img src="assets/images/profile.jpg" alt="Profile" class="profile" />
-</div>
-
-<p>
-  My name is Kyle Corry, I am an Application Developer / Analyst at FM Global. I
-  graduated from WPI in 2019 with a B.S. in Computer Science.
-</p>
-
-<div id="projects">
-  <p class="bold">Projects</p>
-
-  <div class="grid">
-    <a href="https://github.com/kylecorry31/Trail-Sense" class="hidden-link">
-      <img
-        src="assets/images/projects/trail-sense.png"
-        alt=""
-        class="grid-logo"
-      />
-    </a>
-    <a
-      href="https://github.com/kylecorry31/ML4K-AI-Extension"
-      class="hidden-link"
-    >
-      <img src="assets/images/projects/ml4k.svg" alt="" class="grid-logo" />
-    </a>
-    <a
-      href="https://github.com/Gongoliers/Library-of-Gongolierium"
-      class="hidden-link"
-    >
-      <img
-        src="assets/images/projects/gongoliers.png"
-        alt=""
-        class="grid-logo"
-      />
-    </a>
-    <a
-      href="https://github.com/pop-os/gnome-shell-extension-do-not-disturb"
-      class="hidden-link"
-    >
-      <img src="assets/images/projects/pop-os.png" alt="" class="grid-logo" />
-    </a>
-    <a href="https://github.com/kylecorry31/Stargazer" class="hidden-link">
-      <img
-        src="assets/images/projects/stargazer.png"
-        alt=""
-        class="grid-logo"
-      />
-    </a>
-  </div>
-</div>
-
-<div class="spacer"></div>
-
-<h2>Posts</h2>
-
-<div class="center">
-  <p class="inline">Filter by:</p>
-  <select id="filter">
-    <option value="all">All</option>
-    {% for category in site.categories %}
-    <option value="{{ category[0] | slugify }}"
-      >{{ category[0] | replace: "-", " " | capitalize }}</option
-    >
-    {% endfor %}
-  </select>
-</div>
-
-<ul>
-  {% for post in site.posts %}
-  <li
-    class="post {% for category in post.categories %}post-{{ category | slugify }} {% endfor %}"
+<section id="profile">
+  <div
+    class="row container container-sm mx-auto d-flex align-items-center justify-content-center"
   >
-    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-    {% for category in post.categories %}
-    <p class="category category-{{ category | slugify }}">
-      {{ category | replace: "-", " "}}
-    </p>
-    {% endfor %}
-    <p>{{ post.excerpt | strip_html | truncate: 300 }}</p>
-  </li>
-  {% endfor %}
-</ul>
+    <div class="col-md-4">
+      <img
+        src="assets/images/profile.jpg"
+        alt="Profile"
+        class="rounded-circle profile mb-3 d-block mx-auto"
+      />
+    </div>
+    <div class="col-md-8">
+      <p>
+        My name is Kyle Corry, I am an Application Developer / Analyst at FM
+        Global. I graduated from WPI in 2019 with a B.S. in Computer Science.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="posts">
+  <div class="container">
+    <h2>Posts</h2>
+
+    <div class="mb-5">
+      <p class="inline">Filter by:</p>
+      <select id="filter" class="custom-select">
+        <option value="all">All</option>
+        {% for category in site.categories %}
+        <option value="{{ category[0] | slugify }}"
+          >{{ category[0] | replace: "-", " " | capitalize }}</option
+        >
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="posts row">
+      {% for post in site.posts %}
+
+      <div
+        class="col-md-4 post {% for category in post.categories %}post-{{ category | slugify }} {% endfor %}"
+      >
+        <a href="{{ post.url }}" class="stretched-link"></a>
+        <img src="{{ post.image }}" alt="" class="img-fluid" />
+        <h3>
+          {{ post.title }}
+        </h3>
+        {% for category in post.categories %}
+        <p class="category category-{{ category | slugify }}">
+          {{ category | replace: "-", " "}}
+        </p>
+        {% endfor %}
+        <p>{{ post.excerpt | strip_html | truncate: 200 }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 
 <script src="/assets/js/post-filter.js"></script>

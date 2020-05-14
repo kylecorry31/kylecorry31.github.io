@@ -1,8 +1,11 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<h3 class="center">{{ page.date | date_to_long_string }}</h3>
-<br>
 
-{{ content }}
+<div class="container container-sm">
+  <h1>{{ page.title }}</h1>
+  <h3 class="center">{{ page.date | date_to_long_string }}</h3>
+  <br />
+
+  {{ content }}
+</div>
