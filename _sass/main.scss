@@ -163,10 +163,10 @@ strong {
   font-weight: bold;
 }
 
-#play-badge {
-  border: none;
+.app-badge {
+  border: none !important;
 }
 
-#play-badge img {
+.app-badge img {
   width: 200px;
 }

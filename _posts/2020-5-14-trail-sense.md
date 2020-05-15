@@ -10,7 +10,8 @@ An Android app which provides useful information about the environment and can b
 
 ![Promo Image](/assets/images/posts/trail-sense.jpg)
 
-<a id="play-badge" href="https://play.google.com/store/apps/details?id=com.kylecorry.trail_sense&amp;pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"></a>
+<a class="app-badge" href="https://play.google.com/store/apps/details?id=com.kylecorry.trail_sense&amp;pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"></a>
+<a class="app-badge" href="https://f-droid.org/en/packages/com.kylecorry.trail_sense"><img alt="Get it on F-Droid" src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"></a>
 
 ## Navigation
 

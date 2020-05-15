@@ -3,7 +3,7 @@ layout: post
 title: "Car Backup Sensor"
 date: 2020-3-8 12:00:00 -0500
 categories: maker
-image: /assets/images/posts/car-backup-sensor/schematic.png
+image: /assets/images/posts/placeholder.jpg
 ---
 
 An Arduino powered backup sensor for cars.
