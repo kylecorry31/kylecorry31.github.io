@@ -31,7 +31,7 @@ This version was made with an epoxy resin handle, which closely matches the knif
 
 ### Assembly
 
-1. Trace the outline of the 3D printed knife onto the metal (I will eventually upload a printable SVG)
+1. Cut out and glue/tape/trace the template onto a sheet of metal
 
 2. Using the angle grinder, cut out the knife (don't try to cut the hole in the blade)
 
@@ -75,7 +75,7 @@ This version was made using a dead red cedar tree for the handle.
 
 ### Assembly
 
-1. Trace the outline of the 3D printed knife onto the metal (I will eventually upload a printable SVG)
+1. Cut out and glue/tape/trace the template onto a sheet of metal
 
 2. Using the angle grinder, cut out the knife (don't try to cut the hole in the blade)
 
@@ -96,3 +96,7 @@ This version was made using a dead red cedar tree for the handle.
 10. Sand using 80, 150, then 220 sandpaper until smooth
 
 11. Add boiled linseed oil to make the wood grain and color pop and allow to dry (optionally doing several coats)
+
+## Files
+
+[Knife Template (PDF, 0.2 MB)](/assets/pdfs/subnautica_knife.pdf)
