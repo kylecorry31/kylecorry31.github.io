@@ -32,9 +32,9 @@ layout: default
       <select id="filter" class="custom-select">
         <option value="all">All</option>
         {% for category in site.categories %}
-        <option value="{{ category[0] | slugify }}"
-          >{{ category[0] | replace: "-", " " | capitalize }}</option
-        >
+        <option value="{{ category[0] | slugify }}">
+          {{ category[0] | replace: "-", " " | capitalize }}
+        </option>
         {% endfor %}
       </select>
     </div>
@@ -47,9 +47,7 @@ layout: default
       >
         <a href="{{ post.url }}" class="stretched-link"></a>
         <img src="{{ post.image }}" alt="" class="img-fluid" />
-        <h3>
-          {{ post.title }}
-        </h3>
+        <h3>{{ post.title }}</h3>
         {% for category in post.categories %}
         <p class="category category-{{ category | slugify }}">
           {{ category | replace: "-", " "}}
@@ -61,5 +59,4 @@ layout: default
     </div>
   </div>
 </section>
-
 <script src="/assets/js/post-filter.js"></script>

@@ -3,7 +3,7 @@ layout: post
 title: "Oatmeal Banana Cookie"
 date: 2018-07-27 7:00:00 -0500
 categories: recipe
-image: /assets/images/posts/placeholder.jpg
+image: /assets/images/posts/placeholder.png
 ---
 
 Oatmeal banana cookies are a healthy breakfast meal, and very easy to make. These cookies also make great snacks or desserts.
