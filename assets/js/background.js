@@ -2,6 +2,7 @@ var backgroundAnimation = new Ocean();
 var bubbleCount;
 
 function setup(){
+  pixelDensity(1);
   var canvas = createCanvas(document.body.clientWidth, document.body.clientHeight);
   canvas.id("p5-background");
   backgroundAnimation.setup();
@@ -61,11 +62,9 @@ function Ocean(){
 
   this.draw = function(){
     clear();
-    if (windowWidth > 600){
-      bubbles.forEach(function(b){
-        b.update();
-        b.draw();
-      });
-    }
+    bubbles.forEach(function(b){
+      b.update();
+      b.draw();
+    });
   };
 }

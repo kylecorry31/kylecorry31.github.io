@@ -208,20 +208,3 @@ strong {
     color: black !important;
   }
 }
-
-@media screen and (max-width: 600px) {
-  html,
-  body {
-    background: rgb(82, 125, 179);
-    background: linear-gradient(
-      180deg,
-      rgba(82, 125, 179, 1) 0%,
-      rgba(9, 9, 121, 1) 50%,
-      rgba(0, 0, 0, 1) 100%
-    ) !important;
-  }
-
-  #p5-background {
-    visibility: hidden;
-  }
-}
