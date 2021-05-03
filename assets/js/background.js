@@ -61,9 +61,11 @@ function Ocean(){
 
   this.draw = function(){
     clear();
-    bubbles.forEach(function(b){
-      b.update();
-      b.draw();
-    });
+    if (windowWidth > 600){
+      bubbles.forEach(function(b){
+        b.update();
+        b.draw();
+      });
+    }
   };
 }
