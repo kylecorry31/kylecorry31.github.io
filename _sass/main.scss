@@ -9,6 +9,10 @@ html {
   color: white;
 }
 
+body {
+  background: black;
+}
+
 #p5-background {
   position: absolute;
   top: 0;
@@ -41,9 +45,9 @@ html {
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.14em;
-  color: black;
   text-decoration: none;
   transition: color 140ms cubic-bezier(0.33, 0, 0.2, 1);
+  color: white;
 }
 
 #title a.active,

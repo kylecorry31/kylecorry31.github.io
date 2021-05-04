@@ -62,6 +62,13 @@ function Ocean(){
 
   this.draw = function(){
     clear();
+    let now = Date.now();
+    let time = now - new Date().getTimezoneOffset() * 60 * 1000;
+
+    let position = 1 - constrain(map(SunCalc.getPosition(new Date(time), 0,0).altitude * (180/Math.PI), -60.0, 60.0, 0.2, 1.0), 0.2, 1);
+
+    background(`rgba(0, 0, 0, ${position})`);
+
     bubbles.forEach(function(b){
       b.update();
       b.draw();
