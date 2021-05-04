@@ -6,96 +6,66 @@ categories: maker subnautica
 image: /assets/images/posts/subnautica-knife/subnautica-knife.jpg
 ---
 
-The survival knife from Subnautica.
-
-## Epoxy handle version
-
-This version was made with an epoxy resin handle, which closely matches the knife in the game.
+The survival knife from Subnautica with an epoxy resin handle and a high carbon steel blade. I've always wanted the knife from Subnautica, and nothing on the market matched what was used in the game - so I built it. With this project, I learned how to cut metal, make silicone molds, and use epoxy resin. While my painting and polishing skills could be improved, I'm overall really happy with the knife and it feels really good to use.
 
 ![Knife](/assets/images/posts/subnautica-knife/subnautica-knife.jpg)
 
-### Materials used
+**Time Required:** A few hours (plus a couple days set time)
 
-- 1095 steel
+**Difficulty:** Intermediate
+
+**Cost:** $80 - $100
+
+**Materials**
+
+- 1095 steel (1/8" thickness)
 - Resin epoxy
 - White epoxy dye
 - Black acrylic paint
 - Mold making silicone
 - 3D printed Subnautica knife (to make the silicone mold)
 
-### Tools used
+**Tools**
 
 - Angle grinder
-- Metal hole cutter
-- Belt sander (I flip a cheap hand-held belt sander upside-down, 3x18 inch belt)
-
-### Assembly
-
-1. Cut out and glue/tape/trace the template onto a sheet of metal
-
-2. Using the angle grinder, cut out the knife (don't try to cut the hole in the blade)
-
-3. Using the metal hole cutter, cut the hole in the handle
-
-4. Use the angle grinder or a belt sander to put an edge on the knife (both sides)
-
-5. Optionally add the Altera logo to the blade of the knife (draw them on or etch them)
-
-6. Create a mold of the knife handle using the silicone and the 3D print. I cut my mold lengthwise.
-
-7. Tape the knife into the mold so it is perfectly centered between both halves. You may need to use hot glue to hold it in place.
-
-8. Pour resin into the mold until filled (I used a small hole cut into the side of the mold) - remove bubbles if possible
-
-9. Once dried, fill in any missed areas with resin
-
-10. Paint the black grip portion of the handle with acrylic paint and let dry
-
-![Knife in hand](/assets/images/posts/subnautica-knife/subnautica-knife-in-hand.jpg)
-
-## Wooden handle version
-
-This version was made using a dead red cedar tree for the handle.
-
-![Wooden Knife](/assets/images/posts/subnautica-knife/subnautica-knife-wood.jpg)
-
-### Materials used
-
-- 1095 steel
-- Wood (I used Eastern Red Cedar, Juniperus virginiana)
-- Boiled linseed oil
-
-### Tools used
-
-- Angle grinder
-- Metal hole cutter
-- Belt sander (I flip a cheap hand-held belt sander upside-down, 3x18 inch belt)
-- 80, 150, 220 grit sandpaper
+- Metal hole cutter and drill
+- Belt sander (optional)
+- WD-40 (optional)
 - Dremel (optional)
 
-### Assembly
+## Build your own knife
 
-1. Cut out and glue/tape/trace the template onto a sheet of metal
+1. Cut out the knife blade
 
-2. Using the angle grinder, cut out the knife (don't try to cut the hole in the blade)
+   Using the template attached to the bottom of this page, trace the steel portion onto a piece of 1095 steel (1/8"), then use the angle grinder to cut it out - don't try to cut the handle hole with the grinder. Use a cutoff wheel for cutting out the blade and a grinding disk for smoothing it out.
 
-3. Using the metal hole cutter, cut the hole in the handle
+   Once the blank is cut out, you can use a metal hole cutter to cut out the handle hole. Go slowly with this to avoid damaging your drill, and depending on the hardness of the steel, you may need to add WD-40 (or other cutting oil).
 
-4. Use the angle grinder or a belt sander to put an edge on the knife (both sides)
+2. Put an edge on the blade
 
-5. Optionally add the Altera logo to the blade of the knife (draw them on or etch them)
+   I found it was best to put a rough edge onto the blade before creating the handle. Remember the blade is double sided. It may help to use the handle templates to see where the blade should be, and don't sharpen the grooves. For the sharpening, you can use either a belt sander or the angle grinder. The desired angle is between 20 and 30 degrees.
 
-6. Cut the wood into two equal thickness scales (rectangular), slightly larger than the steel
+3. Cast the handle mold
 
-7. Line the scales up with the knife one at a time and mark the center of the hole, then use the hole cutter to cut it out
+   I ordered a 3D print of the knife to create a cast of the handle. I put some clay in the handle hole to prevent the mold from casting that - you may not need to do this, but I thought it would be easier to remove the knife. I then created a small cardboard box, slightly bigger than the knife - it helps if there is a smooth coating on it. I put the knife in it, handle first (the blade does not need to be cast) and taped it a few centimeters above the bottom (so it wouldn't touch). I then combined the silicone and poured it in and let it set.
 
-8. Glue the scales to the knife and clamp it - make sure the hole is lined up
+   To remove the knife, I scored a wavy pattern along the silicone mold and cut it in half, releasing the 3D print. Then cut a small hole in the side of the mold so you can pour resin in. With the blade flat on the table, I made the hole on the left side of the mold (meaning the knife would be set with the mold on its side).
 
-9. Once the glue has dried, use the belt sander and Dremel to shape the knife handle to match mockups
+   This mold can be re-used for future knives.
 
-10. Sand using 80, 150, then 220 sandpaper until smooth
+4. Create the handle
 
-11. Add boiled linseed oil to make the wood grain and color pop and allow to dry (optionally doing several coats)
+   With both the blade and mold finished, it is time for the handle. Place the knife between both halves and tape or hot glue it in place. Then mix the epoxy resin with the white resin dye and pour it into the mold. Let this rest until fully set. You may need to fill in gaps with more resin (I just put it back into the mold with resin over those areas).
+
+5. Finishing touches
+
+   To make the knife even better match the game, you can add paint to the handle. I don't have much painting skills, so I went with the save approach of just painting the grip black. You can also try to etch (as I attempted) or paint the Altera logo into the blade.
+
+   Finally, you can sharpen the blade using a sharpening stone - or you can leave it dull if you don't plan on using it.
+
+   And that's it! While it isn't made out of titanium and silicone rubber, it definitely feels like it is a real life replica of the Subnautica knife.
+
+![Knife in hand](/assets/images/posts/subnautica-knife/subnautica-knife-in-hand.jpg)
 
 ## Files
 
