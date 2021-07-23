@@ -38,7 +38,7 @@ function Ocean(){
       this.x += map(noise(this.noiseX), 0, 1, -0.001, 0.001) * width;
       this.x = constrain(this.x, -20, width + 20);
 
-      this.y -= 1.8;
+      this.y -= 1.5;
       if(this.y < 0){
         this.y = (1 + random()) * height;
         this.x = random() * width;
