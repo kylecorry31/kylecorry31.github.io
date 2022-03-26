@@ -3,7 +3,7 @@ title: Kyle Corry
 layout: default
 ---
 
-<section id="profile">
+<!-- <section id="profile">
   <div
     class="row container container-sm mx-auto d-flex align-items-center justify-content-center"
   >
@@ -21,26 +21,15 @@ layout: default
       </p>
     </div>
   </div>
-</section>
+</section> -->
 
 <section id="posts">
   <div class="container">
-    <h2>Posts</h2>
-
-    <div class="mb-5">
-      <p class="inline">Filter by:</p>
-      <select id="filter" class="custom-select">
-        <option value="all">All</option>
-        {% for category in site.categories %}
-        <option value="{{ category[0] | slugify }}"
-          >{{ category[0] | replace: "-", " " | capitalize }}</option
-        >
-        {% endfor %}
-      </select>
-    </div>
+    <h2 class="mb-2">Posts</h2>
 
     <div class="posts row">
       {% for post in site.posts %}
+      {% unless post.categories contains "recipe" %}
 
       <div
         class="col-md-4 post {% for category in post.categories %}post-{{ category | slugify }} {% endfor %}"
@@ -57,9 +46,8 @@ layout: default
         {% endfor %}
         <p>{{ post.excerpt | strip_html | truncate: 200 }}</p>
       </div>
+      {% endunless %}
       {% endfor %}
     </div>
   </div>
 </section>
-
-<script src="/assets/js/post-filter.js"></script>
