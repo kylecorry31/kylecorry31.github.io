@@ -13,8 +13,8 @@ title: "Irish Soda Bread"
 - 4 tbsp melted butter
 - 2 tbsp Caraway seeds
 - 2 cup raisins
-- 2 cup milk (can substitute with almond milk)
-- 2 eggs (can substitute with flax eggs)
+- 2 cup almond milk
+- 2 flax eggs
 
 ## Directions
 

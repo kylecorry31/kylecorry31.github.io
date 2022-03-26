@@ -1,11 +1,11 @@
 ---
 layout: recipe
-title: "Vegetarian Pumpkin Chili"
+title: "Pumpkin Chili"
 ---
 
 ## Ingredients
 
-- 1 can of pureed pumpkin
+- 1 can of pureed pumpkin (or cooked and mashed winter squash)
 - 1 can of diced tomatoes
 - 1 can of black beans
 - 2 tbsp canola oil
