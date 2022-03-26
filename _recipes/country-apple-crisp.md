@@ -1,17 +1,7 @@
 ---
 layout: recipe
-title: "Country Apple Crisp"
+title: "Apple Crisp"
 ---
-
-Country apple crisp is one of my favorite dessert foods, and it is really simple to make. You can substitute the type of apple, or make it into the pie (put it into a pie crust and don't make the crumbs). It is best served with vanilla ice cream.
-
-**Preparation time:** 15 minutes
-
-**Cook time:** 40 minutes
-
-**Serves:** 4-6
-
-![Apple Crisp](/assets/images/posts/apple-crisp.jpg)
 
 ## Ingredients
 

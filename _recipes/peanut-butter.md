@@ -3,10 +3,6 @@ layout: recipe
 title: "Peanut Butter"
 ---
 
-Homemade peanut butter is really easy to make, and tastes better than the store bought PB.
-
-![PB](/assets/images/posts/peanut_butter.jpg)
-
 ## Ingredients
 
 - Peanuts (shelled, unsalted) (optionally replace with almonds, cashews, etc)

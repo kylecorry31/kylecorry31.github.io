@@ -3,10 +3,6 @@ layout: recipe
 title: "Gingerbread Cookies"
 ---
 
-A classic gingerbread holiday recipe from [Tasty](https://www.youtube.com/watch?v=t5REhShQVt0&t=39s).
-
-![Gingerbread Cookies](/assets/images/posts/gingerbread-cookies.jpg)
-
 ## Ingredients
 
 - 3 cups flour
@@ -38,3 +34,6 @@ A classic gingerbread holiday recipe from [Tasty](https://www.youtube.com/watch?
 10. Cut into desired shapes and transfter to baking sheet
 11. Bake for 12-15 minutes
 12. Decorate
+
+## Credits
+[Tasty](https://www.youtube.com/watch?v=t5REhShQVt0&t=39s)

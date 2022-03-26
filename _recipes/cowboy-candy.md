@@ -1,9 +1,7 @@
 ---
 layout: recipe
-title: "Pickled Jalapenos"
+title: "Cowboy Candy (Pickled Jalapenos)"
 ---
-
-A sweet and spicy jalapeno recipe.
 
 ## Ingredients
 
@@ -20,4 +18,4 @@ A sweet and spicy jalapeno recipe.
 1. Combine everything into a large pot and bring to a rolling boil
 2. Simmer for 15 - 20 minutes
 3. Transfer mixture to jars, making sure to fill with the brine
-4. (Optional) Can - I did water bath canning, but am no expert - if you are going to eat them within a reasonable amount of time, no need to can - just store in the refrigerator
+4. (Optional) Can (water bath)

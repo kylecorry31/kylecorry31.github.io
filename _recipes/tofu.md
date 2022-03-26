@@ -3,8 +3,6 @@ layout: recipe
 title: "Tofu"
 ---
 
-A simple tofu recipe.
-
 ## Ingredients
 
 - 2.5 cups dried soybeans

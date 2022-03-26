@@ -3,10 +3,6 @@ layout: recipe
 title: "Black Bean Burger"
 ---
 
-A simple black bean burger recipe.
-
-![Burgers](/assets/images/posts/black-bean-burger.jpg)
-
 ## Ingredients
 
 - 1 can of black beans (drained)
@@ -17,7 +13,7 @@ A simple black bean burger recipe.
 
 ## Directions
 
-1. Using a food processor (or potato masher), turn black beans into a thick paste
+1. Using a food processor or potato masher, turn black beans into a thick paste
 2. Add seasoning to the black bean paste to your taste
 3. Combine the black beans with bread crumbs and egg
 4. Heat a skillet with some oil over medium-high heat

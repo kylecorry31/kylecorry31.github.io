@@ -1,15 +1,7 @@
 ---
-layout: project
+layout: recipe
 title: "Tortillas"
 ---
-
-Homemade tortillas are really simple to make and taste great (plus they have much fewer ingredients than the store bought variety).
-
-**Preparation time:** 30 minutes
-
-**Cook time:** 10 minutes
-
-**Serves:** 12
 
 ## Ingredients
 
