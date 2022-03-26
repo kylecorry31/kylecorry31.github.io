@@ -1,9 +1,6 @@
 ---
-layout: post
+layout: recipe
 title: "Black Bean Burger"
-date: 2021-09-24 7:00:00 -0500
-categories: recipe
-image: /assets/images/posts/black-bean-burger.jpg
 ---
 
 A simple black bean burger recipe.

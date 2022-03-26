@@ -8,8 +8,7 @@ layout: default
     <h2 class="mb-2">Recipes</h2>
 
     <div class="posts row">
-      {% assign recipes = site.posts | where_exp:"item","item.categories contains 'recipe'" | sort: 'title' %}
-      {% for recipe in recipes %}
+      {% for recipe in site.recipes %}
       <div class="col-md-12 post">
         <a href="{{ recipe.url }}" class="stretched-link"></a>
         <h3>

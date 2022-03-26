@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: "Amish Shoo Fly Pie"
 date: 2020-05-15 7:00:00 -0500
 categories: recipe

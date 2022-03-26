@@ -1,9 +1,6 @@
 ---
-layout: post
+layout: recipe
 title: "Gingerbread Cookies"
-date: 2018-12-24 14:00:00 -0500
-categories: recipe
-image: /assets/images/posts/gingerbread-cookies.jpg
 ---
 
 A classic gingerbread holiday recipe from [Tasty](https://www.youtube.com/watch?v=t5REhShQVt0&t=39s).

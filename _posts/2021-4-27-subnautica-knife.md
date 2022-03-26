@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: "Subnautica Knife"
 date: 2021-04-16 20:00:00 -0500
 categories: maker subnautica

@@ -1,9 +1,6 @@
 ---
-layout: post
+layout: recipe
 title: "Tofu"
-date: 2021-09-24 7:00:00 -0500
-categories: recipe
-image: /assets/images/posts/placeholder.jpg
 ---
 
 A simple tofu recipe.

@@ -1,9 +1,6 @@
 ---
-layout: post
+layout: project
 title: "Tortillas"
-date: 2019-1-7 8:00:00 -0500
-categories: recipe
-image: /assets/images/posts/tortilla.jpg
 ---
 
 Homemade tortillas are really simple to make and taste great (plus they have much fewer ingredients than the store bought variety).

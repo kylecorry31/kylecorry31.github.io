@@ -1,9 +1,6 @@
 ---
-layout: post
-title: "Tofu"
-date: 2020-05-14 6:00:00 -0500
-categories: recipe
-image: /assets/images/posts/tofu.jpg
+layout: recipe
+title: "Crispy Tofu"
 ---
 
 Tofu is a great go to vegitarian food which can be adapted to fit basically any cuisine. This crispy tofu can be used as the base for any tofu recipe.

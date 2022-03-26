@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: "Arduino Barometer Plant"
 date: 2020-3-7 11:00:00 -0500
 categories: maker subnautica

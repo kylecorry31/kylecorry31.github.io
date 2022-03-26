@@ -1,0 +1,5 @@
+collections:
+  recipes:
+    output: true
+    sort_by: title
+    permalink: /:collection/:path

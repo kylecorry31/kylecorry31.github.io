@@ -1,9 +1,6 @@
 ---
-layout: post
+layout: recipe
 title: "Vegetarian Pumpkin Chili"
-date: 2021-09-24 7:00:00 -0500
-categories: recipe
-image: /assets/images/posts/pumpkin-chili.jpg
 ---
 
 A hearty vegetarian chili recipe.

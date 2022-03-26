@@ -1,9 +1,6 @@
 ---
-layout: post
+layout: recipe
 title: "Peanut Butter"
-date: 2020-08-16 11:00:00 -0500
-categories: recipe
-image: /assets/images/posts/peanut_butter.jpg
 ---
 
 Homemade peanut butter is really easy to make, and tastes better than the store bought PB.

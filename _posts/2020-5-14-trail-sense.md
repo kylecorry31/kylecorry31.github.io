@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title: "Trail Sense"
 date: 2020-5-14 8:00:00 -0500
 categories: app maker subnautica
