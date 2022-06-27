@@ -8,11 +8,11 @@ title: "Tofu Dumplings"
 ### Filling
 - 1/2 head of cabbage, shredded
 - 1 block of tofu, crumbled
-- 1 tbsp soy sauce
-- 1 tsp ginger
-- 1 tsp mushroom powder
-- 1/2 tsp garlic powder
-- 1/4 tsp salt
+- 2 tbsp soy sauce
+- 2 tsp ginger
+- 2 tsp mushroom powder
+- 1 tsp garlic
+- 1/2 tsp salt
 - 1/8 tsp pepper
 - Canola or sesame oil
 
@@ -20,14 +20,14 @@ title: "Tofu Dumplings"
 - 1 3/4 cup flour
 - 3 tbsp cornstarch
 - 1/2 tsp salt
-- 1/3 cup hot water
+- 2/3 cup hot water
 - 2 tbsp room temperature water
 
 ### Chili sauce
 - 1/4 cup soy sauce
 - 1/8 cup canola / sesame oil
-- 1/4 tsp chili powder
-- 1/8 tsp sugar
+- 1/2 tsp chili powder
+- 1/4 tsp sugar
 
 ## Directions
 
