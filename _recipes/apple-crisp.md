@@ -8,9 +8,7 @@ title: "Apple Crisp"
 ### For the filling:
 
 - 4 large granny smith apples (peeled, cored and sliced) (or swap for peaches)
-- 1/2 teaspoon cinnamon
-- 1/4 teaspoon nutmeg
-- 1/8 teaspoon ground allspice
+- 1 teaspoon [Apple Pie Spice](/recipes/apple-pie-spice)
 - 3/4 cup granulated sugar
 - 3 tablespoons flour
 - A pinch of salt
