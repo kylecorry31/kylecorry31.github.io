@@ -6,9 +6,6 @@ layout: default
 <section id="posts">
   <div class="container">
     <h2 class="mb-2">Recipes</h2>
-
-    <p>A collection of my vegetarian / lactose free recipes</p>
-
     <div class="posts row">
       {% assign recipes = site.recipes | sort: 'title' %}
       {% for recipe in recipes %}
