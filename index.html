@@ -2,51 +2,23 @@
 title: Kyle Corry
 layout: default
 ---
-
-<!-- <section id="profile">
-  <div
-    class="row container container-sm mx-auto d-flex align-items-center justify-content-center"
-  >
-    <div class="col-md-4">
-      <img
-        src="assets/images/profile.jpg"
-        alt="Profile"
-        class="rounded-circle profile mb-3 d-block mx-auto"
-      />
-    </div>
-    <div class="col-md-8">
-      <p>
-        My name is Kyle Corry, I am an Application Developer / Analyst at FM
-        Global. I graduated from WPI in 2019 with a B.S. in Computer Science.
-      </p>
-    </div>
-  </div>
-</section> -->
-
 <section id="posts">
   <div class="container">
     <h2 class="mb-2">Projects</h2>
 
-    <div class="posts row">
+    <div class="posts">
       {% for post in site.posts %}
-      {% unless post.categories contains "recipe" %}
+
+      
+
 
       <div
-        class="col-md-4 post {% for category in post.categories %}post-{{ category | slugify }} {% endfor %}"
+        class="post {% for category in post.categories %}post-{{ category | slugify }} {% endfor %}"
       >
-        <a href="{{ post.url }}" class="stretched-link"></a>
-        <img src="{{ post.image }}" alt="" class="img-fluid" />
-        <h3>
-          {{ post.title }}
-        </h3>
-        {% for category in post.categories %}
-        <p class="category category-{{ category | slugify }}">
-          {{ category | replace: "-", " "}}
-        </p>
-        {% endfor %}
-        <p>{{ post.excerpt | strip_html | truncate: 200 }}</p>
+        <a href="{{ post.url }}">
+          <polaroid-photo src="{{ post.image }}" title="{{ post.title }}" alt="" /> 
+        </a>
       </div>
-      {% endunless %}
       {% endfor %}
     </div>
   </div>
