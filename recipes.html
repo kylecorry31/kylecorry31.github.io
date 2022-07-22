@@ -6,10 +6,10 @@ layout: default
 <section id="posts">
   <div class="container">
     <h2 class="mb-2">Recipes</h2>
-    <div class="posts row">
+    <div class="recipes row">
       {% assign recipes = site.recipes | sort: 'title' %}
       {% for recipe in recipes %}
-      <div class="col-md-12 post">
+      <div class="col-md-12 recipe">
         <a href="{{ recipe.url }}" class="stretched-link"></a>
         <h3>
           {{ recipe.title }}
