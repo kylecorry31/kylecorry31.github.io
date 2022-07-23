@@ -16,7 +16,7 @@ layout: default
         class="post {% for category in post.categories %}post-{{ category | slugify }} {% endfor %}"
       >
         <a href="{{ post.url }}">
-          <polaroid-photo src="{{ post.image }}" title="{{ post.title }}" alt="" /> 
+          <polaroid-photo src="{{ post.image }}" title="{{ post.title }}" alt="" rotation="5" position="5" scale="1.2"/> 
         </a>
       </div>
       {% endfor %}

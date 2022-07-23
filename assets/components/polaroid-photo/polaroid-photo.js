@@ -6,9 +6,14 @@ class PolaroidPhoto extends HTMLElement {
   
   
     connectedCallback(){
+
+      const rotation = +(this.getAttribute('rotation') || 0);
+      const position = +(this.getAttribute('position') || 0);
+      const zoomScale = +(this.getAttribute('scale') || 1);
+
       this._shadow.innerHTML = `
       <style>
-        @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+        @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
         .polaroid {
             padding: 16px 16px 16px 16px;
@@ -17,8 +22,10 @@ class PolaroidPhoto extends HTMLElement {
             box-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
             margin: 8px;
             display: inline-block;
-            filter: grayscale(100%);
             transition: 0.5s ease all;
+            transform: rotate(${Math.random() * rotation * 2 - rotation}deg);
+            top: ${Math.random() * position * 2 - position}px;
+            left: ${Math.random() * position * 2 - position}px;
         }
         
         .polaroid .polaroid-image {
@@ -38,7 +45,7 @@ class PolaroidPhoto extends HTMLElement {
             text-overflow: ellipsis;
             width: 200px;
             margin: 0;
-            font-family: cursive !important;
+            font-family: 'Indie Flower', cursive !important;
             line-height: 1rem !important;
             height: 2.5rem !important;
             max-height: 2.5rem !important;
@@ -50,6 +57,9 @@ class PolaroidPhoto extends HTMLElement {
         .polaroid:hover {
             filter: none;
             box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
+            transform: scale(${zoomScale});
+            z-index: 100;
+          	position: relative;
         }
       </style>
   

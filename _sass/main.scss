@@ -171,6 +171,11 @@ strong {
   padding: 16px;
 }
 
+.recipe:hover,
+.recipe:focus {
+  background: rgba($color: #000000, $alpha: 0.05);
+}
+
 .posts {
   display: flex;
   flex-direction: row;
@@ -187,49 +192,4 @@ strong {
 
 .post a:hover {
   color: inherit;
-}
-
-.post {
-  -webkit-transform: rotate(-2deg);
-  transform: rotate(-2deg);
-  transition: 0.5s ease all;
-}
-
-/* Rotate all even images 2 degrees */
-.post:nth-child(even) {
-  transform: rotate(2deg);
-}
- 
-/* Don't rotate every third image, but offset its position */
-.post:nth-child(3n) {
-  transform: none;
-  position: relative;
-  top: -5px;
-}
- 
-/* Rotate every fifth image by 5 degrees and offset it */
-.post:nth-child(5n) {
-  transform: rotate(5deg);
-  position: relative;
-  right: 5px;
-}
- 
-/* Keep default rotate for every eighth, but offset it */
-.post:nth-child(8n) {
-  position: relative;
-  top: 8px;
-  right: 5px;
-}
- 
-/* Keep default rotate for every eleventh, but offset it */
-.post:nth-child(11n) {
-  position: relative;
-  top: 3px;
-  left: -5px;
-}
-
-.post:hover {
-	transform: scale(1.2);
-	z-index: 100;
-	position: relative;
 }
