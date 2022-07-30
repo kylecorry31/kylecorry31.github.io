@@ -5,7 +5,7 @@ title: "Avocado Quesadilla"
 
 ## Ingredients
 - 1 avocado
-- 2 tortillas
+- 2 [tortillas](/recipes/tortillas)
 - 1/2 cup cheddar cheese
 - 1/2 tsp salt
 - 1/2 stick butter
