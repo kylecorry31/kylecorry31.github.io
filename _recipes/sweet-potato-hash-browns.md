@@ -18,5 +18,6 @@ title: "Sweet Potato Hash Browns"
 4. Squeeze water out of potatoes and lay to dry in paper towel for 10 minutes
 5. Heat oil and butter in skillet over medium-high heat
 6. Add salt and pepper to potatoes and scoop into skillet, flatten
-7. Cover and cook for 5 minutes or until edges become brown
-8. Flip (may need to use a plate) and cook for another 2 - 3 minutes
+7. Lower heat to medium-low
+8. Cover and cook for 5 minutes or until edges become brown
+9. Flip (may need to use a plate) and cook for another 2 - 3 minutes
