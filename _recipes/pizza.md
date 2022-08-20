@@ -6,7 +6,7 @@ title: "Pizza"
 Makes 1 pizza.
 
 ## Ingredients
-- 3/4 Warm water
+- 3/4 cup warm water
 - 1 tbsp sugar
 - 1 package yeast
 - 2 cups flour
