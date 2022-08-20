@@ -1,8 +1,6 @@
 ---
 layout: project
 title: "Compass Belt"
-date: 2020-3-8 11:00:00 -0500
-categories: maker
 image: /assets/images/posts/compass-belt/belt-prototype-1.jpg
 ---
 

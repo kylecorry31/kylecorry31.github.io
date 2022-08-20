@@ -1,8 +1,6 @@
 ---
 layout: project
 title: "Outer Wilds Echoes of the Eye Artifact"
-date: 2021-12-23 12:00:00 -0400
-categories: maker outer-wilds
 image: /assets/images/posts/outer-wilds-artifact/outer-wilds-artifact-day.jpg
 ---
 
@@ -15,6 +13,8 @@ Created and shared as per the [Mobius Digital Games Fan Content Policy](https://
 This work is unofficial Fan Content created under permission from the Mobius Digital Fan Content Policy. It includes materials which are the property of Mobius Digital and it is neither approved nor endorsed by Mobius Digital.
 
 The artifact was extracted from game files and modified to be printable by me.
+
+[YouTube](https://www.youtube.com/watch?v=gVkRPpwQKvI)
 
 **Time Required:** A few hours (plus a couple days to print)
 

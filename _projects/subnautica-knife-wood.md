@@ -1,8 +1,6 @@
 ---
 layout: project
 title: "Subnautica Knife (Wood)"
-date: 2021-05-04 12:00:00 -0400
-categories: maker subnautica
 image: /assets/images/posts/subnautica-knife/subnautica-knife-wood.jpg
 ---
 

@@ -1,8 +1,6 @@
 ---
 layout: project
 title: "Transmedia Storytelling and the Impact of the IQP"
-date: 2019-2-1 8:00:00 -0500
-categories: research
 image: /assets/images/posts/iqp.jpg
 ---
 

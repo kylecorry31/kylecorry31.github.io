@@ -3,3 +3,7 @@ collections:
     output: true
     sort_by: title
     permalink: /:collection/:path
+  projects:
+    output: true
+    sort_by: title
+    permalink: /:collection/:path

@@ -1,12 +1,10 @@
 ---
 layout: project
 title: "Trail Sense"
-date: 2020-5-14 8:00:00 -0500
-categories: app maker subnautica
 image: /assets/images/posts/trail-sense.jpg
 ---
 
-An Android app which provides useful information about the environment and can be used offline. Designed for hiking, mountaineering, and survival situations. Inspired by the PDA in Subnautica.
+An Android app which provides useful information about the environment and can be used offline. Designed for hiking, mountaineering, and survival situations.
 
 ![Promo Image](/assets/images/posts/trail-sense.jpg)
 

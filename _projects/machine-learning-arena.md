@@ -1,8 +1,6 @@
 ---
 layout: project
 title: "Machine Learning Arena: Creating an ML Based Game"
-date: 2019-12-13 8:00:00 -0500
-categories: research
 image: /assets/images/posts/mla.jpg
 ---
 
