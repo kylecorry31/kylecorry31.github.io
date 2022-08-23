@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Oatmeal Banana Cookie"
+category: breakfast
 ---
 
 ## Ingredients

@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Pizza"
+category: dinner
 ---
 
 Makes 1 pizza.

@@ -128,7 +128,8 @@ img {
   height: auto;
 }
 
-.content a, .link {
+.content a,
+.link {
   border-width: 0 0 1px 0;
   border-style: none none solid none;
   border-color: #c0c0c0;
@@ -136,7 +137,8 @@ img {
   color: rgb(40, 40, 40);
 }
 
-.content a:hover, .link:hover {
+.content a:hover,
+.link:hover {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.6);
 }
@@ -192,4 +194,13 @@ strong {
 
 .post a:hover {
   color: inherit;
+}
+
+.recipe-category {
+  border-bottom: 1px solid #f2f2f2;
+  width: 100%;
+  text-align: center;
+  padding: 16px;
+  border-top: 1px solid #f2f2f2;
+  margin-top: 24px;
 }

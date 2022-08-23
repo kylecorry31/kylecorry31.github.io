@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Banana Pie"
+category: dessert
 ---
 
 ## Ingredients

@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Falafel"
+category: dinner
 ---
 
 ## Ingredients

@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Pumpkin Chili"
+category: dinner
 ---
 
 ## Ingredients

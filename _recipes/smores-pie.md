@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "S'mores Pie"
+category: dessert
 ---
 
 ## Ingredients

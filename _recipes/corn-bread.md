@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Corn Bread"
+category: bread
 ---
 
 ## Ingredients

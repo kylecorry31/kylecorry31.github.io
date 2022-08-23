@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Pastelon"
+category: dinner
 ---
 
 ## Ingredients

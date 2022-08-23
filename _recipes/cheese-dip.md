@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Cheese Dip"
+category: side
 ---
 
 ## Ingredients

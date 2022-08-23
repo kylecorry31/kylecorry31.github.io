@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Poutine"
+category: side
 ---
 
 ## Ingredients

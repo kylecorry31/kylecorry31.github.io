@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Lentil Curry"
+category: dinner
 ---
 
 ## Ingredients

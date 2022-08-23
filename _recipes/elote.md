@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Elote (Mexican Street Corn)"
+category: side
 ---
 
 ## Ingredients

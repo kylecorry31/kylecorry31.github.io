@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Veggie Burger"
+category: dinner
 ---
 
 ## Ingredients

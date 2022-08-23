@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Black Bean Burger"
+category: dinner
 ---
 
 ## Ingredients

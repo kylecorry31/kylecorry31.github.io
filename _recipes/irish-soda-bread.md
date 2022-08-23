@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Irish Soda Bread"
+category: bread
 ---
 
 ## Ingredients

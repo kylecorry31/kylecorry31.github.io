@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Cauliflower Mac & Cheese"
+category: side
 ---
 
 ## Ingredients

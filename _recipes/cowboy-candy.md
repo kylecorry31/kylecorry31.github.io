@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Cowboy Candy (Pickled Jalapenos)"
+category: side
 ---
 
 ## Ingredients

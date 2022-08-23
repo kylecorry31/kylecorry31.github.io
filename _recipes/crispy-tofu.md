@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Crispy Tofu"
+category: dinner
 ---
 
 ## Ingredients

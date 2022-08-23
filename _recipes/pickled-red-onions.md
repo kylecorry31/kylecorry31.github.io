@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Pickled Red Onions"
+category: side
 ---
 
 ## Ingredients

@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Chili Egg Foo Young"
+category: dinner
 ---
 
 ## Ingredients

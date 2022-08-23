@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Avocado Quesadilla"
+category: dinner
 ---
 
 ## Ingredients

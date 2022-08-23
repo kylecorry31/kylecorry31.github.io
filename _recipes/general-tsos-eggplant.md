@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "General Tso's Eggplant"
+category: dinner
 ---
 
 ## Ingredients

@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Tortillas"
+category: bread
 ---
 
 ## Ingredients

@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Sweet Potato Hash Browns"
+category: breakfast
 ---
 
 ## Ingredients

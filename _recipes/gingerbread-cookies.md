@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Gingerbread Cookies"
+category: dessert
 ---
 
 ## Ingredients

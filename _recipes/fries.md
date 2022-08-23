@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Fries"
+category: side
 ---
 
 ## Ingredients

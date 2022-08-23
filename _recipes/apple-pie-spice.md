@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Apple Pie Spice"
+category: dessert
 ---
 
 ## Ingredients

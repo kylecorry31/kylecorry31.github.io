@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Bread"
+category: bread
 ---
 
 ## Ingredients

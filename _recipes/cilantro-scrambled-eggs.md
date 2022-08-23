@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Cilantro Scrambled Eggs"
+category: breakfast
 ---
 
 ## Ingredients

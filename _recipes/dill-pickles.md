@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Dill Pickles"
+category: side
 ---
 
 ## Ingredients

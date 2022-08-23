@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Hard Boiled Eggs"
+category: breakfast
 ---
 
 ## Ingredients

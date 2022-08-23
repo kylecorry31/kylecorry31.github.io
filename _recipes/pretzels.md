@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Pretzels"
+category: bread
 ---
 
 ## Ingredients

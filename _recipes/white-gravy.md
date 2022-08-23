@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "White Gravy"
+category: side
 ---
 
 ## Ingredients

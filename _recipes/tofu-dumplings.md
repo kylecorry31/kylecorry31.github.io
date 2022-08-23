@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Tofu Dumplings"
+category: dinner
 ---
 
 ## Ingredients

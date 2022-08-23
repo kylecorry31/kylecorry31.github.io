@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Roasted Brussel Sprouts"
+category: side
 ---
 
 ## Ingredients

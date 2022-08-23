@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Apple Crisp"
+category: dessert
 ---
 
 ## Ingredients

@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: "Tofu"
+category: dinner
 ---
 
 ## Ingredients
