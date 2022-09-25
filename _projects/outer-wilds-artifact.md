@@ -6,7 +6,7 @@ image: /assets/images/posts/outer-wilds-artifact/outer-wilds-artifact-day.jpg
 
 The artifact from Outer Wilds Echoes of the Eye. 3D printed with an Arduino powered flame that can be turned on using a flashlight and turned off by blowing it out.
 
-**This article is a work in progress. I am going to add a simplier schematic for use as a static prop or night light, and generate a better schematic image.**
+**This article is a work in progress. I am going to add a simpler schematic for use as a static prop or night light, and generate a better schematic image.**
 
 Created and shared as per the [Mobius Digital Games Fan Content Policy](https://www.mobiusdigitalgames.com/fan-content-policy.html)
 
@@ -27,7 +27,7 @@ The artifact was extracted from game files and modified to be printable by me.
 - Black 1.75mm PLA
 - Clear or glow in the dark 1.75mm PLA
 - Silver spray paint
-- Annodized bronze spray paint
+- Anodized bronze spray paint
 - Sandable primer paint
 - Wood filler
 - Painter's tape
@@ -61,7 +61,7 @@ The artifact was extracted from game files and modified to be printable by me.
 
 6. Apply a coat of silver spray paint.
 
-7. Once dry, mask off any true silver areas with painter's tape, then spray the unmasked sections with annodized bronze. I used the video game model as a reference and only painted the most prominent areas - adjust based on your skill (or just keep it silver).
+7. Once dry, mask off any true silver areas with painter's tape, then spray the unmasked sections with anodized bronze. I used the video game model as a reference and only painted the most prominent areas - adjust based on your skill (or just keep it silver).
 
 8. Once dry, spray on a clear coat to protect it.
 
