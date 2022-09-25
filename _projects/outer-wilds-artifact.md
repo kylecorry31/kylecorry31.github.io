@@ -6,6 +6,8 @@ image: /assets/images/posts/outer-wilds-artifact/outer-wilds-artifact-day.jpg
 
 The artifact from Outer Wilds Echoes of the Eye. 3D printed with an Arduino powered flame that can be turned on using a flashlight and turned off by blowing it out.
 
+![Artifact](/assets/images/posts/outer-wilds-artifact/outer-wilds-artifact-day.jpg)
+
 **This article is a work in progress. I am going to add a simpler schematic for use as a static prop or night light, and generate a better schematic image.**
 
 Created and shared as per the [Mobius Digital Games Fan Content Policy](https://www.mobiusdigitalgames.com/fan-content-policy.html)
