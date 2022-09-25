@@ -14,7 +14,7 @@ category: bread
 
 ## Directions
 1. Mix all ingredients
-2. Rest in a loosly covered bowl for 3 hours at room temperature
+2. Rest in a loosely covered bowl for 3 hours at room temperature
 3. Add a pinch of flour and knead dough a little
 4. Form into a round shape and place back in the covered bowl on top of parchment paper
 5. Preheat oven with a cast iron skillet (needs a cover) or dutch oven at 450 degrees for 35 minutes

@@ -30,7 +30,7 @@ Disclaimer: Do not rely on this as a safety measure for your car. I am not respo
 
 2. Upload [this sketch](https://github.com/kylecorry31/car-backup-sensor)to the Arduino after installing the required library.
 
-3. Run the ultrasonic sensor to the rear exterier of your car and connect it to it's breakout board on the inside with the Arduino.
+3. Run the ultrasonic sensor to the rear exterior of your car and connect it to it's breakout board on the inside with the Arduino.
 
 4. Plug the Arduino's USB cable into a car outlet.
 

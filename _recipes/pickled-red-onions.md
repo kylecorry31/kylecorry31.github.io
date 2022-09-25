@@ -17,7 +17,7 @@ category: side
 
 ## Directions
 
-1. Mix vinegar, water, salt, and pepper until sugar and salt is disolved
+1. Mix vinegar, water, salt, and pepper until sugar and salt is dissolved
 2. Slice onions and soak in boiling water for 1 minute
 3. Strain onions and pack into mason jar
 4. Cover onion with the vinegar solution and let cool

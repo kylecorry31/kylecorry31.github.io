@@ -12,7 +12,7 @@ category: dinner
 - 1 tsp dried dill
 - 1/2 tsp garlic powder
 - 1/2 tsp black pepper
-- 1/2 tsp corriander
+- 1/2 tsp coriander
 - 1/4 tsp cayenne powder
 - 1/2 tsp baking soda
 - 1 tsp cumin

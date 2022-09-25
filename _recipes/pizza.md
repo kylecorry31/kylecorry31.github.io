@@ -14,12 +14,12 @@ Makes 1 pizza.
 - 3/4 tsp salt
 - 1 tbsp oil
 - 4 tbsp tomato sauce
-- 1 cup shreded cheese
+- 1 cup shredded cheese
 
 ## Directions
 1. Mix water, 1/2 tbsp sugar, yeast
 2. Cover and let rest for 5 minutes
-3. Wisk together flour, salt, and 1/2 tbsp sugar
+3. Whisk together flour, salt, and 1/2 tbsp sugar
 4. Mix water into dough
 5. Knead and form into a ball
 6. Coat bowl with oil and roll dough in it

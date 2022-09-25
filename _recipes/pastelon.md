@@ -26,7 +26,7 @@ category: dinner
 ## Directions
 1. Saute onions and peppers in oil
 2. Add impossible burger meat and seasonings
-3. Add chopped cilantro and tomatoes and sautee until everything is cooked, then remove from heat
+3. Add chopped cilantro and tomatoes and saute until everything is cooked, then remove from heat
 4. Slice plantains lengthwise into 4 strips each
 5. Fry plantains in oil until golden brown
 6. Mix beaten eggs with the meat mixture

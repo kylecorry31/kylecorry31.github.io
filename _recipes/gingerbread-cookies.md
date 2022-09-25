@@ -32,7 +32,7 @@ category: dessert
 7. Transfer to plastic wrap and chill for at least 2 hours
 8. Preheat oven to 350 deg
 9. Roll out dough to about 1/4 inch thickness
-10. Cut into desired shapes and transfter to baking sheet
+10. Cut into desired shapes and transfer to baking sheet
 11. Bake for 12-15 minutes
 12. Decorate
 

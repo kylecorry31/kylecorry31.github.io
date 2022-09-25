@@ -62,7 +62,7 @@ I wanted a unique bioluminescent plant as a decoration for my desk at work that 
 
 ## Mimicking nature
 
-The plant is designed to adapt to the barometric high and low of the location it is placed. It may take several days for the plant to adapt and become consistent. The plant is given a default pressure range (tuned to my location), but after it experiences a range of pressures (currently 8 hPa) it will use the minimum and maximum pressure it has sensed as the high and low for the location rather than the default. This was designed to mimick the way plants adapt to changes in light levels or seasons. The default values can be changed by updating the `default_min_pressure` and `default_max_pressure` constants in the sketch.
+The plant is designed to adapt to the barometric high and low of the location it is placed. It may take several days for the plant to adapt and become consistent. The plant is given a default pressure range (tuned to my location), but after it experiences a range of pressures (currently 8 hPa) it will use the minimum and maximum pressure it has sensed as the high and low for the location rather than the default. This was designed to mimic the way plants adapt to changes in light levels or seasons. The default values can be changed by updating the `default_min_pressure` and `default_max_pressure` constants in the sketch.
 
 ![Default Pressure Code](/assets/images/posts/barometer-plant/default-pressure.png)
 

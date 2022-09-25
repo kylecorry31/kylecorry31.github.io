@@ -23,4 +23,4 @@ category: bread
 7. Bring a skillet to medium-high heat
 8. Cook each tortilla, one at a time, until bubbles form and they have brown spots.
 9. Serve warm
-10. Store leftovers in refridgerator
+10. Store leftovers in refrigerator

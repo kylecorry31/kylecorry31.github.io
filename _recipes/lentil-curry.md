@@ -17,5 +17,5 @@ category: dinner
 1. Cook lentils in water until soft
 2. Add tomatoes to a pot and mash or blend
 3. Add lentils, curry powder, and salt to the pot and cook over medium heat until boiling
-4. Add cocount milk and return to boil
+4. Add coconut milk and return to boil
 5. Reduce to a simmer for 30 minutes 

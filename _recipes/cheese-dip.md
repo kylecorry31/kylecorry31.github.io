@@ -17,7 +17,7 @@ category: side
 
 1. Melt butter in a skillet over medium heat
 2. Add flour and stir constantly until it becomes light golden brown
-3. Add milk and bring to a boil while stiring
+3. Add milk and bring to a boil while stirring
 4. Stir for 1 minute until it thickens
 5. Stir in cheese until it melts
 6. Add salt and pepper to taste
