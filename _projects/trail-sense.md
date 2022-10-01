@@ -28,3 +28,6 @@ View the sun/moon rise and set times and see the current phase of the moon at yo
 ## Code
 
 The code for this app can be found [here](https://github.com/kylecorry31/Trail-Sense)
+
+## White papers
+- [Cloud Image Classification on a Smartphone (PDF, 0.08 MB)](/assets/pdfs/cloud_image_classification_on_a_smartphone.pdf)
