@@ -1,7 +1,7 @@
 ---
 layout: recipe
 title: "Peanut Butter"
-category: side
+category: snack
 ---
 
 ## Ingredients
