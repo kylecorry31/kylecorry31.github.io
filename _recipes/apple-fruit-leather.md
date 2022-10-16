@@ -5,7 +5,8 @@ category: snack
 ---
 
 ## Ingredients
-- [Apple Sauce](/recipes/apple-sauce)
+
+- [Apple sauce](/recipes/apple-sauce)
 
 
 ## Directions

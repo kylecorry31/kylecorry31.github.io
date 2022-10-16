@@ -9,12 +9,12 @@ category: dessert
 ### For the filling:
 
 - 4 large granny smith apples (peeled, cored and sliced) (or swap for peaches)
-- 1 teaspoon [Apple Pie Spice](/recipes/apple-pie-spice)
+- 1 tsp [apple pie spice](/recipes/apple-pie-spice)
 - 3/4 cup granulated sugar
-- 3 tablespoons flour
+- 3 tbsp flour
 - A pinch of salt
-- 2 tablespoons lemon juice
-- 2 tablespoons butter
+- 2 tbsp lemon juice
+- 2 tbsp butter
 
 ### For the crumbs:
 
