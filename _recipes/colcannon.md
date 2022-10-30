@@ -6,7 +6,7 @@ category: side
 
 ## Ingredients
 
-- [Mashed potatoes](/recipes/apple-sauce)
+- [Mashed potatoes](/recipes/mashed-potatoes)
 - Olive oil (substitute with other oil / butter)
 - 1 bunch of kale 
 
