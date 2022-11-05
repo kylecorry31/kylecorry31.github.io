@@ -7,7 +7,7 @@ category: dinner
 ## Ingredients
 
 ### Filling
-- 1/2 head of cabbage, shredded
+- 1/2 head of Napa cabbage, shredded
 - 1 block of tofu, crumbled
 - 2 tbsp soy sauce
 - 2 tsp ginger
