@@ -14,7 +14,7 @@ category: bread
 - 1 egg
 - 1 1/2 tsp salt
 - 2 tsp baking powder
-- 1/3 cup sugar
+- 1/2 cup sugar
 
 
 ## Directions
