@@ -1,7 +1,7 @@
 ---
 layout: recipe
 title: "Apple Pie Spice"
-category: dessert
+category: spice
 ---
 
 ## Ingredients
