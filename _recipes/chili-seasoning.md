@@ -6,12 +6,12 @@ category: spice
 
 ## Ingredients
 
-- 9 parts chili powder
-- 3 parts cumin
-- 3 parts salt
+- 8 parts chili powder
+- 4 parts cumin
+- 2 parts salt
 - 2 parts cilantro
-- 1 part onion powder
-- 1 part garlic powder
+- 2 parts onion powder
+- 2 parts garlic powder
 - 1 part pepper
 - 1 part cayenne pepper
 
