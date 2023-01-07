@@ -6,10 +6,11 @@ category: snack
 
 ## Ingredients
 
-- 4 dates
-- 16 cashews
+- 1 cup dates (optionally soaked for easier blending)
+- 1 cup cashews
 
 ## Directions
 
-1. Add ingredients to a food processor and process until combined (optionally adding some hot water - or soaking before)
-2. Shape into bars and dehydrate at 135 for a few hours
+1. Add ingredients to a food processor and process until combined
+2. Shape into bars
+3. Dehydrate at 135 for a few hours or store in refrigerator
