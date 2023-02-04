@@ -8,7 +8,7 @@ category: spice
 
 - 8 parts chili powder
 - 4 parts cumin
-- 2 parts salt
+- 3 parts salt
 - 2 parts cilantro
 - 2 parts onion powder
 - 2 parts garlic powder

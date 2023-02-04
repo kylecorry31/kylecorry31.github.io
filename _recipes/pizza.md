@@ -11,7 +11,7 @@ Makes 1 pizza.
 - 1 tbsp sugar
 - 1 package yeast
 - 2 cups flour
-- 3/4 tsp salt
+- 1 tsp salt
 - 1 tbsp oil
 - 4 tbsp tomato sauce
 - 1 cup shredded cheese

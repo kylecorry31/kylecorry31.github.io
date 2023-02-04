@@ -13,7 +13,7 @@ category: dinner
 - 3 chili peppers (diced)
 - 1 Onion (diced)
 - 3/4 cup dried quinoa
-- 2 tbsp [Chili Seasoning](/recipes/chili-seasoning)
+- 1 tbsp [Chili Seasoning](/recipes/chili-seasoning)
 
 ## Directions
 
