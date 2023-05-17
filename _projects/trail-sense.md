@@ -31,3 +31,4 @@ The code for this app can be found [here](https://github.com/kylecorry31/Trail-S
 
 ## White papers
 - [Cloud Image Classification on a Smartphone (PDF, 0.08 MB)](/assets/pdfs/cloud_image_classification_on_a_smartphone.pdf)
+- [Sea Level Calibration of Smartphone Barometers (PDF, 0.10 MB)](/assets/pdfs/sea_level_calibration_of_smartphone_barometers.pdf)
