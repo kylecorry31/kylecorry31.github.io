@@ -15,8 +15,8 @@ category: breakfast
 3. Remove pot and let cool until it is around 110°F - 115°F. You can put the pot in a sink of cold water to speed up the process.
 4. Add starter and mix well
 5. Return pot to instant pot and click yogurt button until it is on normal, replace lid and set for 8 hours
-6. (Optional) Strain yogurt through a cheesecloth in fridge for a few hours to make greek yogurt
-7. Place yogurt in fridge for 8 hours to let it set
+6. (Optional) Strain yogurt with a cheesecloth in fridge for a 4 - 6 hours to make greek yogurt
+7. Place yogurt in fridge for at least 8 hours to let it set
 
 ## Notes
 - You can use dry milk powder instead of milk
