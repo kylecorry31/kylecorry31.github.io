@@ -4,7 +4,7 @@ summary: An on-device image classifier for cloud genera.
 date: 2022-10-01
 ---
 
-Clouds are one of the oldest indicators used to predict weather. The ability to accurately identify cloud genera can improve offline weather prediction. The system outlined here allows for offline classification of the 10 main cloud genera using a smartphone camera and minimal processing requirements.
+Clouds are one of the oldest indicators used to predict weather. The ability to accurately identify cloud genera can improve offline weather prediction. The system outlined here is used by Trail Sense and allows for offline classification of the 10 main cloud genera using a smartphone camera with minimal processing requirements.
 
 ![Cloud Classification](/assets/images/research/cloud-classification.jpg)
 
@@ -36,7 +36,9 @@ max(1, (red - blue) / (red + blue))
 6. Feed all features, plus a bias of 1 into a softmax classifier.
 
 ## Results
-After training on a small dataset (~300 images) that was unevenly distributed, the weighted average F1 score was 0.63. This model was included in version 4.6.0 of Trail Sense.
+After training on a small dataset (~300 images) that was unevenly distributed, the weighted average F1 score was 0.63. With more training data (and better distribution), I believe this score will improved.
+
+This model was included in version 4.6.0 of Trail Sense.
 
 ## References
 1. Heinle, A., Macke, A. & Srivastav, A. (2010, May 6). Automatic cloud classification of whole sky images. Retrieved from [https://doi.org/10.5194/amt-3-557-2010](https://doi.org/10.5194/amt-3-557-2010)
