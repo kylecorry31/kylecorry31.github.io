@@ -1,0 +1,18 @@
+{{{includes.header}}}
+<section id="posts">
+    <div class="container">
+        <h2 class="mb-2">Projects</h2>
+
+        <div class="posts">
+            {{#collections.projects.items}}
+            <div class="post">
+                <a href="{{ url }}">
+                    <polaroid-photo src="{{ image }}" title="{{ title }}" alt="" rotation="5" position="5"
+                        scale="1.2" />
+                </a>
+            </div>
+            {{/collections.projects.items}}
+
+        </div>
+    </div>
+</section>

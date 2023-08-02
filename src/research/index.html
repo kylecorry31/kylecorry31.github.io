@@ -1,0 +1,18 @@
+{{{includes.header}}}
+
+<section id="posts">
+    <div class="container">
+        <h2 class="mb-2">Research</h2>
+        <div class="recipes row">
+            {{#collections.research.items}}
+            <div class="col-md-12 recipe">
+                <a href="{{ url }}" class="stretched-link"></a>
+                <h3>
+                    {{ title }}
+                </h3>
+            </div>
+            {{/collections.research.items}}
+        </div>
+    </div>
+</section>
+{{{includes.footer}}}

@@ -1,0 +1,21 @@
+{{{includes.header}}}
+
+<section id="posts">
+    <div class="container">
+        <h2 class="mb-2">Recipes</h2>
+        <div class="recipes row">
+            {{#collections.recipes.categories}}
+            <h3 class="recipe-category">{{ name }}</h3>
+            {{#items}}
+            <div class="col-md-12 recipe">
+                <a href="{{ url }}" class="stretched-link"></a>
+                <h3>
+                    {{ title }}
+                </h3>
+            </div>
+            {{/items}}
+            {{/collections.recipes.categories}}
+        </div>
+    </div>
+</section>
+{{{includes.footer}}}
