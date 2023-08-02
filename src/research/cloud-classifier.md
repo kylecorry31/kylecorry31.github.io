@@ -6,6 +6,8 @@ date: 2022-10-01
 
 Clouds are one of the oldest indicators used to predict weather. The ability to accurately identify cloud genera can improve offline weather prediction. The system outlined here allows for offline classification of the 10 main cloud genera using a smartphone camera and minimal processing requirements.
 
+![Cloud Classification](/assets/images/research/cloud-classification.jpg)
+
 ## Solution
 The following steps outline the process of classifying a cloud image:
 
