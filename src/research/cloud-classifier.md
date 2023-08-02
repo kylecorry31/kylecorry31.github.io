@@ -18,7 +18,7 @@ The following steps outline the process of classifying a cloud image:
 max(1, (red - blue) / (red + blue))
 ``` [[1](https://doi.org/10.5194/amt-3-557-2010)]
 
-3. Calculate the normed 16 level Gray-Level Co-occurrence Matrix (GLCM) of the red channel for each 100x100 region of the image using the following step sizes (averaged): (0, 1), (1, 1), (1, 0), (1, -1). [[2](https://doi.org/10.11575/PRISM/33280)][[3](https://doi.org/10.1038/s41598-017-04151-4)]
+3. Calculate the normed, symmetric 16 level Gray-Level Co-occurrence Matrix (GLCM) of the red channel for each 100x100 region of the image using the following step sizes (averaged): (0, 1), (1, 1), (1, 0), (1, -1). [[2](https://doi.org/10.11575/PRISM/33280)][[3](https://doi.org/10.1038/s41598-017-04151-4)]
 
 4. Compute the following features for each GLCM and take the average of each feature across all the GLCMS [[3](https://doi.org/10.11575/PRISM/33280)]:
     - Energy
