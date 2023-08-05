@@ -35,6 +35,7 @@ While this isn't an exact representation, I found it does a good job of approxim
 
 ### Elevation and temperature
 The temperature decreases as elevation increases. The rate of decrease is about 0.0065°C per meter. This means that the temperature at sea level will be 6.5°C higher than the temperature at an elevation of 1000 meters. The following formulas can be used:
+
 <code>
 sea_level_temperature = temperature + (elevation * 0.0065)
 
