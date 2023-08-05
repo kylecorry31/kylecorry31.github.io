@@ -28,12 +28,12 @@ Bilinear interpolation is a method of interpolating between two points in a two-
 Cubic interpolation is a method of interpolating between two points in a one-dimensional space. This technique can be used to smooth out a set of data points. For example, if you have one temperature data point per month, you can use cubic interpolation to get a temperature for any day of the month. The advantage of cubic interpolation over linear interpolation is that it is smoother and does not have any sharp corners, therefore it better aligns to how temperature changes over time.
 
 ### Hourly temperatures
-Typically, the temperature is lowest right before sunrise and highest a few hours after noon (lets say 3PM). A rough approximation can be made by splitting the interpolation into two segments. The first segment is between the high temperature at 3PM and the low temperature at sunrise (next day). A quadratic interpolation can be used between high and low temperatures. The second segment is between the low temperature at sunrise and the high temperature at 3PM. A sine interpolation can be used between low and high temperatures.
+Typically, the temperature is lowest right before sunrise and highest a few hours after noon (let's say 3PM). A rough approximation can be made by splitting the interpolation into two segments. The first segment is between the high temperature at 3PM and the low temperature at sunrise (next day). A quadratic interpolation can be used between high and low temperatures. The second segment is between the low temperature at sunrise and the high temperature at 3PM. A sine interpolation can be used between low and high temperatures.
 
 While this isn't an exact representation, I found it does a good job of approximating the temperature throughout the day.
 
 ### Elevation and temperature
-The temperature decreases as elevation increases. The rate of decrease is about 0.0065°C per meter. This means that the temperature at sea level will be 6.5°C higher than the temperature at 1000 meters. The following formulas can be used:
+The temperature decreases as elevation increases. The rate of decrease is about 0.0065°C per meter. This means that the temperature at sea level will be 6.5°C higher than the temperature at an elevation of 1000 meters. The following formulas can be used:
 <code>
 sea_level_temperature = temperature + (elevation * 0.0065)
 
@@ -46,7 +46,7 @@ At a high level, the monthly average high and low temperatures are encoded as ge
 ### Image generation
 1. Download the monthly average high and low temperatures for the last 30 years from MERRA2. These temperatures do not account for elevation. [[2](https://doi.org/10.5067/KVIMOMCUO83U)]
 
-2. Download the elevation data from ETOPO. This data also include bathymetry, which is not needed and if factored in will lead to inaccurate values over bodies of water and near the coast. [[3](https://doi.org/10.25921/fd45-gt74)]
+2. Download the elevation data from ETOPO. This data also includes bathymetry, which is not needed and if factored in, it will lead to inaccurate values over bodies of water and near the coast. [[3](https://doi.org/10.25921/fd45-gt74)]
 
 3. Download a land mask from Natural Earth. This data is used to remove the bathymetry from the elevation data. [[4](https://www.naturalearthdata.com/)]
 
