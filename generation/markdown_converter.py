@@ -78,4 +78,7 @@ def get_collection_metadata(collection_path):
         })
     metadata['categories'] = category_list
 
+    for category in category_list:
+        metadata['category_' + category['name']] = category['items']
+
     return metadata
