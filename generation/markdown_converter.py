@@ -54,7 +54,13 @@ def get_collection_metadata(collection_path):
                 meta = get_markdown_metadata(os.path.join(root, name), url)
                 items.append(meta)
     metadata = {}
-    metadata['items'] = sorted(items, key=lambda item: item['title'])
+
+    sort_method = lambda item: item['date'] if 'date' in item else item['title']
+    
+    # Reverse sort if any item contains a date
+    sort_reverse = any('date' in item for item in items)
+
+    metadata['items'] = sorted(items, key=sort_method, reverse=sort_reverse)
 
     categories = {}
     for item in items:
@@ -68,7 +74,7 @@ def get_collection_metadata(collection_path):
     for category in sorted(categories.keys()):
         category_list.append({
             "name": category,
-            "items": sorted(categories[category], key=lambda item: item['title'])
+            "items": sorted(categories[category], key=sort_method, reverse=sort_reverse)
         })
     metadata['categories'] = category_list
 
