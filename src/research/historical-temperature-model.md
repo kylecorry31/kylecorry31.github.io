@@ -75,6 +75,10 @@ In practice, I've found this model generally matches the current temperature. Th
 
 Further research is needed to see if combining this model with other sensors on the device, such as a barometer, can improve its accuracy during extreme weather events.
 
+## Source code
+- [Trail Sense Temperature Model (image generation)](https://github.com/kylecorry31/Trail-Sense-Temperature-Model)
+- [Trail Sense](https://github.com/kylecorry31/Trail-Sense)
+
 ## References
 1. Julian, B. & Angermann, M. (2023, April 24-27). Resource Efficient and Accurate Altitude Conversion to Mean Sea Level. Retrieved from [https://doi.org/10.1109/PLANS53410.2023.10140105](https://doi.org/10.1109/PLANS53410.2023.10140105)
 
