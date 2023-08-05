@@ -6,6 +6,7 @@ html {
     padding: 0;
     font-family: "Open Sans", sans-serif;
     background: white;
+    overflow-wrap: break-word;
 }
 
 @font-face {
