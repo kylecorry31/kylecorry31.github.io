@@ -1,0 +1,17 @@
+{{{includes.header}}}
+
+<section id="posts">
+    <div class="container">
+        <h2 class="mb-2">Trail Sense Blog</h2>
+        <div class="recipes row">
+            {{#collections.research.category_trail_sense}}
+            <div class="col-md-12 recipe">
+                <a href="{{ url }}" class="stretched-link"></a>
+                <h3>{{ title }}&nbsp;&nbsp;&nbsp;&nbsp;<small>{{ date }}</small></h3>
+                <p>{{ summary }}</p>
+            </div>
+            {{/collections.research.category_trail_sense}}
+        </div>
+    </div>
+</section>
+{{{includes.footer}}}
