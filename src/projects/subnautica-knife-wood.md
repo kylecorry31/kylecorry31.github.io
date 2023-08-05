@@ -31,21 +31,21 @@ The survival knife from Subnautica with a wooden handle and a high carbon steel 
 
 ## Build your own knife
 
-1. Cut out the knife blade
+### 1. Cut out the knife blade
 
    Using the template attached to the bottom of this page, trace the steel portion onto a piece of 1095 steel (1/8"), then use the angle grinder to cut it out - don't try to cut the handle hole with the grinder. Use a cutoff wheel for cutting out the blade and a grinding disk for smoothing it out.
 
    Once the blank is cut out, you can use a metal hole cutter to cut out the handle hole. Go slowly with this to avoid damaging your drill, and depending on the hardness of the steel, you may need to add WD-40 (or other cutting oil).
 
-2. Put an edge on the blade
+### 2. Put an edge on the blade
 
    I found it was best to put a rough edge onto the blade before creating the handle. Remember the blade is double sided. It may help to use the handle templates to see where the blade should be, and don't sharpen the grooves. For the sharpening, you can use either a belt sander or the angle grinder. The desired angle is between 20 and 30 degrees.
 
-3. Carve the handle
+### 3. Carve the handle
 
    For the handle, I used a dead Eastern Red Cedar tree, so I needed to cut a piece off about the length of the knife handle and then split it. If you are using pre-cut wood, just trace the template onto the wood and cut it out. Once cut, use wood glue to secure both halves onto the tang of the knife. Finally, use the belt grinder to sand it flush to the metal and give it a smooth curve until it fits comfortably in your hand.
 
-4. Finishing touches
+### 4. Finishing touches
 
    To best protect the handle, and make the wood pop, you should add some oil. I really like the look of boiled linseed oil on cedar, so I used that. You could optionally use a stain and/or coating instead.
 
