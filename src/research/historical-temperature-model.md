@@ -6,6 +6,9 @@ date: 2023-08-05
 
 Knowing what the temperature will be like in the future can be very helpful when planning a trip. In this article, I'll cover the system used in Trail Sense, which allows for offline temperature prediction using historical data. This system can predict the temperature at any time, location, and elevation all while running offline and using minimal processing power and storage.
 
+![Compressed climate normal data map](/assets/images/research/historic-temperatures-map.webp)
+*Compressed climate normal data map*
+
 ## Background
 
 ### Climate normals
