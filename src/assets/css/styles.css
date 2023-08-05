@@ -186,6 +186,7 @@ strong {
     column-gap: 16px;
     align-items: center;
     justify-content: space-evenly;
+    padding-bottom: 16px;
 }
 
 .post a {
