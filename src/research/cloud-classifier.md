@@ -2,7 +2,7 @@
 title: Cloud Image Classification on a Smartphone
 summary: An on-device image classifier for cloud genera.
 date: 2022-10-01
-category: trail_sense
+category: trail-sense
 ---
 
 Clouds have long been used as indicators for weather prediction. Having an accurate historical log of cloud types can be helpful in forecasting the passing of weather fronts, especially when combined with barometer data over time. In this article, I'll cover the system used in Trail Sense, which allows for offline classification of the 10 main cloud genera using a smartphone camera with minimal processing requirements.
