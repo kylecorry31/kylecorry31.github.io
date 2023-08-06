@@ -33,9 +33,7 @@ A Gray-Level Co-occurrence Matrix (GLCM) is a matrix that describes the spatial 
 
 ### Logistic Regression
 Logistic regression is a classification algorithm that uses a softmax function to classify an input into one of several classes. The softmax function is defined as follows:
-```
-softmax(x) = exp(x) / sum(exp(x))
-```
+<code>softmax(x) = exp(x) / sum(exp(x))</code>
 
 This algorithm is easy to implement, relatively fast to run, and does not require a large memory footprint. It is also easy to interpret the results of the algorithm and see how it decided upon the classification.
 
@@ -44,11 +42,8 @@ The following steps outline the process of classifying a cloud image:
 
 1. Resize the image to 400x400 pixels. This reduces the memory footprint and improves the performance on low-end devices.
 
-2. Calculate the average Normalized Red-Blue Ratio (NRBR) of the image. The NRBR is calculated as
-```
-max(1, (red - blue) / (red + blue))
-```
-[[1](https://doi.org/10.5194/amt-3-557-2010)]
+2. Calculate the average Normalized Red-Blue Ratio (NRBR) of the image. The NRBR is calculated as [[1](https://doi.org/10.5194/amt-3-557-2010)]:
+<code>max(1, (red - blue) / (red + blue))</code>
 
 3. Calculate the normed, symmetric 16 level Gray-Level Co-occurrence Matrix (GLCM) of the red channel for each 100x100 region of the image using the following step sizes (averaged): (0, 1), (1, 1), (1, 0), (1, -1). [[2](https://doi.org/10.11575/PRISM/33280)][[3](https://doi.org/10.1038/s41598-017-04151-4)]
 

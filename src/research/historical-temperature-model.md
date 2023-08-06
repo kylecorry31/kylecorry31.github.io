@@ -35,12 +35,8 @@ While this isn't an exact representation, I found it does a good job of approxim
 
 ### Elevation and Temperature
 The temperature decreases as elevation increases. The rate of decrease is about 0.0065°C per meter. This means that the temperature at sea level will be 6.5°C higher than the temperature at an elevation of 1000 meters. The following formulas can be used:
-
-<code>
-sea_level_temperature = temperature + (elevation * 0.0065)
-
-temperature = sea_level_temperature - (elevation * 0.0065)
-</code>
+<code>sea_level_temperature = temperature + (elevation * 0.0065)</code>
+<code>temperature = sea_level_temperature - (elevation * 0.0065)</code>
 
 ## Solution
 At a high level, the monthly average high and low temperatures are encoded as geographic images. Using image compression, the entire model can be stored in less than 300KB. At runtime, the pixel corresponding to the desired location can be extracted from the image and interpolation can be used to get the temperature at any time. [[1](https://doi.org/10.1109/PLANS53410.2023.10140105)]

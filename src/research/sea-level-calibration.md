@@ -36,8 +36,7 @@ To accurately convert barometric pressure to sea level pressure, Trail Sense fir
 1. Obtain up to 8 sequential GPS elevation readings and their reported vertical accuracies.
 2. Convert the GPS elevation to MSL using EGM96 geoid model.
 3. Use a joint Gaussian filter to smooth the MSL readings. The following algorithm is used:
-<code>
-def join(mean1, var1, mean2, var2):
+<code>def join(mean1, var1, mean2, var2):
     joint = mean1 * var2 + mean2 * var1
     sumVar = var1 + var2
     multVar = var1 * var2
@@ -45,8 +44,7 @@ def join(mean1, var1, mean2, var2):
     var = multVar / sumVar
     return (mean, var)
 </code>
-<code>
-def join_all(dists):
+<code>def join_all(dists):
     if len(dists) == 0:
         return None
     last = dists[0]
@@ -59,9 +57,7 @@ def join_all(dists):
 1. Every 30 minutes, a background process records the barometric pressure and improved GPS elevation. The interval of this is configurable.
 
 2. Convert the readings to sea level using this formula:
-<code>
-P * (1 - D / 44330.0) ** (-5.255)
-</code>
+<code>P * (1 - D / 44330.0) ** (-5.255)</code>
 
 3. Smooth the sea level pressure readings from the last 48 hours using the LOESS algorithm. The default span is 0.15 and a single robustness iteration is used. The span can be made configurable to account for different devices and environments.
 
