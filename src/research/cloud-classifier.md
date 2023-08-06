@@ -52,7 +52,7 @@ max(1, (red - blue) / (red + blue))
 
 3. Calculate the normed, symmetric 16 level Gray-Level Co-occurrence Matrix (GLCM) of the red channel for each 100x100 region of the image using the following step sizes (averaged): (0, 1), (1, 1), (1, 0), (1, -1). [[2](https://doi.org/10.11575/PRISM/33280)][[3](https://doi.org/10.1038/s41598-017-04151-4)]
 
-4. Compute the following features for each GLCM and take the average of each feature across all the GLCMS [[3](https://doi.org/10.11575/PRISM/33280)]:
+4. Compute the following features for each GLCM and take the average of each feature across all the GLCMs [[3](https://doi.org/10.11575/PRISM/33280)]:
     - Energy
     - Contrast
     - Vertical Mean
