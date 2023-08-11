@@ -15,6 +15,7 @@ class Watcher:
 
   def run(self):
     event_handler = Handler()
+    subprocess.call(["py", "build.py"])
     self.observer.schedule(event_handler, self.DIRECTORY_TO_WATCH, recursive=True)
     self.observer.start()
     print("Watching for changes in " + self.DIRECTORY_TO_WATCH)
