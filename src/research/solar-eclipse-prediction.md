@@ -137,6 +137,11 @@ while searchTime < maxTime:
 return start, peak, end
 </code>
 
+## Results
+This algorithm has proven to be both accurate and fast. As mentioned, most searches complete within a second and the results match the NASA eclipse catalog.
+
+Further improvements can likely be made to check for more conditions in which an eclipse cannot occur. In addition, I believe more research is needed to see if an algorithm, such as binary search, can be used to find the eclipse start, peak, and end times faster. Another idea could be to have progressively smaller search regions.
+
 ## References
 1. Meeus, J. (1998, January 1). Astronomical Algorithms.
 2. Reda, I. (2010, March). Solar Eclipse Monitoring for Solar Energy Applications Using the Solar and Moon Position Algorithms. Retrieved from [https://doi.org/10.11578/dc.20190909.1](https://doi.org/10.11578/dc.20190909.1)
