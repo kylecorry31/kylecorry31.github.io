@@ -52,8 +52,7 @@ Search from the current time to the maximum search duration. The step size is de
 - **Moon phase is not new**: Time until the next new moon (approximate)
 - **Sun is set**: Time until the next sunrise
 - **Moon is set**: Time until the next moonrise
-- **Angular distance is greater than 10 degrees**: 2 hours
-- **Angular distance is greater than 2 degrees**: 30 minutes
+- **Angular distance is greater than 1.5 degrees**: The same number of hours as the angular distance, rounded down to the nearest hour, with a minimum of 1 hour and a maximum of 12 hours
 - **No eclipse (magnitude = 0)**: 15 minutes
 
 Otherwise, an eclipse has been found and the current time is returned.
@@ -71,11 +70,9 @@ while start < maxDuration:
     if moon is set:
         start += timeUntilNextMoonrise(start)
         continue
-    if angularDistance > 10:
-        start += hours(2)
+    if angularDistance > 1.5:
+        start += hours(constrain(floor(angularDistance), 1, 12))
         continue
-    if angularDistance > 2:
-        start += minutes(30)
     if magnitude > 0:
         return start
     start += minutes(15)
@@ -140,7 +137,21 @@ return start, peak, end
 ## Results
 This algorithm has proven to be both accurate and fast. As mentioned, most searches complete within a second and the results match the NASA eclipse catalog.
 
-Further improvements can likely be made to check for more conditions in which an eclipse cannot occur. In addition, I believe more research is needed to see if an algorithm, such as binary search, can be used to find the eclipse start, peak, and end times faster. Another idea could be to have progressively smaller search regions.
+For example, if the search was started on 2023-10-15, it would find the eclipse on 2024-04-08 in only 127 iterations (across 176 days). Note, that in the diagram the majority of iterations occur around the date of the new moon.
+
+![Eclipse Search](/assets/images/research/solar-eclipse-frequency.png)
+
+Further improvements can likely be made to check for more conditions in which an eclipse cannot occur, especially around the time of the new moon.
+
+Based on my analysis, the majority of iterations run into one of the following conditions:
+
+- Too far apart (angular distance check)
+- Sun is set
+- Moon is set
+
+Further research should focus on improving the heuristics used to determine the step size around those conditions.
+
+In addition, I believe more research is needed to see if an algorithm, such as binary search, can be used to find the eclipse start, peak, and end times faster.
 
 ## References
 1. Meeus, J. (1998, January 1). Astronomical Algorithms.
