@@ -92,8 +92,8 @@ The following pseudo-code shows how to find the start, peak, and end times. For 
 - Eclipse is not visible at minTime or maxTime
 - Eclipse is visible at eclipseTime
 
-<code>minTime = eclipseTime - 3 hours
-maxTime = eclipseTime + 3 hours
+<code>minTime = eclipseTime - 6 hours
+maxTime = eclipseTime + 6 hours
 // Use binary search to find when it goes from false to true
 start = binarySearchRising(minTime, eclipseTime, precision, (time) => isEclipseVisible(time))
 // Use binary search to find when it goes from true to false
