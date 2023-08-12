@@ -123,9 +123,9 @@ return start, peak, end
 ## Results
 This algorithm has proven to be both accurate and fast. As mentioned, most searches complete within a second and the results match the NASA eclipse catalog.
 
-For example, if the search was started on 2023-10-15, it would find the eclipse on 2024-04-08 in only 7 iterations (across 176 days).
+For example, if the search was started on 2023-10-15, it would find the eclipse on 2024-04-08 with a precision of 1 minute in 150 iterations (across 176 days).
 
-I believe more research is needed to see if an algorithm, such as binary search, can be used to find the eclipse start, peak, and end times faster.
+I believe more research is needed to see if an algorithm, such as binary search, can be used to find the eclipse start, peak, and end times faster. In my testing, the vast majority of iterations are being spent searching for the start and end times.
 
 ## References
 1. Meeus, J. (1998, January 1). Astronomical Algorithms.
