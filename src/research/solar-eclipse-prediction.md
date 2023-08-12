@@ -53,7 +53,7 @@ The following pseudo-code shows how to find the next eclipse time.
 <code>time = now
 while time < maxDuration:
     peak = getNextEclipsePeak(time)
-    for searchTime in [peak - 4 hours, peak + 4 hours]:
+    for searchTime in [peak - 3 hours, peak + 3 hours]:
         if sun is set:
             continue
         if moon is set:
@@ -92,8 +92,8 @@ The following pseudo-code shows how to find the start, peak, and end times. For 
 - Eclipse is not visible at minTime or maxTime
 - Eclipse is visible at eclipseTime
 
-<code>minTime = eclipseTime - 12 hours
-maxTime = eclipseTime + 12 hours
+<code>minTime = eclipseTime - 3 hours
+maxTime = eclipseTime + 3 hours
 // Use binary search to find when it goes from false to true
 start = binarySearchRising(minTime, eclipseTime, precision, (time) => isEclipseVisible(time))
 // Use binary search to find when it goes from true to false
