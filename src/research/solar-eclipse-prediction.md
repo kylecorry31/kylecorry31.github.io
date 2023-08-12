@@ -1,11 +1,11 @@
 ---
 title: Solar Eclipse Prediction
-summary: A simple method to efficiently predict solar eclipses, designed to be run on a smartphone.
+summary: A simple method to efficiently predict locally visible solar eclipses, designed to be run on a smartphone.
 date: 2023-08-11
 category: trail-sense
 ---
 
-Solar eclipse prediction can be a computationally expensive task, especially when trying to find the next eclipse that will be visible at a given location. This article will cover a simple method to efficiently find solar eclipses, designed to be run on a smartphone. On most smartphones, it can predict the next solar eclipse in under 1 second with accuracy matching posted eclipse times. This method is used in the Trail Sense application.
+Solar eclipse prediction at a given location can be a computationally expensive task. This article will cover a simple method to efficiently find solar eclipses, designed to be run on a smartphone. On most smartphones, it can predict the next solar eclipse in under 1 second with accuracy matching posted eclipse times. This method is used in the Trail Sense application.
 
 ## Background
 
@@ -36,46 +36,32 @@ The solar eclipse prediction algorithm used by Trail Sense is composed of two pa
 1. Find the next time an eclipse is happening
 2. Find the start, peak, and end of the eclipse
 
-This article only covers the algorithm used to search for the next solar eclipse. Details on how to determine the following are omitted, but can be found in astronomical algorithms books. You will need to ensure the algorithm chosen can accurately calculate the position of the sun and moon from a given location. See the references section for sources:
+This article only covers the algorithm used to search for the next solar eclipse at a given location. Details on how to determine the following are omitted, but can be found in astronomical algorithms books. You will need to ensure the algorithm chosen can accurately calculate the position of the sun and moon from a given location. See the references section for sources:
 
 - Positions of the sun and moon [1]
-- Rise and set times of the sun and moon [1]
-- Moon phase [1]
+- Calculation of the next potential solar eclipse (global) [1]
 - Calculation of the angular distance between the sun and moon [[2](https://doi.org/10.11578/dc.20190909.1)]
 - Calculation of the magnitude/obscuration of the eclipse [[2](https://doi.org/10.11578/dc.20190909.1)]
 
 ## Find the next time an eclipse is happening
 This will find the next time that an eclipse is occurring. It does not find the start, peak, and end of the eclipse, but the time found here will have a visible eclipse. The second step will work to find the start, peak, and end of the eclipse.
 
-Search from the current time to the maximum search duration. The step size is determined as follows, in this order:
-
-- **Moon phase is not new**: Time until the next new moon (approximate)
-- **Sun is set**: Time until the next sunrise
-- **Moon is set**: Time until the next moonrise
-- **Angular distance is greater than 1.5 degrees**: The same number of hours as the angular distance, rounded down to the nearest hour, with a minimum of 1 hour and a maximum of 12 hours
-- **No eclipse (magnitude = 0)**: 15 minutes
-
-Otherwise, an eclipse has been found and the current time is returned.
+For each potential solar eclipse (calculated using the algorithm described by Meeus [1]) until the maximum search duration, we need to check if it is visible at the location provided. This can be done by searching around the calculated eclipse peak time for visibility.
 
 The following pseudo-code shows how to find the next eclipse time.
 
-<code>start = now
-while start < maxDuration:
-    if moonPhase != New:
-        start += timeUntilNextNewMoon(moonPhase)
-        continue
-    if sun is set:
-        start += timeUntilNextSunrise(start)
-        continue
-    if moon is set:
-        start += timeUntilNextMoonrise(start)
-        continue
-    if angularDistance > 1.5:
-        start += hours(constrain(floor(angularDistance), 1, 12))
-        continue
-    if magnitude > 0:
-        return start
-    start += minutes(15)
+<code>time = now
+while time < maxDuration:
+    peak = getNextEclipsePeak(time)
+    for searchTime in [peak - 4 hours, peak + 4 hours]:
+        if sun is set:
+            continue
+        if moon is set:
+            continue
+        if magnitude > 0:
+            return searchTime
+        searchTime += minutes(15)
+    time = peak + 10 days
 return NONE
 </code>
 
@@ -137,23 +123,9 @@ return start, peak, end
 ## Results
 This algorithm has proven to be both accurate and fast. As mentioned, most searches complete within a second and the results match the NASA eclipse catalog.
 
-For example, if the search was started on 2023-10-15, it would find the eclipse on 2024-04-08 in only 127 iterations (across 176 days). Note, that in the diagram the majority of iterations occur around the date of the new moon.
+For example, if the search was started on 2023-10-15, it would find the eclipse on 2024-04-08 in only 7 iterations (across 176 days).
 
-![Eclipse Search](/assets/images/research/solar-eclipse-frequency.png)
-
-Further improvements could potentially be made to check for more conditions in which an eclipse cannot occur, especially around the time of the new moon.
-
-Based on my analysis, the majority of iterations run into one of the following conditions:
-
-- Too far apart (angular distance check)
-- Sun is set
-- Moon is set
-
-Further research should focus on improving the heuristics used to determine the step size around those conditions.
-
-In addition, I believe more research is needed to see if an algorithm, such as binary search, can be used to find the eclipse start, peak, and end times faster.
-
-Finally, there is likely to be a mathematical way to determine the time of an eclipse, similar to the way lunar eclipse times are calculated. In my research, I was unable to find a published algorithm for this though - most resources found in my research just mentioned that solar eclipse prediction is a complex problem.
+I believe more research is needed to see if an algorithm, such as binary search, can be used to find the eclipse start, peak, and end times faster.
 
 ## References
 1. Meeus, J. (1998, January 1). Astronomical Algorithms.
