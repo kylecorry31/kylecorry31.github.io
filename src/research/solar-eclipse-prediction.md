@@ -76,56 +76,38 @@ If the duration of the eclipse is smaller than the minimum duration, return no e
 
 The following pseudo-code shows how to find the start, peak, and end times.
 
-<code>start = eclipseTime
-minTime = eclipseTime - 12 hours
-end = eclipseTime
+The following pseudo-code returns true when the eclipse is visible:
+<code>function isEclipseVisible(time):
+    if sun is set:
+        return false
+    if moon is set:
+        return false
+    if magnitude > 0:
+        return true
+    return false
+</code>
+
+The following pseudo-code shows how to find the start, peak, and end times. For efficiency, I used binary search, but any search algorithm can be used. The following assumptions can be made:
+
+- Eclipse is not visible at minTime or maxTime
+- Eclipse is visible at eclipseTime
+
+<code>minTime = eclipseTime - 12 hours
 maxTime = eclipseTime + 12 hours
-peak = eclipseTime
-peakMagnitude = 0
-</code>
-
-<code>// Find the start
-searchTime = start
-while searchTime > minTime:
-    if sun is set:
-        break
-    if moon is set:
-        break
-    if magnitude is 0:
-        break
-    if magnitude > peakMagnitude:
-        peakMagnitude = magnitude
-        peak = searchTime
-    start = searchTime
-    searchTime = searchTime - minutes(15)
-</code>
-
-<code>// Find the end
-searchTime = end
-while searchTime < maxTime:
-    if sun is set:
-        break
-    if moon is set:
-        break
-    if magnitude is 0:
-        break
-    if magnitude > peakMagnitude:
-        peakMagnitude = magnitude
-        peak = searchTime
-    end = searchTime
-    searchTime = searchTime + minutes(15)
-</code>
-<code>if end - start < minDuration:
-    return NONE
-return start, peak, end
+// Use binary search to find when it goes from false to true
+start = binarySearchRising(minTime, eclipseTime, precision, (time) => isEclipseVisible(time))
+// Use binary search to find when it goes from true to false
+end = binarySearchFalling(eclipseTime, maxTime, precision, (time) => isEclipseVisible(time))
+// Use binary search to find the peak magnitude
+peak = binarySearchPeak(start, end, precision, (time) => magnitude(time))
 </code>
 
 ## Results
 This algorithm has proven to be both accurate and fast. As mentioned, most searches complete within a second and the results match the NASA eclipse catalog.
 
-For example, if the search was started on 2023-10-15, it would find the eclipse on 2024-04-08 with a precision of 1 minute in 150 iterations (across 176 days).
+For example, if the search was started on 2023-10-15, it would find the eclipse on 2024-04-08 with a precision of 1 minute in 110 iterations (across 176 days).
 
-I believe more research is needed to see if an algorithm, such as binary search, can be used to find the eclipse start, peak, and end times faster. In my testing, the vast majority of iterations are being spent searching for the start and end times.
+Most of the iterations were spent searching for the start, peak, and end of the eclipse. Efforts to improve this algorithm should be focused around that.
 
 ## References
 1. Meeus, J. (1998, January 1). Astronomical Algorithms.
