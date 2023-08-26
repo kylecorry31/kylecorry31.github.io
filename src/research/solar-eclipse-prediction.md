@@ -46,7 +46,7 @@ This article only covers the algorithm used to search for the next solar eclipse
 ## Find the next time an eclipse is happening
 This will find the next time that an eclipse is occurring. It does not find the start, peak, and end of the eclipse, but the time found here will have a visible eclipse. The second step will work to find the start, peak, and end of the eclipse.
 
-For each potential solar eclipse (calculated using the algorithm described by Meeus [1]) until the maximum search duration, we need to check if it is visible at the location provided. This can be done by searching around the calculated eclipse peak time for visibility.
+For each potential solar eclipse (calculated using the algorithm described by Meeus [1]), we need to check if it is visible at the location provided. This can be done by searching around the calculated eclipse peak time for visibility.
 
 The following pseudo-code shows how to find the next eclipse time.
 
