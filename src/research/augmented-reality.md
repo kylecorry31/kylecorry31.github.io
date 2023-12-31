@@ -5,7 +5,7 @@ date: 2023-12-31
 category: trail-sense
 ---
 
-Augmented Reality (AR) is a technology that allows for the overlay of digital content on top of the real world. It can be used in a variety of applications, such as navigation, astronomy, and gaming. In this article, I'll cover the system used in Trail Sense, which uses built-in Android features to create an AR experience without the need to external libraries such as ARCore.
+Augmented Reality (AR) is a technology that allows for the overlay of digital content on top of the real world. It can be used in a variety of applications, such as navigation, astronomy, and gaming. In this article, I'll cover the system used in Trail Sense, which uses built-in Android features to create an AR experience without the need for external libraries such as ARCore.
 
 ## Background
 
