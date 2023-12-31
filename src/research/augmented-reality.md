@@ -34,7 +34,7 @@ It is trivial to convert between these two Cartesian coordinate systems on Andro
 The camera intrinsics are the focal length (fx, fy) and principal point (cx, cy) of the camera. The focal length is the distance between the camera and the image plane. The principal point is the center of the image plane [[3](https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics)].
 
 ### Perspective Projection
-A perspective projection is a projection that maps a point in 3D space to a point on a 2D plane. Points farther away from the camera appear smaller than points closer to the camera, and lines that are parallel in 3D space appear to converge in the 2D plane [[4](https://www.youtube.com/watch?v=2XM2Rb2pfyQ)].
+A perspective projection is a projection that maps a point in 3D space to a point on a 2D plane. Points farther away from the camera appear smaller than points closer to the camera, and lines that are parallel in 3D space appear to converge in the 2D plane [[4](https://www.youtube.com/watch?v=qByYk6JggQU)].
 
 ### Device Orientation
 The orientation of the device can be obtained using the sensor fusion of the accelerometer, magnetometer, and gyroscope (optional). It can be represented as Euler angles (roll, pitch, yaw), a quaternion/rotation vector, or a rotation matrix. Euler angles are the most intuitive but are prone to gimbal lock, so it is best to represent the orientation as a quaternion or rotation matrix [[1](https://developer.android.com/develop/sensors-and-location/sensors/sensors_overview)].
@@ -119,7 +119,7 @@ The following steps outline the process used by Trail Sense to create an augment
     z = world[1]
     ```
 
-9. Calculate the screen position of the point using a perspective projection [[4](https://www.youtube.com/watch?v=2XM2Rb2pfyQ)]:
+9. Calculate the screen position of the point using a perspective projection [[4](https://www.youtube.com/watch?v=qByYk6JggQU)]:
     
     ```
     if (z <= 0) {
@@ -148,4 +148,4 @@ The Augmented Reality tool is still a work in progress in Trail Sense, but here 
 1. Android Developers. (2023, December 18). Sensors Overview. Retrieved from [https://developer.android.com/develop/sensors-and-location/sensors/sensors_overview](https://developer.android.com/develop/sensors-and-location/sensors/sensors_overview)
 2. Android Developers. (2023, April 12). SensorManager. Retrieved from [https://developer.android.com/reference/android/hardware/SensorManager](https://developer.android.com/reference/android/hardware/SensorManager)
 3. Android Developers. (2023, October 24). CameraCharacteristics. Retrieved from [https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics](https://developer.android.com/reference/android/hardware/camera2/CameraCharacteristics)
-4. Nayar, S. & First Principles of Computer Vision. (2021, April 4). Intrinsic and Extrinsic Matrices | Camera Calibration. Retrieved from [https://www.youtube.com/watch?v=2XM2Rb2pfyQ](https://www.youtube.com/watch?v=2XM2Rb2pfyQ)
+4. Nayar, S. & First Principles of Computer Vision. (2021, April 18). Linear Camera Model | Camera Calibration. Retrieved from [https://www.youtube.com/watch?v=qByYk6JggQU](https://www.youtube.com/watch?v=qByYk6JggQU)
