@@ -16,6 +16,8 @@ The spherical coordinate system uses azimuth (angle), elevation (angle), and rad
 
 The geographic coordinate system uses latitude (angle), longitude (angle), and elevation (distance) to describe a point on the surface of the Earth. It is a variation of the spherical coordinate system. In this article, the elevation will be relative to mean sea level. If you know the user's location, you can convert a point in this system to a spherical coordinate system centered at the user's location.
 
+The East-North-Up coordinate system uses X, Y, and Z axes to describe a point in 3D space. The origin is the point (0, 0, 0), and the axes are perpendicular to each other. The X axis is positive towards the East, the Y axis is positive towards the North, and the Z axis is positive upwards. It is a variation of the Cartesian coordinate system.
+
 On Android, sensors report values using a Cartesian coordinate system with the axes [[1](https://developer.android.com/develop/sensors-and-location/sensors/sensors_overview)]:
 
 - X: Positive to the right
@@ -90,7 +92,7 @@ The following steps outline the process used by Trail Sense to create an augment
     Matrix.rotateM(rotationMatrix, 0, declination, 0f, 0f, 1f)
     ```
 
-7. Convert the point from spherical to cartesian. All spherical coordinates should be relative to True North. You can use the Haversine or Vincenty formulas (or similar) to calculate the distance/bearing between two points on the surface of the Earth.
+7. Convert the point from spherical to cartesian (East-North-Up). All spherical coordinates should be relative to True North. You can use the Haversine or Vincenty formulas (or similar) to calculate the distance/bearing between two points on the surface of the Earth.
 
     To convert a geographic coordinate to a spherical coordinate, you can use the following:
     
@@ -103,15 +105,15 @@ The following steps outline the process used by Trail Sense to create an augment
     To convert a spherical coordinate to a cartesian coordinate, you can use the following:
     
     ```
-    val x = radius * cos(Math.toRadians(elevation)) * sin(Math.toRadians(azimuth))
-    val y = radius * cos(Math.toRadians(elevation)) * cos(Math.toRadians(azimuth))
-    val z = radius * sin(Math.toRadians(elevation))
+    val x = radius * cos(Math.toRadians(elevation)) * sin(Math.toRadians(azimuth)) // East
+    val y = radius * cos(Math.toRadians(elevation)) * cos(Math.toRadians(azimuth)) // North
+    val z = radius * sin(Math.toRadians(elevation)) // Up
     ```
 
 8. Rotate the point by the rotation matrix to adjust for the device orientation:
     
     ```
-    val world = floatArrayOf(x, y, z, 1f)
+    val world = floatArrayOf(x, y, z, 1f) // East-North-Up
     Matrix.multiplyMV(world, 0, rotationMatrix, 0, world, 0)
     // The point ends up in the sensor coordinate system, so we need to swap y and z to get it into the AR coordinate system
     x = world[0]
