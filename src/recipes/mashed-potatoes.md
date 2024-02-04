@@ -6,8 +6,8 @@ category: side
 ## Ingredients
 
 - 4 russet potatoes
-- 2 tbsp butter
-- 1/2 cup almond milk
+- 1 stick of butter
+- 1/2 cup milk
 - 1/2 tsp salt
 - 1/2 tsp pepper
 
