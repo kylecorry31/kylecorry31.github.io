@@ -14,7 +14,7 @@ category: bread
 - 2 tbsp Caraway seeds
 - 2 cup raisins
 - 2 cup almond milk
-- 2 flax eggs
+- 2 eggs (substitute with flax eggs)
 
 ## Directions
 

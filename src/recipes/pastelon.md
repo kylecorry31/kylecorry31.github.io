@@ -15,7 +15,7 @@ category: dinner
 - 1/2 tsp coriander
 - 1/2 tsp black pepper
 - 2 diced jalapenos
-- 12 oz Impossible burger meat
+- 1 lb ground beef or turkey
 - 1 cup cheddar cheese
 - 2 eggs
 - 4 ripe plantains
@@ -24,7 +24,7 @@ category: dinner
 
 ## Directions
 1. Saute onions and peppers in oil
-2. Add impossible burger meat and seasonings
+2. Add ground meat and seasonings
 3. Add chopped cilantro and tomatoes and saute until everything is cooked, then remove from heat
 4. Slice plantains lengthwise into 4 strips each
 5. Fry plantains in oil until golden brown
