@@ -3,16 +3,17 @@
 <section id="posts">
     <div class="container">
         <h2 class="mb-2">Recipes</h2>
-        <div class="recipes row">
+        <div class="recipes">
             {{#collections.recipes.categories}}
             <h3 class="recipe-category">{{ name }}</h3>
             {{#items}}
-            <div class="col-md-12 recipe">
-                <a href="{{ url }}" class="stretched-link"></a>
-                <h3>
-                    {{ title }}
-                </h3>
-            </div>
+            <a href="{{ url }}" class="hidden-link">
+                <div class="recipe">
+                    <p class="m-0">
+                        {{ title }}
+                    </p>
+                </div>
+            </a>
             {{/items}}
             {{/collections.recipes.categories}}
         </div>

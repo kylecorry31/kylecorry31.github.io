@@ -1,17 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
-
 body,
 html {
     margin: 0;
     padding: 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: Verdana, sans-serif;
     background: white;
     overflow-wrap: break-word;
-}
-
-@font-face {
-    font-family: "2ProngTree";
-    src: url("../fonts/2ProngTree.TTF");
 }
 
 code {
@@ -20,7 +13,7 @@ code {
     display: block;
     padding: 16px;
     color: white;
-    font-family: consolas;
+    font-family: consolas, monospace;
     border-radius: 4px;
     margin-top: 16px;
     margin-bottom: 16px;
@@ -39,8 +32,8 @@ code.inline-code {
 #title,
 #title a {
     text-align: center;
-    text-transform: capitalize;
-    font-family: "2ProngTree", sans-serif;
+    text-transform: uppercase;
+    font-family: consolas, monospace;
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
@@ -55,12 +48,19 @@ code.inline-code {
     color: rgb(100, 100, 100);
 }
 
-.inline {
-    display: inline;
+.content a,
+.link {
+    border-width: 0 0 1px 0;
+    border-style: none none solid none;
+    border-color: #c0c0c0;
+    text-decoration: none;
+    color: rgb(40, 40, 40);
 }
 
-.hidden {
-    display: none;
+.content a:hover,
+.link:hover {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 h1 {
@@ -97,6 +97,11 @@ h3 {
     color: rgba(28, 28, 28, 0.8);
 }
 
+small {
+    font-size: 80%;
+    font-weight: 400;
+}
+
 li,
 p {
     font-size: 15px;
@@ -108,78 +113,14 @@ p {
     text-rendering: optimizeLegibility;
 }
 
-.category {
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 0px 4px;
-    font-size: 10px;
-    color: white;
-    text-transform: uppercase;
-    border-radius: 2px;
-    margin: 0 4px 0 0;
-}
-
-.category-recipe {
-    color: white;
-    background-color: #9c27b0;
-}
-
-.category-app {
-    color: white;
-    background-color: #4caf50;
-}
-
-.category-maker {
-    color: white;
-    background-color: #ff9800;
-}
-
-.category-research {
-    color: white;
-    background-color: #3700b3;
-}
-
-.category-subnautica {
-    color: black;
-    background-color: #a0caff;
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 img {
     width: 100%;
     height: auto;
-}
-
-.content a,
-.link {
-    border-width: 0 0 1px 0;
-    border-style: none none solid none;
-    border-color: #c0c0c0;
-    text-decoration: none;
-    color: rgb(40, 40, 40);
-}
-
-.content a:hover,
-.link:hover {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.6);
-}
-
-.profile {
-    width: 200px;
-    height: auto;
-    max-width: 100%;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.container-sm {
-    max-width: 720px;
-}
-
-strong {
-    font-weight: bold;
 }
 
 .app-badge {
@@ -226,8 +167,44 @@ strong {
     border-top: 1px solid #f2f2f2;
     margin-top: 24px;
     text-transform: capitalize;
+    box-sizing: border-box;
 }
 
 polaroid-photo {
     color: black !important;
+}
+
+.container {
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1100px;
+    box-sizing: border-box;
+}
+
+.container-sm {
+    width: 720px;
+}
+
+.mb-2 {
+    margin-bottom: .5rem;
+}
+
+.hidden-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mr-5 {
+    margin-right: 3rem;
+}
+
+.m-0 {
+    margin: 0;
 }
