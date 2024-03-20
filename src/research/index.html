@@ -5,12 +5,14 @@
         <h2 class="mb-2">Research</h2>
         <div class="recipes">
             {{#collections.research.items}}
+            {{^draft}}
             <a href="{{ url }}" class="hidden-link">
                 <div class="recipe">
                     <h3>{{ title }}&nbsp;&nbsp;&nbsp;&nbsp;<small>{{ date }}</small></h3>
                     <p>{{ summary }}</p>
                 </div>
             </a>
+            {{/draft}}
             {{/collections.research.items}}
         </div>
     </div>
