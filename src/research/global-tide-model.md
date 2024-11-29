@@ -13,27 +13,26 @@ In this article, I’ll cover the system used in Trail Sense that enables offlin
 ## Background
 
 ### Tidal harmonics
-Tides can be represented by "harmonic constituents," which are a series of waves defined by their amplitudes, phases, and speeds. By combining these waves, we can generate a final waveform that represents water level changes. From this waveform, the times of high and low tide can be determined as the local extrema.
+Tides can be represented by "harmonic constituents," which are a series of waves defined by their amplitudes, phases, and speeds. By combining these waves, we can generate a final waveform that represents the water level. The times of high and low tide can be determined as the local extrema of this waveform.
 
-Harmonics correspond to real-world factors such as the position of the Earth relative to the Sun and Moon, as well as shallow-water interactions. There are dozens of official tidal harmonics, but the EOT20 dataset uses 17 primary harmonics, which account for the majority of tidal motion.
+Harmonic constituents correspond to real-world factors such as the position of the Earth relative to the Sun and Moon, as well as shallow-water interactions. Constituents are defined by a constant speed, which represents the frequency of the associated wave. For example, the S2 (solar semidiurnal) speed is 30 degrees / hour, which corresponds to a 12 hour period (half a day). The phase and amplitude of each of these constituents varies by location and are calculated through frequency analysis of water level.
 
-To transform harmonics into water levels, we need to know the position of each wave at a reference time. This position can be calculated using equilibrium arguments (V) and nodal modulation factors (u and f). These factors are derived from the positions of the Sun and Moon relative to the Earth on a given date (typically the start of a year). Many libraries can precompute these constants.
+Before the tidal harmonics can be transformed into water levels, a correction/reference for each constituent wave needs to be calculated. These factors let us choose a reference start date (say January 1, 2025 0h UTC) and they account for changes to the Sun-Earth-Moon system over time. Once we choose a start date, we can precompute and embed these as constants.
 
 For each constituent, the following information is required:
 
-- **Speed**: Constant for each constituent.
-- **Amplitude**: Varies by location for each constituent.
-- **Phase**: Varies by location for each constituent.
-- **V**: Constant for each constituent.
-- **u**: Constant for each constituent.
-- **f**: Constant for each constituent.
+- **Speed**: The definition of the constituent (constant).
+- **Amplitude**: The (half) height of the wave (varies by location).
+- **Phase**: The phase shift (offset) of the wave (varies by location).
+- **V + u**: The phase correction of the constituent when t = 0, used to specify a start date (varies over time, can be precalculated as a constant with decent accuracy).
+- **f**: The amplitude correction of the wave at a given time (varies over time, can be precalculated as a constant with decent accuracy).
 
 Finally, the water level can be calculated as follows:
 
 <code>t = (currentTime - jan_1_2025_0utc).seconds
 level = 0
-for h in harmonics
-  level += h.f * h.amplitude * cos(h.speed * t + h.u + h.V - h.phase)</code>
+for c in constituents
+  level += c.f * c.amplitude * cos(c.speed * t + c.V + c.u - c.phase)</code>
 
 ## Solution
 
@@ -44,7 +43,7 @@ for h in harmonics
 4. Use the land mask to remove excess ocean tide data from the EOT20 tide model.  
 5. Resize the resulting image to 720x360 (2 pixels per degree of latitude/longitude).  
 6. Remap the amplitudes and phases to values between 0 and 255, recording the maximum amplitude for each factor. Amplitudes over 500 cm are handled separately to retain sufficient resolution (these are rare).  
-7. Remove all land pixels (as marked in the EOT20 dataset) and resize the data to a width of 250. This results in compressed images for both amplitude and phase, albeit with a loss of spatial information.  
+7. Remove all land and open ocean pixels (leaving just the coastline) and resize the resulting array to have a width of 250 pixels. This results in compressed images for both amplitude and phase, albeit with a loss of spatial information.  
 8. To recover spatial information, replace each pixel in the 720x360 image with the X (red) and Y (green) coordinates of its position in the compressed image. Use a 1-based indexing system, where RGB = 0 indicates irrelevant pixels. Export this as a lossless WebP file.  
 9. Store each compressed amplitude image in the red, green, and blue channels of a lossless WebP file. Repeat this for the compressed phase images.  
 
