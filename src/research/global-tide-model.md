@@ -5,7 +5,7 @@ date: 2024-11-29
 category: trail-sense
 ---
 
-In this article, I’ll cover the system used in Trail Sense that enables offline tide prediction. This system is less than 300 KB and allows for tide prediction at any coastal location.
+In this article, I’ll cover the system used in Trail Sense that enables offline tide prediction at any coastal location.
 
 ![M2 harmonic amplitude](/assets/images/research/global-tides-m2.webp)
 *The M2 harmonic constituent amplitude from EOT20*
