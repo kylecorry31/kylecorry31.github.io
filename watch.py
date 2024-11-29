@@ -15,7 +15,7 @@ class Watcher:
 
   def run(self):
     event_handler = Handler()
-    subprocess.call(["py", "build.py"])
+    subprocess.call(["python", "build.py"])
     self.observer.schedule(event_handler, self.DIRECTORY_TO_WATCH, recursive=True)
     self.observer.start()
     print("Watching for changes in " + self.DIRECTORY_TO_WATCH)
@@ -31,7 +31,7 @@ class Handler(FileSystemEventHandler):
   
   def run_build():
     print("Starting build")
-    subprocess.call(["py", "build.py"])
+    subprocess.call(["python", "build.py"])
 
   @staticmethod
   def on_any_event(event):
@@ -45,6 +45,6 @@ class Handler(FileSystemEventHandler):
         Handler.run_build()
 
 if __name__ == "__main__":
-  subprocess.Popen(["py", "-m", "http.server", "8000", "--directory", "_site"])
+  subprocess.Popen(["python", "-m", "http.server", "8000", "--directory", "_site"])
   w = Watcher() 
   w.run()
