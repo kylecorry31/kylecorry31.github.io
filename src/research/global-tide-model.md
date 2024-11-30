@@ -60,12 +60,12 @@ Y = pixel.green - 1</code>
 5. For each amplitude and phase file, load the X, Y pixel. Map it from [0, 255] to [0, max amplitude for constituent] and [-180, 180] respectively. You now have the harmonic constituents for the location, which can be plugged into the tidal harmonic formula to obtain the water level and extremas can be located to get the time of high/low tide.
 
 ## Results
-Using a test dataset of 17 locations (covering all 7 continents and 5 oceans) and 20 days (spanning all 4 main phases of the Moon), the following results were obtained:
+Using a test dataset of 27 locations (covering all 7 continents and 5 oceans) and 30 days (spanning all 4 main phases of the Moon), the following results were obtained:
 
-- **Average error**: 15 minutes  
-- **90% quantile error**: 40 minutes  
+- **Average error**: 12 minutes  
+- **90% quantile error**: 44 minutes  
 - **Minimum error**: 0 minutes  
-- **Maximum error**: 67 minutes  
+- **Maximum error**: 87 minutes  
 
 This level of accuracy is sufficient for my use case. However, increasing the resolution of the tide images would reduce errors at the cost of a larger storage footprint.
 
