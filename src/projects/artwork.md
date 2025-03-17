@@ -1,5 +1,6 @@
 ---
 title: "Artwork"
+image: /assets/images/artwork/crab.webp
 ---
 
 ## Drawings
