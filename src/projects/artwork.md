@@ -2,7 +2,7 @@
 title: "Artwork"
 ---
 
-## Clouds
+## Drawings
 
 <div class="grid-2x2">
     <div>
@@ -45,11 +45,6 @@ title: "Artwork"
         <img src="/assets/images/artwork/stratus.webp" alt="Stratus">
         <p>Stratus</p>
     </div>
-</div>
-
-## Wildlife
-
-<div class="grid-2x2">
     <div>
         <img src="/assets/images/artwork/ant.webp" alt="Ant">
         <p>Ant</p>
@@ -102,20 +97,10 @@ title: "Artwork"
         <img src="/assets/images/artwork/tinder_fungus.webp" alt="Tinder Fungus">
         <p>Tinder Fungus</p>
     </div>
-</div>
-
-## Rocks and Minerals
-
-<div class="grid-2x2">
     <div>
         <img src="/assets/images/artwork/chert.webp" alt="Chert">
         <p>Chert</p>
     </div>
-</div>
-
-## Survival
-
-<div class="grid-2x2">
     <div>
         <img src="/assets/images/artwork/gorge_hook.webp" alt="Gorge Hook">
         <p>Gorge Hook</p>
@@ -124,13 +109,56 @@ title: "Artwork"
         <img src="/assets/images/artwork/sunset_hand.webp" alt="Sunset Estimation">
         <p>Sunset Estimation</p>
     </div>
-</div>
-
-## Knots
-
-<div class="grid-2x2">
     <div>
         <img src="/assets/images/artwork/knot_overhand.webp" alt="Overhand Knot">
         <p>Overhand Knot</p>
+    </div>
+</div>
+
+## Photos
+<div class="grid-2x2">
+    <div>
+        <img src="/assets/images/photos/aurora-1.webp" alt="Aurora 1">
+        <p>Aurora 1</p>
+    </div>
+    <div>
+        <img src="/assets/images/photos/aurora-2.webp" alt="Aurora 2">
+        <p>Aurora 2</p>
+    </div>
+    <div>
+        <img src="/assets/images/photos/aurora-3.webp" alt="Aurora 3">
+        <p>Aurora 3</p>
+    </div>
+    <div>
+        <img src="/assets/images/photos/aurora-4.webp" alt="Aurora 4">
+        <p>Aurora 4</p>
+    </div>
+    <div>
+        <img src="/assets/images/photos/aurora-5.webp" alt="Aurora 5">
+        <p>Aurora 5</p>
+    </div>
+    <div>
+        <img src="/assets/images/photos/comet-2021-a1.webp" alt="Comet 2021 A1">
+        <p>Comet 2021 A1</p>
+    </div>
+    <div>
+        <img src="/assets/images/photos/eclipse-1.webp" alt="Eclipse 1">
+        <p>Eclipse 1</p>
+    </div>
+    <div>
+        <img src="/assets/images/photos/eclipse-2.webp" alt="Eclipse 2">
+        <p>Eclipse 2</p>
+    </div>
+    <div>
+        <img src="/assets/images/photos/eclipse-3.webp" alt="Eclipse 3">
+        <p>Eclipse 3</p>
+    </div>
+    <div>
+        <img src="/assets/images/photos/eclipse-4.webp" alt="Eclipse 4">
+        <p>Eclipse 4</p>
+    </div>
+    <div>
+        <img src="/assets/images/photos/mt-washington.webp" alt="Mt. Washington">
+        <p>Mt. Washington</p>
     </div>
 </div>
