@@ -208,3 +208,10 @@ polaroid-photo {
 .m-0 {
     margin: 0;
 }
+
+.grid-2x2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+    row-gap: 32px;
+}
