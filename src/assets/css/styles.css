@@ -216,4 +216,5 @@ polaroid-photo {
     row-gap: 32px;
     justify-items: center;
     align-items: center;
+    text-align: center;
 }
