@@ -55,8 +55,20 @@ image: /assets/images/artwork/crab.webp
         <p>Crab</p>
     </div>
     <div>
+        <img src="/assets/images/artwork/crayfish.webp" alt="Crayfish">
+        <p>Crayfish</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/cricket.webp" alt="Cricket">
+        <p>Cricket</p>
+    </div>
+    <div>
         <img src="/assets/images/artwork/earthworm.webp" alt="Earthworm">
         <p>Earthworm</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/grasshopper.webp" alt="Grasshopper">
+        <p>Grasshopper</p>
     </div>
     <div>
         <img src="/assets/images/artwork/grub.webp" alt="Grub">
@@ -77,6 +89,18 @@ image: /assets/images/artwork/crab.webp
     <div>
         <img src="/assets/images/artwork/periwinkle.webp" alt="Periwinkle">
         <p>Periwinkle</p>
+    </div>
+        <div>
+        <img src="/assets/images/artwork/black_bass.webp" alt="Black Bass">
+        <p>Black Bass</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/carp.webp" alt="Carp">
+        <p>Carp</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/sunfish.webp" alt="Sunfish">
+        <p>Sunfish</p>
     </div>
     <div>
         <img src="/assets/images/artwork/chaga.webp" alt="Chaga">
@@ -111,8 +135,24 @@ image: /assets/images/artwork/crab.webp
         <p>Sunset Estimation</p>
     </div>
     <div>
+        <img src="/assets/images/artwork/jam_knot.webp" alt="Jam Knot">
+        <p>Jam Knot</p>
+    </div>
+    <div>
         <img src="/assets/images/artwork/knot_overhand.webp" alt="Overhand Knot">
         <p>Overhand Knot</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/map_scale.webp" alt="Map Scale">
+        <p>Map Scale</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/northern_stars.webp" alt="Northern Stars">
+        <p>Northern Stars</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/southern_stars.webp" alt="Southern Stars">
+        <p>Southern Stars</p>
     </div>
 </div>
 
