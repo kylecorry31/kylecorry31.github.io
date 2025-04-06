@@ -103,6 +103,10 @@ image: /assets/images/artwork/crab.webp
         <p>Sunfish</p>
     </div>
     <div>
+        <img src="/assets/images/artwork/bolete.webp" alt="Bolete">
+        <p>Bolete</p>
+    </div>
+    <div>
         <img src="/assets/images/artwork/chaga.webp" alt="Chaga">
         <p>Chaga</p>
     </div>
