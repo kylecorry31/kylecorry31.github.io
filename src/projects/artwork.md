@@ -103,6 +103,14 @@ image: /assets/images/artwork/crab.webp
         <p>Sunfish</p>
     </div>
     <div>
+        <img src="/assets/images/artwork/bamboo.webp" alt="Bamboo">
+        <p>Bamboo</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/brambles.webp" alt="Brambles">
+        <p>Brambles</p>
+    </div>
+    <div>
         <img src="/assets/images/artwork/bolete.webp" alt="Bolete">
         <p>Bolete</p>
     </div>
@@ -157,6 +165,86 @@ image: /assets/images/artwork/crab.webp
     <div>
         <img src="/assets/images/artwork/southern_stars.webp" alt="Southern Stars">
         <p>Southern Stars</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/bushcraft_compass.webp" alt="Bushcraft Compass">
+        <p>Bushcraft Compass</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/cattail.webp" alt="Cattail">
+        <p>Cattail</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/chicken_of_the_woods.webp" alt="Chicken of the Woods">
+        <p>Chicken of the Woods</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/common_plantain.webp" alt="Common Plantain">
+        <p>Common Plantain</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/contours.webp" alt="Contours">
+        <p>Contours</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/dandelion.webp" alt="Dandelion">
+        <p>Dandelion</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/direction_shadow.webp" alt="Direction Shadow">
+        <p>Direction Shadow</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/direction_watch.webp" alt="Direction Watch">
+        <p>Direction Watch</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/dock.webp" alt="Dock">
+        <p>Dock</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/figure_4_trap.webp" alt="Figure 4 Trap">
+        <p>Figure 4 Trap</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/ground_to_air.webp" alt="Ground To Air Signal">
+        <p>Ground To Air Signal</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/grouse.webp" alt="Grouse">
+        <p>Grouse</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/kelp.webp" alt="Kelp">
+        <p>Kelp</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/knot_fishermans.webp" alt="Fisherman's Knot">
+        <p>Fisherman's Knot</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/mouse.webp" alt="Mouse">
+        <p>Mouse</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/oyster_mushroom.webp" alt="Oyster Mushroom">
+        <p>Oyster Mushroom</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/rabbit.webp" alt="Rabbit">
+        <p>Rabbit</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/stinging_nettle.webp" alt="Stinging Nettle">
+        <p>Stinging Nettle</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/tides.webp" alt="Tides">
+        <p>Tides</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/trail_blazes.webp" alt="Trail Blazes">
+        <p>Trail Blazes</p>
     </div>
 </div>
 
