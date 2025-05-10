@@ -4,7 +4,6 @@ image: /assets/images/artwork/crab.webp
 ---
 
 ## Drawings
-
 <div class="grid-2x2">
     <div>
         <img src="/assets/images/artwork/altocumulus.webp" alt="Altocumulus">
@@ -13,6 +12,58 @@ image: /assets/images/artwork/crab.webp
     <div>
         <img src="/assets/images/artwork/altostratus.webp" alt="Altostratus">
         <p>Altostratus</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/ant.webp" alt="Ant">
+        <p>Ant</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/back_stitch.webp" alt="Back Stitch">
+        <p>Back Stitch</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/bamboo.webp" alt="Bamboo">
+        <p>Bamboo</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/bear_bag.webp" alt="Bear Bag">
+        <p>Bear Bag</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/black_bass.webp" alt="Black Bass">
+        <p>Black Bass</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/bolete.webp" alt="Bolete">
+        <p>Bolete</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/brambles.webp" alt="Brambles">
+        <p>Brambles</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/bushcraft_compass.webp" alt="Bushcraft Compass">
+        <p>Bushcraft Compass</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/carp.webp" alt="Carp">
+        <p>Carp</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/cattail.webp" alt="Cattail">
+        <p>Cattail</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/chaga.webp" alt="Chaga">
+        <p>Chaga</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/chert.webp" alt="Chert">
+        <p>Chert</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/chicken_of_the_woods.webp" alt="Chicken Of The Woods">
+        <p>Chicken Of The Woods</p>
     </div>
     <div>
         <img src="/assets/images/artwork/cirrocumulus.webp" alt="Cirrocumulus">
@@ -27,28 +78,24 @@ image: /assets/images/artwork/crab.webp
         <p>Cirrus</p>
     </div>
     <div>
-        <img src="/assets/images/artwork/cumulonimbus.webp" alt="Cumulonimbus">
-        <p>Cumulonimbus</p>
+        <img src="/assets/images/artwork/clam.webp" alt="Clam">
+        <p>Clam</p>
     </div>
     <div>
-        <img src="/assets/images/artwork/cumulus.webp" alt="Cumulus">
-        <p>Cumulus</p>
+        <img src="/assets/images/artwork/clouds.webp" alt="Clouds">
+        <p>Clouds</p>
     </div>
     <div>
-        <img src="/assets/images/artwork/nimbostratus.webp" alt="Nimbostratus">
-        <p>Nimbostratus</p>
+        <img src="/assets/images/artwork/clover.webp" alt="Clover">
+        <p>Clover</p>
     </div>
     <div>
-        <img src="/assets/images/artwork/stratocumulus.webp" alt="Stratocumulus">
-        <p>Stratocumulus</p>
+        <img src="/assets/images/artwork/common_plantain.webp" alt="Common Plantain">
+        <p>Common Plantain</p>
     </div>
     <div>
-        <img src="/assets/images/artwork/stratus.webp" alt="Stratus">
-        <p>Stratus</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/ant.webp" alt="Ant">
-        <p>Ant</p>
+        <img src="/assets/images/artwork/contours.webp" alt="Contours">
+        <p>Contours</p>
     </div>
     <div>
         <img src="/assets/images/artwork/crab.webp" alt="Crab">
@@ -63,132 +110,20 @@ image: /assets/images/artwork/crab.webp
         <p>Cricket</p>
     </div>
     <div>
-        <img src="/assets/images/artwork/earthworm.webp" alt="Earthworm">
-        <p>Earthworm</p>
+        <img src="/assets/images/artwork/cumulonimbus.webp" alt="Cumulonimbus">
+        <p>Cumulonimbus</p>
     </div>
     <div>
-        <img src="/assets/images/artwork/grasshopper.webp" alt="Grasshopper">
-        <p>Grasshopper</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/grub.webp" alt="Grub">
-        <p>Grub</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/termite.webp" alt="Termite">
-        <p>Termite</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/clam.webp" alt="Clam">
-        <p>Clam</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/mussel.webp" alt="Mussel">
-        <p>Mussel</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/periwinkle.webp" alt="Periwinkle">
-        <p>Periwinkle</p>
-    </div>
-        <div>
-        <img src="/assets/images/artwork/black_bass.webp" alt="Black Bass">
-        <p>Black Bass</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/carp.webp" alt="Carp">
-        <p>Carp</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/sunfish.webp" alt="Sunfish">
-        <p>Sunfish</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/bamboo.webp" alt="Bamboo">
-        <p>Bamboo</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/brambles.webp" alt="Brambles">
-        <p>Brambles</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/bolete.webp" alt="Bolete">
-        <p>Bolete</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/chaga.webp" alt="Chaga">
-        <p>Chaga</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/clover.webp" alt="Clover">
-        <p>Clover</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/morel.webp" alt="Morel">
-        <p>Morel</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/poison_ivy.webp" alt="Poison Ivy">
-        <p>Poison Ivy</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/tinder_fungus.webp" alt="Tinder Fungus">
-        <p>Tinder Fungus</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/chert.webp" alt="Chert">
-        <p>Chert</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/gorge_hook.webp" alt="Gorge Hook">
-        <p>Gorge Hook</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/sunset_hand.webp" alt="Sunset Estimation">
-        <p>Sunset Estimation</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/jam_knot.webp" alt="Jam Knot">
-        <p>Jam Knot</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/knot_overhand.webp" alt="Overhand Knot">
-        <p>Overhand Knot</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/map_scale.webp" alt="Map Scale">
-        <p>Map Scale</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/northern_stars.webp" alt="Northern Stars">
-        <p>Northern Stars</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/southern_stars.webp" alt="Southern Stars">
-        <p>Southern Stars</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/bushcraft_compass.webp" alt="Bushcraft Compass">
-        <p>Bushcraft Compass</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/cattail.webp" alt="Cattail">
-        <p>Cattail</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/chicken_of_the_woods.webp" alt="Chicken of the Woods">
-        <p>Chicken of the Woods</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/common_plantain.webp" alt="Common Plantain">
-        <p>Common Plantain</p>
-    </div>
-    <div>
-        <img src="/assets/images/artwork/contours.webp" alt="Contours">
-        <p>Contours</p>
+        <img src="/assets/images/artwork/cumulus.webp" alt="Cumulus">
+        <p>Cumulus</p>
     </div>
     <div>
         <img src="/assets/images/artwork/dandelion.webp" alt="Dandelion">
         <p>Dandelion</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/dangerous_plants.webp" alt="Dangerous Plants">
+        <p>Dangerous Plants</p>
     </div>
     <div>
         <img src="/assets/images/artwork/direction_shadow.webp" alt="Direction Shadow">
@@ -203,48 +138,200 @@ image: /assets/images/artwork/crab.webp
         <p>Dock</p>
     </div>
     <div>
+        <img src="/assets/images/artwork/earthworm.webp" alt="Earthworm">
+        <p>Earthworm</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/feather_stick.webp" alt="Feather Stick">
+        <p>Feather Stick</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/ferrorod.webp" alt="Ferrorod">
+        <p>Ferrorod</p>
+    </div>
+    <div>
         <img src="/assets/images/artwork/figure_4_trap.webp" alt="Figure 4 Trap">
         <p>Figure 4 Trap</p>
     </div>
     <div>
-        <img src="/assets/images/artwork/ground_to_air.webp" alt="Ground To Air Signal">
-        <p>Ground To Air Signal</p>
+        <img src="/assets/images/artwork/filter.webp" alt="Filter">
+        <p>Filter</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/fire_magnifying_glass.webp" alt="Fire Magnifying Glass">
+        <p>Fire Magnifying Glass</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/fire_reflector.webp" alt="Fire Reflector">
+        <p>Fire Reflector</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/fire_tepee.webp" alt="Fire Tepee">
+        <p>Fire Tepee</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/fish_trap_bottle.webp" alt="Fish Trap Bottle">
+        <p>Fish Trap Bottle</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/fish_trap_funnel.webp" alt="Fish Trap Funnel">
+        <p>Fish Trap Funnel</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/gorge_hook.webp" alt="Gorge Hook">
+        <p>Gorge Hook</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/grasshopper.webp" alt="Grasshopper">
+        <p>Grasshopper</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/ground_to_air.webp" alt="Ground To Air">
+        <p>Ground To Air</p>
     </div>
     <div>
         <img src="/assets/images/artwork/grouse.webp" alt="Grouse">
         <p>Grouse</p>
     </div>
     <div>
+        <img src="/assets/images/artwork/grub.webp" alt="Grub">
+        <p>Grub</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/improvised_sunglasses.webp" alt="Improvised Sunglasses">
+        <p>Improvised Sunglasses</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/jam_knot.webp" alt="Jam Knot">
+        <p>Jam Knot</p>
+    </div>
+    <div>
         <img src="/assets/images/artwork/kelp.webp" alt="Kelp">
         <p>Kelp</p>
     </div>
     <div>
-        <img src="/assets/images/artwork/knot_fishermans.webp" alt="Fisherman's Knot">
-        <p>Fisherman's Knot</p>
+        <img src="/assets/images/artwork/knot_fishermans.webp" alt="Knot Fishermans">
+        <p>Knot Fishermans</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/knot_overhand.webp" alt="Knot Overhand">
+        <p>Knot Overhand</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/log_bowl.webp" alt="Log Bowl">
+        <p>Log Bowl</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/map_scale.webp" alt="Map Scale">
+        <p>Map Scale</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/morel.webp" alt="Morel">
+        <p>Morel</p>
     </div>
     <div>
         <img src="/assets/images/artwork/mouse.webp" alt="Mouse">
         <p>Mouse</p>
     </div>
     <div>
+        <img src="/assets/images/artwork/mussel.webp" alt="Mussel">
+        <p>Mussel</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/nimbostratus.webp" alt="Nimbostratus">
+        <p>Nimbostratus</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/northern_stars.webp" alt="Northern Stars">
+        <p>Northern Stars</p>
+    </div>
+    <div>
         <img src="/assets/images/artwork/oyster_mushroom.webp" alt="Oyster Mushroom">
         <p>Oyster Mushroom</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/periwinkle.webp" alt="Periwinkle">
+        <p>Periwinkle</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/poison_ivy.webp" alt="Poison Ivy">
+        <p>Poison Ivy</p>
     </div>
     <div>
         <img src="/assets/images/artwork/rabbit.webp" alt="Rabbit">
         <p>Rabbit</p>
     </div>
     <div>
+        <img src="/assets/images/artwork/rip_current.webp" alt="Rip Current">
+        <p>Rip Current</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/running_stitch.webp" alt="Running Stitch">
+        <p>Running Stitch</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/signal_mirror.webp" alt="Signal Mirror">
+        <p>Signal Mirror</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/solar_still.webp" alt="Solar Still">
+        <p>Solar Still</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/southern_stars.webp" alt="Southern Stars">
+        <p>Southern Stars</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/squirrel.webp" alt="Squirrel">
+        <p>Squirrel</p>
+    </div>
+    <div>
         <img src="/assets/images/artwork/stinging_nettle.webp" alt="Stinging Nettle">
         <p>Stinging Nettle</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/stratocumulus.webp" alt="Stratocumulus">
+        <p>Stratocumulus</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/stratus.webp" alt="Stratus">
+        <p>Stratus</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/sunfish.webp" alt="Sunfish">
+        <p>Sunfish</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/sunset_hand.webp" alt="Sunset Hand">
+        <p>Sunset Hand</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/termite.webp" alt="Termite">
+        <p>Termite</p>
     </div>
     <div>
         <img src="/assets/images/artwork/tides.webp" alt="Tides">
         <p>Tides</p>
     </div>
     <div>
+        <img src="/assets/images/artwork/tinder_fungus.webp" alt="Tinder Fungus">
+        <p>Tinder Fungus</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/tongs.webp" alt="Tongs">
+        <p>Tongs</p>
+    </div>
+    <div>
         <img src="/assets/images/artwork/trail_blazes.webp" alt="Trail Blazes">
         <p>Trail Blazes</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/transpiration_bag.webp" alt="Transpiration Bag">
+        <p>Transpiration Bag</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/whip_stitch.webp" alt="Whip Stitch">
+        <p>Whip Stitch</p>
     </div>
 </div>
 
