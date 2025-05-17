@@ -38,6 +38,10 @@ image: /assets/images/artwork/crab.webp
         <p>Bolete</p>
     </div>
     <div>
+        <img src="/assets/images/artwork/bow_drill_usage.webp" alt="Bow Drill Usage">
+        <p>Bow Drill Usage</p>
+    </div>
+    <div>
         <img src="/assets/images/artwork/brambles.webp" alt="Brambles">
         <p>Brambles</p>
     </div>
@@ -94,12 +98,20 @@ image: /assets/images/artwork/crab.webp
         <p>Common Plantain</p>
     </div>
     <div>
-        <img src="/assets/images/artwork/contours.webp" alt="Contours">
-        <p>Contours</p>
+        <img src="/assets/images/artwork/cover.jpg" alt="Cover">
+        <p>Cover</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/cover.webp" alt="Cover">
+        <p>Cover</p>
     </div>
     <div>
         <img src="/assets/images/artwork/crab.webp" alt="Crab">
         <p>Crab</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/craft_cordage.webp" alt="Craft Cordage">
+        <p>Craft Cordage</p>
     </div>
     <div>
         <img src="/assets/images/artwork/crayfish.webp" alt="Crayfish">
@@ -170,6 +182,10 @@ image: /assets/images/artwork/crab.webp
         <p>Fire Tepee</p>
     </div>
     <div>
+        <img src="/assets/images/artwork/fish_hook_removal.webp" alt="Fish Hook Removal">
+        <p>Fish Hook Removal</p>
+    </div>
+    <div>
         <img src="/assets/images/artwork/fish_trap_bottle.webp" alt="Fish Trap Bottle">
         <p>Fish Trap Bottle</p>
     </div>
@@ -210,12 +226,20 @@ image: /assets/images/artwork/crab.webp
         <p>Kelp</p>
     </div>
     <div>
+        <img src="/assets/images/artwork/knot_bowline.webp" alt="Knot Bowline">
+        <p>Knot Bowline</p>
+    </div>
+    <div>
         <img src="/assets/images/artwork/knot_fishermans.webp" alt="Knot Fishermans">
         <p>Knot Fishermans</p>
     </div>
     <div>
         <img src="/assets/images/artwork/knot_overhand.webp" alt="Knot Overhand">
         <p>Knot Overhand</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/knot_tautline_hitch.webp" alt="Knot Tautline Hitch">
+        <p>Knot Tautline Hitch</p>
     </div>
     <div>
         <img src="/assets/images/artwork/log_bowl.webp" alt="Log Bowl">
@@ -270,6 +294,14 @@ image: /assets/images/artwork/crab.webp
         <p>Running Stitch</p>
     </div>
     <div>
+        <img src="/assets/images/artwork/shelter_debris_hut.webp" alt="Shelter Debris Hut">
+        <p>Shelter Debris Hut</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/shelter_tarp.webp" alt="Shelter Tarp">
+        <p>Shelter Tarp</p>
+    </div>
+    <div>
         <img src="/assets/images/artwork/signal_mirror.webp" alt="Signal Mirror">
         <p>Signal Mirror</p>
     </div>
@@ -320,6 +352,10 @@ image: /assets/images/artwork/crab.webp
     <div>
         <img src="/assets/images/artwork/tongs.webp" alt="Tongs">
         <p>Tongs</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/topographical_map.webp" alt="Topographical Map">
+        <p>Topographical Map</p>
     </div>
     <div>
         <img src="/assets/images/artwork/trail_blazes.webp" alt="Trail Blazes">
