@@ -98,10 +98,6 @@ image: /assets/images/artwork/crab.webp
         <p>Common Plantain</p>
     </div>
     <div>
-        <img src="/assets/images/artwork/cover.jpg" alt="Cover">
-        <p>Cover</p>
-    </div>
-    <div>
         <img src="/assets/images/artwork/cover.webp" alt="Cover">
         <p>Cover</p>
     </div>
