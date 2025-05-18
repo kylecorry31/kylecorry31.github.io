@@ -20,6 +20,9 @@ def minify_images(directory):
                         output_path = os.path.join(root, f'{file.replace(".jpg", ".webp")}')
                         img.save(output_path, 'WEBP', quality=75)
                         print(f"Minified: {file_path} -> {output_path}")
+
+                        if file.lower().endswith('.jpg'):
+                            os.remove(file_path)
                 except Exception as e:
                     print(f"Failed to process {file_path}: {e}")
 
