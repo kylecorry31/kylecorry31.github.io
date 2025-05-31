@@ -98,6 +98,10 @@ image: /assets/images/artwork/crab.webp
         <p>Common Plantain</p>
     </div>
     <div>
+        <img src="/assets/images/artwork/compass_bearings.webp" alt="Compass Bearings">
+        <p>Compass Bearings</p>
+    </div>
+    <div>
         <img src="/assets/images/artwork/cover.webp" alt="Cover">
         <p>Cover</p>
     </div>
@@ -226,12 +230,24 @@ image: /assets/images/artwork/crab.webp
         <p>Knot Bowline</p>
     </div>
     <div>
+        <img src="/assets/images/artwork/knot_clove_hitch.webp" alt="Knot Clove Hitch">
+        <p>Knot Clove Hitch</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/knot_double_sheet_bend.webp" alt="Knot Double Sheet Bend">
+        <p>Knot Double Sheet Bend</p>
+    </div>
+    <div>
         <img src="/assets/images/artwork/knot_fishermans.webp" alt="Knot Fishermans">
         <p>Knot Fishermans</p>
     </div>
     <div>
         <img src="/assets/images/artwork/knot_overhand.webp" alt="Knot Overhand">
         <p>Knot Overhand</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/knot_overhand_loop.webp" alt="Knot Overhand Loop">
+        <p>Knot Overhand Loop</p>
     </div>
     <div>
         <img src="/assets/images/artwork/knot_tautline_hitch.webp" alt="Knot Tautline Hitch">
@@ -276,6 +292,10 @@ image: /assets/images/artwork/crab.webp
     <div>
         <img src="/assets/images/artwork/poison_ivy.webp" alt="Poison Ivy">
         <p>Poison Ivy</p>
+    </div>
+    <div>
+        <img src="/assets/images/artwork/prepare_fish.webp" alt="Prepare Fish">
+        <p>Prepare Fish</p>
     </div>
     <div>
         <img src="/assets/images/artwork/rabbit.webp" alt="Rabbit">
