@@ -63,7 +63,7 @@ Y = pixel.green - 1</code>
 Using a test dataset of 27 locations (covering all 7 continents and 5 oceans) and 30 days (spanning all 4 main phases of the Moon), the following results were obtained:
 
 - **Average error**: 12 minutes  
-- **90% quantile error**: 44 minutes  
+- **90% quantile error**: 41 minutes  
 - **Minimum error**: 0 minutes  
 - **Maximum error**: 87 minutes  
 
