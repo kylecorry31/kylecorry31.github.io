@@ -3,13 +3,16 @@
 <section id="posts">
     <div class="container">
         <h2 class="mb-2">Trail Sense Research</h2>
-        <div class="recipes row">
+        <div class="recipes">
             {{#collections.research.category_trail-sense}}
-            <div class="col-md-12 recipe">
-                <a href="{{ url }}" class="stretched-link"></a>
-                <h3>{{ title }}&nbsp;&nbsp;&nbsp;&nbsp;<small>{{ date }}</small></h3>
-                <p>{{ summary }}</p>
-            </div>
+            {{^draft}}
+            <a href="{{ url }}" class="hidden-link">
+                <div class="recipe">
+                    <h3>{{ title }}&nbsp;&nbsp;&nbsp;&nbsp;<small>{{ date }}</small></h3>
+                    <p>{{ summary }}</p>
+                </div>
+            </a>
+            {{/draft}}
             {{/collections.research.category_trail-sense}}
         </div>
     </div>
