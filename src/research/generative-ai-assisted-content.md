@@ -5,9 +5,7 @@ date: 2025-04-06
 category: trail-sense
 ---
 
-Many people view generative AI art/writing in a negative light because it has the potential to replace the creative, human touch on a project and may take on the style of other artists/writers. I'm also not a fan of letting generative AI create for me unless it's a throwaway script, and would rather learn the new skills myself. But I believe generative AI can be a tool just like spell check, grammar check, or code smell detection/replacement. That's why, for Trail Sense's survival and field guides, I decided to draw all the images and write all the content myself and only leverage generative AI as a review tool.
-
-The end result is that all the art in the Trail Sense survival guide is drawn by me, but the proportions are accurate enough that you can use them as a real-world reference and the text content is mostly free of grammatical issues.
+Many people view generative AI art/writing in a negative light because it has the potential to replace the creative, human touch on a project and may take on the style of other artists/writers. I'm also not a fan of letting generative AI create for me unless it's a throwaway script, and would rather learn the new skills myself. But I believe generative AI can be a tool just like spell check, grammar check, or code smell detection. Therefore I only leverage generative AI as a review tool after I do all the creative work.
 
 ## Process
 This is an iterative process and as my skills improve, I need fewer iterations to produce the same quality result.
