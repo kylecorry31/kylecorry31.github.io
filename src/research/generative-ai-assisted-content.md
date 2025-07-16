@@ -2,7 +2,6 @@
 title: Generative AI Assisted Content
 summary: Improving drawings and writing using generative AI.
 date: 2025-04-06
-category: trail-sense
 ---
 
 Many people view generative AI art/writing in a negative light because it has the potential to replace the creative, human touch on a project and may take on the style of other artists/writers. I'm also not a fan of letting generative AI create for me unless it's a throwaway script, and would rather learn the new skills myself. But I believe generative AI can be a tool just like spell check, grammar check, or code smell detection. Therefore I only leverage generative AI as a review tool after I do all the creative work.

@@ -209,6 +209,15 @@ polaroid-photo {
     margin: 0;
 }
 
+.grid {
+    display: grid;
+    column-gap: 16px;
+    row-gap: 32px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
 .grid-2x2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -217,4 +226,107 @@ polaroid-photo {
     justify-items: center;
     align-items: center;
     text-align: center;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    row-gap: 16px;
+}
+
+.polaroid {
+    padding: 16px 16px 16px 16px;
+    background-color: white;
+    width: 200px;
+    box-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    margin: 8px;
+    display: inline-block;
+    transition: 0.5s ease all;
+    filter: sepia(20%);
+}
+
+.polaroid .polaroid-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0;
+}
+
+.polaroid p {
+    display: block;
+    padding-top: 16px;
+    text-align: center;
+    text-overflow: ellipsis;
+    width: 200px;
+    margin: 0;
+    line-height: 1rem !important;
+    height: 2.5rem !important;
+    max-height: 2.5rem !important;
+    min-height: 2.5rem !important;
+    font-size: 16px !important;
+    vertical-align: middle !important;
+}
+
+.polaroid:hover {
+    filter: none !important;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
+    transform: scale(2) !important;
+    z-index: 100 !important;
+    position: relative !important;
+}
+
+.drawing {
+    background-color: white;
+    width: 250px;
+    box-shadow: 0 1px 1.5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    margin: 8px;
+    display: inline-block;
+    transition: 0.5s ease all;
+}
+
+.drawing .drawing-image {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin: 0;
+}
+
+.drawing p {
+    display: block;
+    padding-top: 16px;
+    text-align: center;
+    text-overflow: ellipsis;
+    margin: 0;
+    line-height: 1rem !important;
+    font-size: 16px !important;
+    vertical-align: middle !important;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 4px;
+    transition: opacity 0.5s ease;
+}
+
+.drawing:hover {
+    filter: none !important;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
+    transform: scale(2) !important;
+    z-index: 100 !important;
+    position: relative !important;
+}
+
+.drawing:hover p {
+    opacity: 0;
 }

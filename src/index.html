@@ -1,5 +1,4 @@
 {{{includes.header}}}
-<script src="/assets/components/polaroid-photo-html-element/lib/polaroid-photo.js"></script>
 <section id="posts">
     <div class="container">
         <h2 class="mb-2">Projects</h2>
@@ -8,8 +7,10 @@
             {{#collections.projects.items}}
             <div class="post">
                 <a href="{{ url }}">
-                    <polaroid-photo src="{{ image }}" title="{{ title }}" alt="" rotation="5" position="5"
-                        scale="1.2" />
+                    <div class="polaroid">
+                        <img class="polaroid-image" src="{{ image }}"/>
+                        <p>{{ title }}</p>
+                    </div>
                 </a>
             </div>
             {{/collections.projects.items}}
@@ -17,3 +18,4 @@
         </div>
     </div>
 </section>
+{{{ includes.footer }}}
