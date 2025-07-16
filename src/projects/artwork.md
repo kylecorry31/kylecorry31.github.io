@@ -1,6 +1,7 @@
 ---
 title: "Artwork"
 image: /assets/images/artwork/crab.webp
+class: full-width
 ---
 
 ## Drawings

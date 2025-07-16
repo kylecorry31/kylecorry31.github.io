@@ -184,6 +184,10 @@ polaroid-photo {
     box-sizing: border-box;
 }
 
+.full-width {
+    width: 100% !important;
+}
+
 .container-sm {
     width: 720px;
 }
@@ -238,6 +242,8 @@ polaroid-photo {
     align-items: center;
     justify-content: space-around;
     row-gap: 16px;
+    column-gap: 32px;
+    margin-bottom: 64px;
 }
 
 .polaroid {
@@ -322,7 +328,7 @@ polaroid-photo {
 .drawing:hover {
     filter: none !important;
     box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
-    transform: scale(2) !important;
+    transform: scale(1.5) !important;
     z-index: 100 !important;
     position: relative !important;
 }
