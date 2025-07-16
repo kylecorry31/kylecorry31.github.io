@@ -8,6 +8,12 @@ class: full-width
 <div class="photo-grid">
     <div>
         <div class="drawing">
+            <img class="drawing-image" src="/assets/images/artwork/acorn_whistle.webp"/>
+            <p>Acorn Whistle</p>
+        </div>
+    </div>
+    <div>
+        <div class="drawing">
             <img class="drawing-image" src="/assets/images/artwork/altocumulus.webp"/>
             <p>Altocumulus</p>
         </div>
@@ -206,6 +212,12 @@ class: full-width
     </div>
     <div>
         <div class="drawing">
+            <img class="drawing-image" src="/assets/images/artwork/declination.webp"/>
+            <p>Declination</p>
+        </div>
+    </div>
+    <div>
+        <div class="drawing">
             <img class="drawing-image" src="/assets/images/artwork/direction_shadow.webp"/>
             <p>Direction Shadow</p>
         </div>
@@ -374,14 +386,38 @@ class: full-width
     </div>
     <div>
         <div class="drawing">
+            <img class="drawing-image" src="/assets/images/artwork/knot_square_lashing.webp"/>
+            <p>Knot Square Lashing</p>
+        </div>
+    </div>
+    <div>
+        <div class="drawing">
             <img class="drawing-image" src="/assets/images/artwork/knot_tautline_hitch.webp"/>
             <p>Knot Tautline Hitch</p>
         </div>
     </div>
     <div>
         <div class="drawing">
+            <img class="drawing-image" src="/assets/images/artwork/knot_truckers_hitch.webp"/>
+            <p>Knot Truckers Hitch</p>
+        </div>
+    </div>
+    <div>
+        <div class="drawing">
             <img class="drawing-image" src="/assets/images/artwork/log_bowl.webp"/>
             <p>Log Bowl</p>
+        </div>
+    </div>
+    <div>
+        <div class="drawing">
+            <img class="drawing-image" src="/assets/images/artwork/map_location.webp"/>
+            <p>Map Location</p>
+        </div>
+    </div>
+    <div>
+        <div class="drawing">
+            <img class="drawing-image" src="/assets/images/artwork/map_orientation.webp"/>
+            <p>Map Orientation</p>
         </div>
     </div>
     <div>
@@ -536,6 +572,12 @@ class: full-width
     </div>
     <div>
         <div class="drawing">
+            <img class="drawing-image" src="/assets/images/artwork/tick_removal.webp"/>
+            <p>Tick Removal</p>
+        </div>
+    </div>
+    <div>
+        <div class="drawing">
             <img class="drawing-image" src="/assets/images/artwork/tides.webp"/>
             <p>Tides</p>
         </div>
@@ -568,6 +610,12 @@ class: full-width
         <div class="drawing">
             <img class="drawing-image" src="/assets/images/artwork/transpiration_bag.webp"/>
             <p>Transpiration Bag</p>
+        </div>
+    </div>
+    <div>
+        <div class="drawing">
+            <img class="drawing-image" src="/assets/images/artwork/triangulation.webp"/>
+            <p>Triangulation</p>
         </div>
     </div>
     <div>
