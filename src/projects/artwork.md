@@ -696,3 +696,7 @@ class: full-width
     </div>
   </div>
 </div>
+
+<p class="text-center">
+    All artwork on this page was drawn or photographed by me.
+</p>
