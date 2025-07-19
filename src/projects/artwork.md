@@ -695,6 +695,12 @@ class: full-width
       <p>Mt. Washington</p>
     </div>
   </div>
+  <div>
+    <div class="polaroid">
+      <img class="polaroid-image" src="/assets/images/photos/saturn-20250719.webp" />
+      <p>Saturn 7/19/2025</p>
+    </div>
+  </div>
 </div>
 
 <p class="text-center">
