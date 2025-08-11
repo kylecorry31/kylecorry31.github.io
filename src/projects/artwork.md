@@ -74,6 +74,12 @@ class: full-width
     </div>
     <div>
         <div class="drawing">
+            <img class="drawing-image" src="/assets/images/artwork/breaking_branches.webp"/>
+            <p>Breaking Branches</p>
+        </div>
+    </div>
+    <div>
+        <div class="drawing">
             <img class="drawing-image" src="/assets/images/artwork/bushcraft_compass.webp"/>
             <p>Bushcraft Compass</p>
         </div>
@@ -106,6 +112,12 @@ class: full-width
         <div class="drawing">
             <img class="drawing-image" src="/assets/images/artwork/chicken_of_the_woods.webp"/>
             <p>Chicken Of The Woods</p>
+        </div>
+    </div>
+    <div>
+        <div class="drawing">
+            <img class="drawing-image" src="/assets/images/artwork/choking.webp"/>
+            <p>Choking</p>
         </div>
     </div>
     <div>
@@ -160,6 +172,12 @@ class: full-width
         <div class="drawing">
             <img class="drawing-image" src="/assets/images/artwork/cover.webp"/>
             <p>Cover</p>
+        </div>
+    </div>
+    <div>
+        <div class="drawing">
+            <img class="drawing-image" src="/assets/images/artwork/cpr.webp"/>
+            <p>Cpr</p>
         </div>
     </div>
     <div>
@@ -380,8 +398,20 @@ class: full-width
     </div>
     <div>
         <div class="drawing">
+            <img class="drawing-image" src="/assets/images/artwork/knot_overhand_bend.webp"/>
+            <p>Knot Overhand Bend</p>
+        </div>
+    </div>
+    <div>
+        <div class="drawing">
             <img class="drawing-image" src="/assets/images/artwork/knot_overhand_loop.webp"/>
             <p>Knot Overhand Loop</p>
+        </div>
+    </div>
+    <div>
+        <div class="drawing">
+            <img class="drawing-image" src="/assets/images/artwork/knot_shear_lashing.webp"/>
+            <p>Knot Shear Lashing</p>
         </div>
     </div>
     <div>
@@ -400,6 +430,12 @@ class: full-width
         <div class="drawing">
             <img class="drawing-image" src="/assets/images/artwork/knot_truckers_hitch.webp"/>
             <p>Knot Truckers Hitch</p>
+        </div>
+    </div>
+    <div>
+        <div class="drawing">
+            <img class="drawing-image" src="/assets/images/artwork/leech_removal.webp"/>
+            <p>Leech Removal</p>
         </div>
     </div>
     <div>
@@ -518,6 +554,18 @@ class: full-width
     </div>
     <div>
         <div class="drawing">
+            <img class="drawing-image" src="/assets/images/artwork/skin_mammal.webp"/>
+            <p>Skin Mammal</p>
+        </div>
+    </div>
+    <div>
+        <div class="drawing">
+            <img class="drawing-image" src="/assets/images/artwork/sling.webp"/>
+            <p>Sling</p>
+        </div>
+    </div>
+    <div>
+        <div class="drawing">
             <img class="drawing-image" src="/assets/images/artwork/solar_still.webp"/>
             <p>Solar Still</p>
         </div>
@@ -526,6 +574,12 @@ class: full-width
         <div class="drawing">
             <img class="drawing-image" src="/assets/images/artwork/southern_stars.webp"/>
             <p>Southern Stars</p>
+        </div>
+    </div>
+    <div>
+        <div class="drawing">
+            <img class="drawing-image" src="/assets/images/artwork/splint.webp"/>
+            <p>Splint</p>
         </div>
     </div>
     <div>
