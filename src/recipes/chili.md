@@ -11,7 +11,7 @@ category: dinner
 - 1 can of black beans
 - 3 chili peppers (diced)
 - 1 Onion (diced)
-- 1.5 lbs ground beef or turkey
+- 1.5 lbs ground beef
 - 1 tbsp [Chili Seasoning](/recipes/chili-seasoning)
 - 1 tbsp oil
 - 2 cups water (instant pot only)

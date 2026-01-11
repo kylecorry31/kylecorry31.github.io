@@ -8,7 +8,7 @@ category: side
 - [Mashed potatoes](/recipes/mashed-potatoes)
 - Olive oil (substitute with other oil / butter)
 - 1 bunch of kale 
-- 1.5 lbs ground beef or turkey (optional)
+- 1.5 lbs ground beef (optional)
 
 
 ## Directions

@@ -6,7 +6,7 @@ category: dinner
 ## Ingredients
 
 ### For the loaf:
-- 1.5 lbs ground turkey
+- 1.5 lbs ground beef
 - 1 egg
 - 1/2 cup breadcrumbs
 - 1/4 cup onion flakes (rehydrated)

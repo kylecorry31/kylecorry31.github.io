@@ -15,7 +15,7 @@ category: dinner
 - 1/2 tsp coriander
 - 1/2 tsp black pepper
 - 2 diced jalapenos
-- 1 lb ground beef or turkey
+- 1 lb ground beef
 - 1 cup cheddar cheese
 - 2 eggs
 - 4 ripe plantains
