@@ -17,7 +17,9 @@ artwork = list(sorted([os.path.join('/assets/images/artwork', file)
 
 elements = [f"""<div>
     <div class="drawing">
-        <img class="drawing-image" src="{file}"/>
+        <a class="drawing-link" href="{file}" target="_blank" rel="noopener">
+            <img class="drawing-image" src="{file}"/>
+        </a>
         <p>{format_name(file)}</p>
     </div>
 </div>""" for file in artwork]
