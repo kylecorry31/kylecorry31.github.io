@@ -14,7 +14,7 @@ category: dinner
 - 1 tsp garlic
 - 1/2 tsp salt
 - 1/8 tsp pepper
-- Canola or sesame oil
+- Oil
 
 ### Dough
 - 1 3/4 cup flour
@@ -25,7 +25,7 @@ category: dinner
 
 ### Chili sauce
 - 1/4 cup soy sauce
-- 1/8 cup canola / sesame oil
+- 1/8 cup oil
 - 1/2 tsp chili powder
 - 1/4 tsp sugar
 

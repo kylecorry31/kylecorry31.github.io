@@ -13,7 +13,7 @@ category: bread
 - 4 tbsp melted butter
 - 2 tbsp Caraway seeds
 - 2 cup raisins
-- 2 cup almond milk
+- 2 cup milk
 - 2 eggs (substitute with flax eggs)
 
 ## Directions

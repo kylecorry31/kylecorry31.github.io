@@ -7,7 +7,7 @@ category: dinner
 
 - 1 package extra firm tofu
 - 3 tablespoons soy sauce
-- 1 tablespoon canola or olive oil
+- 1 tablespoon oil
 - A pinch of salt
 - A pinch of pepper
 - A pinch of garlic powder

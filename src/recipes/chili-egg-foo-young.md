@@ -8,7 +8,7 @@ category: dinner
 - 1/2 onion
 - 2 tbsp soy sauce
 - 1 tbsp chili powder
-- 2 tsp canola oil
+- 2 tsp oil
 - 1 tsp salt
 
 ## Directions

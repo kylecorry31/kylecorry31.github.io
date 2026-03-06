@@ -19,7 +19,7 @@ category: dinner
 - 1 cup cheddar cheese
 - 2 eggs
 - 4 ripe plantains
-- Canola oil
+- Oil
 
 
 ## Directions

@@ -7,7 +7,7 @@ category: breakfast
 
 - 3 tbsp butter
 - 4 eggs
-- 1/4 cup almond milk
+- 1/4 cup milk
 - 1/4 tsp salt
 - 1/4 tsp pepper
 - 1/2 tsp cilantro (dried; can substitute for fresh chopped - about 5 sprigs)

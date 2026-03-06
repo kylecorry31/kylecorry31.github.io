@@ -11,7 +11,7 @@ category: dinner
 - 1/8 tsp salt
 - 1/8 tsp pepper
 - 1/4 cup cheddar cheese
-- 1 tbsp canola oil
+- 1 tbsp oil
 
 ## Directions
 
