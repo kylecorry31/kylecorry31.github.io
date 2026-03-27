@@ -29,3 +29,8 @@ Generative AI can be used as a glorified spell/grammar checker and tends to do a
 2. Run it through spell and grammar checking with a tool such as Grammarly or Word/LibreOffice.
 3. Upload it to a generative AI tool with the prompt: **"Proofread this and ONLY make minor corrections to grammar or spelling if needed. Don't change it much."** This will output your text with some minor adjustments.
 4. Since I use git for tracking, I commit my original text and then replace it with the generated text. I then switch over to the git changes view (in VS Code, this is the Source Control tab) and review the changes. The above prompt is pretty good at limiting changes, but when it decides to rewrite something entirely, I discard that and just use it as a reference for how to make my text clearer.
+
+Wikipedia has a very similar policy, which limits generative AI use to just basic copyedits (and translations). [[1](https://en.wikipedia.org/wiki/Wikipedia:Writing_articles_with_large_language_models)]
+
+## References
+1. Wikipedia contributors. (n.d.). Wikipedia: Writing articles with large language models. In Wikipedia. Retrieved March 27, 2026, from https://en.wikipedia.org/wiki/Wikipedia:Writing_articles_with_large_language_models
