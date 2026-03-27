@@ -1,41 +1,14 @@
 ---
 title: Sea Level Calibration of Smartphone Barometers
 summary: A more robust method of calibrating smartphone barometers while on the move.
-date: 2023-05-01
+date: 2026-03-27
 category: trail-sense
 ---
 
-Many smartphones contain a barometer, which can be used for offline weather forecasting. Unfortunately, barometers are impacted by changes in altitude, which can lead to inaccurate readings while on the move. Elevation can be accounted for by converting the barometer reading to sea level pressure, but this requires an accurate GPS elevation, which can be difficult to obtain. In this article, I'll cover the system used in Trail Sense, which uses a combination of sensor processing methods to allow for accurate barometer readings while on the move.
+Many smartphones contain a barometer, which can be used for offline weather forecasting. Unfortunately, barometers are impacted by changes in altitude, which can lead to inaccurate readings while on the move. Elevation can be accounted for by converting the barometer reading to sea level pressure, but this requires an accurate GPS elevation, which can be difficult to obtain. I implemented the following approach in the Trail Sense application on Android.
 
-## Background
-### Barometric Pressure
-Barometric pressure is the pressure exerted by the atmosphere at a given point. It is commonly used in weather forecasting, as it can be used to predict the movement of weather fronts. Pressure also changes with altitude, which will interfere with weather forecasting if not accounted for.
+The first place to start is to ensure I can obtain the most accurate GPS elevation by aggregating multiple readings into one while factoring in their accuracy. I use a joint Gaussian filter algorithm to do this:
 
-### Sea Level Pressure
-Sea level pressure is the pressure that would be measured at a given point if it were at sea level. It is commonly used in weather forecasting, as it allows for the comparison of pressure between different locations, regardless of altitude.
-
-### Mean Sea Level (MSL)
-Mean sea level is the average height of the ocean's surface. It is used as a reference point for altitude, as it is relatively constant. 
-
-### GPS Elevation
-GPS elevation is the altitude of a given point above the WGS84 ellipsoid. In order to convert this to MSL, a geoid model must be used. A geoid model is a model of the Earth's surface that approximates MSL. The most common geoid model is EGM96.
-
-Unfortunately, GPS elevation is not very accurate, as it is affected by the number of satellites in view, the quality of the signal, and the accuracy of the geoid model.
-
-### Digital Elevation Model (DEM)
-A digital elevation model is a map of the elevation of a given area. It is commonly used in offline navigation applications, as it allows for the calculation of altitude based on the more accurate GPS location. Unfortunately, DEMs take up a lot of space, which makes them impractical for offline use on smartphones.
-
-### LOESS / LOWESS
-The LOESS algorithm is a smoothing algorithm that uses a weighted least squares regression to smooth a set of data points. This algorithm works well on non-linear data and can be easily tuned. [[1](https://www.itl.nist.gov/div898/handbook/pmd/section1/pmd144.htm)]
-
-
-## Solution
-To accurately convert barometric pressure to sea level pressure, Trail Sense first obtains a more accurate GPS elevation, then converts to sea level, and finally it smooths the readings to account for noise.
-
-### Improving GPS Elevation Accuracy
-1. Obtain up to 8 sequential GPS elevation readings and their reported vertical accuracies.
-2. Convert the GPS elevation to MSL using EGM96 geoid model.
-3. Use a joint Gaussian filter to smooth the MSL readings. The following algorithm is used:
 <code>def join(mean1, var1, mean2, var2):
     joint = mean1 * var2 + mean2 * var1
     sumVar = var1 + var2
@@ -53,18 +26,19 @@ To accurately convert barometric pressure to sea level pressure, Trail Sense fir
     return last
 </code>
 
-### Sea Level Calibration
-1. Every 30 minutes, a background process records the barometric pressure and improved GPS elevation. The interval of this is configurable.
+The GPS also uses an offline GEOID model, which allows me to convert the elevations to mean sea level (MSL). I won't go in depth here, but it is an image that ships with Trail Sense where X is longitude and Y is latitude (both multiplied by some factor to get the actual pixel index), and the grayscale color (0 to 255) is the normalized height. Once I obtain the pixel color, I can scale and translate it by some predetermined constants to obtain the actual height offset in meters for a given location. This value can be added to the GPS elevation to convert it to MSL.
 
-2. Convert the readings to sea level using this formula:
-<code>P * (1 - D / 44330.0) ** (-5.255)</code>
+To make it easier for me to deal with this, I used the decorator pattern to implement this logic so I can just listen for GPS elevation changes and get the improved accuracy and MSL conversion without further complicating my pressure monitor service.
 
-3. Smooth the sea level pressure readings from the last 48 hours using the LOESS algorithm. The default span is 0.15 and a single robustness iteration is used. The span can be made configurable to account for different devices and environments.
+Now that I have a way to obtain a more accurate GPS MSL elevation, I can convert my pressure readings to sea level pressure. I obtain a pressure reading from the barometer (P) and a GPS MSL elevation (D) and plug them into this formula: `P * (1 - D / 44330.0)^(-5.255)`. So now I have a sea level pressure, but there's still a lot of GPS elevation noise (even with the Gaussian filter).
 
-## Results
+Since I am also interested in how the pressure changes over time, I have a background service which runs at a fixed interval (default 30 minutes) and records these sea level pressure readings. That gives me a time series dataset which I can apply a smoothing algorithm to. After a significant amount of experimentation, I went with the LOESS algorithm, which uses a weighted least squares regression to smooth a set of data points. [[1](https://www.itl.nist.gov/div898/handbook/pmd/section1/pmd144.htm)]
+
+The LOESS algorithm was easy to implement, fast to run, and produced decent results using a span of 0.15 and a single robustness iteration. So all I do is run my sea level pressures (Y) and the reading times (X) through this algorithm, and I get a much better sea level pressure estimate.
+
 I do not have quantitative results for this, but I have found that I get far fewer false storm alerts while traveling or hiking in the mountains. Comparing to local weather stations, I have found that the barometer readings are generally within 1 hPa of my local weather station.
 
-Future work should be done to evaluate the accuracy of this method.
+Since my initial implementation of this, I was able to ship a digital elevation model (DEM) with Trail Sense, which drastically reduces the elevation noise. I apply the exact same algorithm, just using DEM elevation instead of GPS elevation, and get even better sea level pressure estimates.
 
 ## References
 1. NIST. (n.d.). 4.1.4.4. LOESS (aka LOWESS). Retrieved from [https://www.itl.nist.gov/div898/handbook/pmd/section1/pmd144.htm](https://www.itl.nist.gov/div898/handbook/pmd/section1/pmd144.htm)
