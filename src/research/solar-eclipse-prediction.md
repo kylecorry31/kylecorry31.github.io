@@ -1,54 +1,19 @@
 ---
 title: Solar Eclipse Prediction
 summary: A simple method to efficiently predict locally visible solar eclipses, designed to be run on a smartphone.
-date: 2023-08-11
+date: 2026-03-27
 category: trail-sense
 ---
 
-Solar eclipse prediction at a given location can be a computationally expensive task. This article will cover a simple method to efficiently find solar eclipses, designed to be run on a smartphone. On most smartphones, it can predict the next solar eclipse in under 1 second with accuracy matching posted eclipse times. This method is used in the Trail Sense application.
+Solar eclipse prediction at a given location can be a computationally expensive task and is normally done on a server rather than on a smartphone. I wanted to have offline, on-device solar eclipse prediction in the Trail Sense application, so I had to come up with my own approach.
 
-## Background
+In the simplest definition, a solar eclipse is when the moon passes between the sun and the earth and the shadow is cast onto the observer. If you were to look at the sun during an eclipse (with special glasses), you would see the moon overlapping the sun. The amount of overlap determines how "strong" the eclipse is, and it is possible for the moon to completely cover the sun in a total eclipse. So from a high level, all we need to know is if the moon is overlapping the sun in the sky to determine if a solar eclipse is occurring.
 
-This article is around the method to efficiently search for the next solar eclipse, it does not cover how to calculate astronomical values. If you are looking for a method to calculate the values used, see the references section for sources.
+For a given point in time, it is possible to calculate the positions of the sun and moon in the sky for an observer and from that determine their angular distance and magnitude of the eclipse (overlap). [1] [[2](https://doi.org/10.11578/dc.20190909.1)] I won't go into the details of these calculations, but you can check out the references to see how they work.
 
-### Solar Eclipses
-Solar eclipses occur when the moon passes between the sun and the earth, blocking the sun's light from reaching the earth. There are three types of solar eclipses:
+The naive approach would be to determine the sun and moon's positions in the sky at every point in time to see if they overlap, which would take forever to run. So we need to be more selective about when we check for overlap by eliminating times when an eclipse would be impossible. Luckily, there is already an algorithm in existence which can tell you roughly when the next solar eclipse is occurring somewhere (it doesn't tell you where, though). I won't go into detail about that algorithm, but it is from the Astronomical Algorithms book by Meeus. [1]
 
-- **Total**: The moon completely blocks the sun, leaving only the sun's corona visible.
-- **Annular**: The moon is too far away to completely block the sun, leaving a ring of the sun visible.
-- **Partial**: The moon only partially blocks the sun, leaving a portion of the sun visible.
-
-Solar eclipses can only occur during a new moon.
-
-### Eclipse Magnitude
-The magnitude of an eclipse is the fraction of the sun's diameter that is covered by the moon. For example, a magnitude of 0.5 means that half of the sun's diameter is covered by the moon. The magnitude of an eclipse is always between 0 and 1.
-
-### Eclipse Obscuration
-The obscuration of an eclipse is the fraction of the sun's area that is covered by the moon. For example, an obscuration of 0.5 means that half of the sun's area is covered by the moon. The obscuration of an eclipse is always between 0 and 1.
-
-### Angular Distance
-The angular distance between the sun and moon is the angle between disks of the sun and moon as seen from the earth. The angular distance can be used to determine if an eclipse is happening. Given you know the positions of the sun and moon and the size of the sun and moon disks, you can calculate the angular distance.
-
-## Solution
-
-The solar eclipse prediction algorithm used by Trail Sense is composed of two parts:
-
-1. Find the next time an eclipse is happening
-2. Find the start, peak, and end of the eclipse
-
-This article only covers the algorithm used to search for the next solar eclipse at a given location. Details on how to determine the following are omitted, but can be found in astronomical algorithms books. You will need to ensure the algorithm chosen can accurately calculate the position of the sun and moon from a given location. See the references section for sources:
-
-- Positions of the sun and moon [1]
-- Calculation of the next potential solar eclipse (global) [1]
-- Calculation of the angular distance between the sun and moon [[2](https://doi.org/10.11578/dc.20190909.1)]
-- Calculation of the magnitude/obscuration of the eclipse [[2](https://doi.org/10.11578/dc.20190909.1)]
-
-## Find the next time an eclipse is happening
-This will find the next time that an eclipse is occurring. It does not find the start, peak, and end of the eclipse, but the time found here will have a visible eclipse. The second step will work to find the start, peak, and end of the eclipse.
-
-For each potential solar eclipse (calculated using the algorithm described by Meeus [1]), we need to check if it is visible at the location provided. This can be done by searching around the calculated eclipse peak time for visibility.
-
-The following pseudo-code shows how to find the next eclipse time.
+So using that algorithm, we can determine when the next solar eclipse is occurring at some place on Earth. We now need to determine if it is visible to the observer, which we can do by calculating the magnitude of the eclipse for the observer's location, using the algorithms mentioned previously. For a partial eclipse, the observer may only see the eclipse for a short period of time, so just checking the peak time may lead to missed eclipses. I use the following algorithm to determine the next eclipse that is visible to the observer:
 
 <code>time = now
 while time < maxDuration:
@@ -65,18 +30,8 @@ while time < maxDuration:
 return NONE
 </code>
 
-## Find the start, peak, and end of the eclipse
-Once we know a time in which an eclipse is visible, we can search for the start, peak, and end of the eclipse.
+If that returns a value, then I know at least one time that the eclipse is visible for the observer and can conduct a more detailed search to find the start, end, and peak times. To find the start and end times, we can take the known eclipse visible time and search backwards (for start) and forwards (for end) until the magnitude is 0 or the sun or moon is set. Once we know the start and end times, we can search for the peak, which will be sometime between the two. I use the following algorithms:
 
-To find the start time, take the eclipse time and search backwards until the magnitude is 0 or the sun or moon is set. While searching, keep track of the maximum magnitude and the time it occurred.
-
-To find the end time, take the eclipse time and search forwards until the magnitude is 0 or the sun or moon is set. During the search, track the maximum magnitude and the time it occurred.
-
-If the duration of the eclipse is smaller than the minimum duration, return no eclipse, otherwise return the start, peak, and end times.
-
-The following pseudo-code shows how to find the start, peak, and end times.
-
-The following pseudo-code returns true when the eclipse is visible:
 <code>function isEclipseVisible(time):
     if sun is set:
         return false
@@ -87,10 +42,10 @@ The following pseudo-code returns true when the eclipse is visible:
     return false
 </code>
 
-The following pseudo-code shows how to find the start, peak, and end times. For efficiency, I used binary search, but any search algorithm can be used. The following assumptions can be made:
+For efficiency, I used binary search, but any search algorithm can be used. The following assumptions can be made to constrain the search:
 
 - Eclipse is not visible at minTime or maxTime
-- Eclipse is visible at eclipseTime
+- Eclipse is visible at eclipseTime (this is the known visible time we determined earlier)
 
 <code>minTime = eclipseTime - 6 hours
 maxTime = eclipseTime + 6 hours
@@ -102,12 +57,7 @@ end = binarySearchFalling(eclipseTime, maxTime, precision, (time) => isEclipseVi
 peak = binarySearchPeak(start, end, precision, (time) => magnitude(time))
 </code>
 
-## Results
-This algorithm has proven to be both accurate and fast. As mentioned, most searches complete within a second and the results match the NASA eclipse catalog.
-
-For example, if the search was started on 2023-10-15, it would find the eclipse on 2024-04-08 with a precision of 1 minute in 110 iterations (across 176 days).
-
-Most of the iterations were spent searching for the start, peak, and end of the eclipse. Efforts to improve this algorithm should be focused around that.
+The end result is an algorithm that can find the next solar eclipse for an observer, usually in under a second, with results matching the NASA eclipse catalog. For reference, if the search was started on 2023-10-15 for a location in the northeast US, it would find the eclipse on 2024-04-08 with a precision of 1 minute in 110 iterations (across 176 days).
 
 ## References
 1. Meeus, J. (1998, January 1). Astronomical Algorithms.
