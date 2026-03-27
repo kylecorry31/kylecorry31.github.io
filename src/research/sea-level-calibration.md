@@ -30,7 +30,7 @@ The GPS also uses an offline GEOID model, which allows me to convert the elevati
 
 To make it easier for me to deal with this, I used the decorator pattern to implement this logic so I can just listen for GPS elevation changes and get the improved accuracy and MSL conversion without further complicating my pressure monitor service.
 
-Now that I have a way to obtain a more accurate GPS MSL elevation, I can convert my pressure readings to sea level pressure. I obtain a pressure reading from the barometer (P) and a GPS MSL elevation (D) and plug them into this formula: `P * (1 - D / 44330.0)^(-5.255)`. So now I have a sea level pressure, but there's still a lot of GPS elevation noise (even with the Gaussian filter).
+Now that I have a way to obtain a more accurate GPS MSL elevation, I can convert my pressure readings to sea level pressure. I obtain a pressure reading from the barometer (P) and a GPS MSL elevation (D) and plug them into this formula: <code class="inline-code">P * (1 - D / 44330.0)^(-5.255)</code>. So now I have a sea level pressure, but there's still a lot of GPS elevation noise (even with the Gaussian filter).
 
 Since I am also interested in how the pressure changes over time, I have a background service which runs at a fixed interval (default 30 minutes) and records these sea level pressure readings. That gives me a time series dataset which I can apply a smoothing algorithm to. After a significant amount of experimentation, I went with the LOESS algorithm, which uses a weighted least squares regression to smooth a set of data points. [[1](https://www.itl.nist.gov/div898/handbook/pmd/section1/pmd144.htm)]
 
