@@ -24,7 +24,6 @@ To reduce the noise in GPS elevation data, multiple readings can be combined usi
     mean = joint / sumVar
     var = multVar / sumVar
     return (mean, var)
-
 def join_all(dists):
     if len(dists) == 0:
         return None
@@ -44,7 +43,7 @@ Once a somewhat accurate MSL elevation is obtained, the pressure readings can be
 
 <code>P * (1 - D / 44330.0)^(-5.255)</code>
 
-where <code class="inline-code">P</code> is the pressure in hPa and <code class="inline-code">D</code> is the MSL elevation in meters. [[5](https://en.wikipedia.org/wiki/Barometric_formula)]
+where <code class="inline-code">P</code> is the pressure in hPa and <code class="inline-code">D</code> is the MSL elevation in meters.<sup>[[5](https://en.wikipedia.org/wiki/Barometric_formula)]</sup>
 
 ## Time Series Smoothing
 
