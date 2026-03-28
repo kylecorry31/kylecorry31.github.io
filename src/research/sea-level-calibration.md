@@ -5,9 +5,17 @@ date: 2026-03-27
 category: trail-sense
 ---
 
-Many smartphones contain a barometer, which can be used for offline weather forecasting. Unfortunately, barometers are impacted by changes in altitude, which can lead to inaccurate readings while on the move. Elevation can be accounted for by converting the barometer reading to sea level pressure, but this requires an accurate GPS elevation, which can be difficult to obtain. I implemented the following approach in the Trail Sense application on Android.
+Trail Sense's sea level calibration algorithm can be used to improve offline weather forecasting by providing a cleaner barometric pressure signal that is adjusted for the user's elevation. Because barometric pressure varies with altitude, raw measurements from a smartphone's sensors can be inaccurate when the user is changing elevation, so a calibration procedure is needed.
 
-The first place to start is to ensure I can obtain the most accurate GPS elevation by aggregating multiple readings into one while factoring in their accuracy. I use a joint Gaussian filter algorithm to do this:
+## Background
+
+Many modern smartphones contain a barometer to measure atmospheric pressure. This sensor was originally added to smartphones to enable faster GPS locks, but it can have other uses today.<sup>[[1](https://www.engadget.com/2011-10-20-galaxy-nexus-barometer-explained-sam-champion-not-out-of-a-job.html)]</sup> Barometers can also be used for short-term weather forecasting by sensing the movement of weather fronts via changes in pressure.<sup>[[2](https://en.wikipedia.org/wiki/Barometer)]</sup> However, pressure also changes when the altitude of the sensor changes, which can obscure the pressure changes caused by weather fronts. To combat this, the pressure can be converted to sea level using the barometric formula. The conversion requires an elevation reading, which can be obtained using the GPS sensor.
+
+GPS-derived elevation readings are subject to significant noise, which can degrade the accuracy of sea level-corrected pressures. Additional processing techniques are required to make this reading usable. GPS elevations on Android are returned in meters above the WGS84 reference ellipsoid and can be converted to mean sea level (MSL) using a geoid model.<sup>[[3](https://developer.android.com/reference/android/location/Location)] [[4](https://en.wikipedia.org/wiki/Global_Positioning_System)]</sup>
+
+## Elevation Estimate
+
+To reduce the noise in GPS elevation data, multiple readings can be combined using a joint Gaussian filter. This filter considers the elevation value and how accurate Android reports it to be to construct a better estimate of the actual elevation. The algorithm is as follows:
 
 <code>def join(mean1, var1, mean2, var2):
     joint = mean1 * var2 + mean2 * var1
@@ -16,8 +24,8 @@ The first place to start is to ensure I can obtain the most accurate GPS elevati
     mean = joint / sumVar
     var = multVar / sumVar
     return (mean, var)
-</code>
-<code>def join_all(dists):
+
+def join_all(dists):
     if len(dists) == 0:
         return None
     last = dists[0]
@@ -26,19 +34,32 @@ The first place to start is to ensure I can obtain the most accurate GPS elevati
     return last
 </code>
 
-The GPS also uses an offline GEOID model, which allows me to convert the elevations to mean sea level (MSL). I won't go in depth here, but it is an image that ships with Trail Sense where X is longitude and Y is latitude (both multiplied by some factor to get the actual pixel index), and the grayscale color (0 to 255) is the normalized height. Once I obtain the pixel color, I can scale and translate it by some predetermined constants to obtain the actual height offset in meters for a given location. This value can be added to the GPS elevation to convert it to MSL.
+In addition to filtering, the elevation needs to be converted to be relative to MSL. This requires a geoid model, which is essentially a map of latitude and longitude to a correction factor. Trail Sense ships this as an image where X is longitude, Y is latitude, and the red channel contains a normalized offset amount. The red pixel value is read for the given location and scaled/shifted by a predefined constant to map it to meters. This value is added to the GPS elevation to convert it to MSL.
 
-To make it easier for me to deal with this, I used the decorator pattern to implement this logic so I can just listen for GPS elevation changes and get the improved accuracy and MSL conversion without further complicating my pressure monitor service.
+Trail Sense also offers the option to use a digital elevation model (DEM) instead of the GPS. The DEM can obtain the elevation given a latitude and longitude. This model is a lot less noisy than the GPS, but the resolution is very coarse, so rugged terrain may not work well.
 
-Now that I have a way to obtain a more accurate GPS MSL elevation, I can convert my pressure readings to sea level pressure. I obtain a pressure reading from the barometer (P) and a GPS MSL elevation (D) and plug them into this formula: <code class="inline-code">P * (1 - D / 44330.0)^(-5.255)</code>. So now I have a sea level pressure, but there's still a lot of GPS elevation noise (even with the Gaussian filter).
+## Pressure Conversion
 
-Since I am also interested in how the pressure changes over time, I have a background service which runs at a fixed interval (default 30 minutes) and records these sea level pressure readings. That gives me a time series dataset which I can apply a smoothing algorithm to. After a significant amount of experimentation, I went with the LOESS algorithm, which uses a weighted least squares regression to smooth a set of data points. [[1](https://www.itl.nist.gov/div898/handbook/pmd/section1/pmd144.htm)]
+Once a somewhat accurate MSL elevation is obtained, the pressure readings can be converted to sea level pressure using the following formula:
 
-The LOESS algorithm was easy to implement, fast to run, and produced decent results using a span of 0.15 and a single robustness iteration. So all I do is run my sea level pressures (Y) and the reading times (X) through this algorithm, and I get a much better sea level pressure estimate.
+<code>P * (1 - D / 44330.0)^(-5.255)</code>
 
-I do not have quantitative results for this, but I have found that I get far fewer false storm alerts while traveling or hiking in the mountains. Comparing to local weather stations, I have found that the barometer readings are generally within 1 hPa of my local weather station.
+where <code class="inline-code">P</code> is the pressure in hPa and <code class="inline-code">D</code> is the MSL elevation in meters. [[5](https://en.wikipedia.org/wiki/Barometric_formula)]
 
-Since my initial implementation of this, I was able to ship a digital elevation model (DEM) with Trail Sense, which drastically reduces the elevation noise. I apply the exact same algorithm, just using DEM elevation instead of GPS elevation, and get even better sea level pressure estimates.
+## Time Series Smoothing
+
+Despite the filtering done to the GPS elevation, it still has a lot of residual noise, which means the sea level pressures are inaccurate. To improve the estimate, Trail Sense records the sea level pressure at a fixed interval (default 30 minutes) and then smooths the time series data. It uses the LOESS algorithm, which applies a weighted least squares regression to smooth the data (span of 0.15, 1 robustness interval).<sup>[[6](https://www.itl.nist.gov/div898/handbook/pmd/section1/pmd144.htm)]</sup> This algorithm was easy to implement, fast to run, and produced decent results.
+
+## Results
+
+There are no quantitative results for this algorithm, but users have provided positive feedback that it has accurate detection of storms and is generally within 1 hPa of local weather stations.
 
 ## References
-1. NIST. (n.d.). 4.1.4.4. LOESS (aka LOWESS). Retrieved from [https://www.itl.nist.gov/div898/handbook/pmd/section1/pmd144.htm](https://www.itl.nist.gov/div898/handbook/pmd/section1/pmd144.htm)
+
+1. Engadget. (2011, October 20). *Galaxy Nexus barometer explained, Sam Champion not out of a job*. Retrieved March 27, 2026, from [https://www.engadget.com/2011/10/20/galaxy-nexus-barometer-explained-sam-champion-not-out-of-a-job/](https://www.engadget.com/2011/10/20/galaxy-nexus-barometer-explained-sam-champion-not-out-of-a-job/)
+2. Wikipedia contributors. (n.d.). *Barometer*. In *Wikipedia, The Free Encyclopedia*. Retrieved March 27, 2026, from [https://en.wikipedia.org/wiki/Barometer](https://en.wikipedia.org/wiki/Barometer)
+3. Android Developers. (n.d.). *Location*. Retrieved March 27, 2026, from [https://developer.android.com/reference/android/location/Location](https://developer.android.com/reference/android/location/Location)
+4. Wikipedia contributors. (n.d.). *Global Positioning System*. In *Wikipedia, The Free Encyclopedia*. Retrieved March 27, 2026, from [https://en.wikipedia.org/wiki/Global_Positioning_System](https://en.wikipedia.org/wiki/Global_Positioning_System)
+5. Wikipedia contributors. (n.d.). *Barometric formula*. In *Wikipedia, The Free Encyclopedia*. Retrieved March 27, 2026, from [https://en.wikipedia.org/wiki/Barometric_formula](https://en.wikipedia.org/wiki/Barometric_formula)
+6. National Institute of Standards and Technology. (n.d.). *4.1.4.4. LOESS (aka LOWESS)*. Retrieved March 27, 2026, from [https://www.itl.nist.gov/div898/handbook/pmd/section1/pmd144.htm](https://www.itl.nist.gov/div898/handbook/pmd/section1/pmd144.htm)
+
