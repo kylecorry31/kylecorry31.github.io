@@ -7,6 +7,8 @@ category: trail-sense
 
 Solar eclipse prediction at a given location can be a computationally expensive task and is normally done on a server rather than on a smartphone. Trail Sense uses a custom algorithm to enable fast and accurate offline eclipse prediction.
 
+![Solar eclipse](/assets/images/photos/eclipse-1.wepb)
+
 ## Solar Eclipses
 
 In the simplest definition, a solar eclipse is when the moon passes between the sun and the Earth and a shadow is cast onto the observer. If you were to look at the sun during an eclipse (with special glasses), you would see the moon overlapping the sun. The amount of overlap determines how "strong" the eclipse is, and it is possible for the moon to completely cover the sun in a total eclipse.
