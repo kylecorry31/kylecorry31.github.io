@@ -7,7 +7,7 @@ category: trail-sense
 
 Solar eclipse prediction at a given location can be a computationally expensive task and is normally done on a server rather than on a smartphone. Trail Sense uses a custom algorithm to enable fast and accurate offline eclipse prediction.
 
-![Solar eclipse](/assets/images/photos/eclipse-1.wepb)
+![Solar eclipse](/assets/images/photos/eclipse-1.webp)
 
 ## Solar Eclipses
 
