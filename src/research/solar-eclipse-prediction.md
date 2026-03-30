@@ -11,11 +11,9 @@ Solar eclipse prediction at a given location can be a computationally expensive 
 
 In the simplest definition, a solar eclipse is when the moon passes between the sun and the Earth and a shadow is cast onto the observer. If you were to look at the sun during an eclipse (with special glasses), you would see the moon overlapping the sun. The amount of overlap determines how "strong" the eclipse is, and it is possible for the moon to completely cover the sun in a total eclipse.
 
-## Sun and Moon Positions
+## Algorithm
 
 For a given point in time, it is possible to calculate the positions of the sun and moon in the sky for an observer. From that, the angular distance and magnitude of overlap (if any) can be calculated.<sup>[1] [[2](https://doi.org/10.11578/dc.20190909.1)]</sup>
-
-## Algorithm
 
 The naive approach would be to determine the sun and moon's positions in the sky at every point in time to see if they overlap, which would be inefficient. A more efficient algorithm would only check for overlap when an eclipse is possible. The Astronomical Algorithms book covers an algorithm to find the next eclipse that will occur anywhere on Earth, which can be used as a starting point.<sup>[1]</sup>
 
