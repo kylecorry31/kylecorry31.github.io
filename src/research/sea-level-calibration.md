@@ -7,7 +7,7 @@ category: trail-sense
 
 Trail Sense's sea level calibration algorithm can be used to improve offline weather forecasting by providing a cleaner barometric pressure signal that is adjusted for the user's elevation. Because barometric pressure varies with altitude, raw measurements from a smartphone's sensors can be inaccurate when the user is changing elevation, so a calibration procedure is needed.
 
-## Background
+## Smartphone Sensors
 
 Many modern smartphones contain a barometer to measure atmospheric pressure. This sensor was originally added to smartphones to enable faster GPS locks, but it can have other uses today.<sup>[[1](https://www.engadget.com/2011-10-20-galaxy-nexus-barometer-explained-sam-champion-not-out-of-a-job.html)]</sup> Barometers can also be used for short-term weather forecasting by sensing the movement of weather fronts via changes in pressure.<sup>[[2](https://en.wikipedia.org/wiki/Barometer)]</sup> However, pressure also changes when the altitude of the sensor changes, which can obscure the pressure changes caused by weather fronts. To combat this, the pressure can be converted to sea level using the barometric formula. The conversion requires an elevation reading, which can be obtained using the GPS sensor.
 
