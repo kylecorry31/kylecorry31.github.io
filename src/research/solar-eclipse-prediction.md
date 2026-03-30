@@ -17,9 +17,7 @@ In the simplest definition, a solar eclipse is when the moon passes between the 
 
 For a given point in time, it is possible to calculate the positions of the sun and moon in the sky for an observer. From that, the angular distance and magnitude of overlap (if any) can be calculated.<sup>[1] [[2](https://doi.org/10.11578/dc.20190909.1)]</sup>
 
-The naive approach would be to determine the sun and moon's positions in the sky at every point in time to see if they overlap, which would be inefficient. A more efficient algorithm would only check for overlap when an eclipse is possible. The Astronomical Algorithms book covers an algorithm to find the next eclipse that will occur anywhere on Earth, which can be used as a starting point.<sup>[1]</sup>
-
-The next eclipse algorithm provides a time when an eclipse is occurring on the Earth. To determine if the eclipse is visible for the observer, the algorithm needs to calculate the magnitude of the eclipse for several points around the calculated time.
+The naive approach would be to determine the sun and moon's positions in the sky at every point in time to see if they overlap, which would be inefficient. A more efficient algorithm would only check for overlap when an eclipse is possible which can be found in the Astronomical Algorithms book.<sup>[1]</sup> This algorithm provides a time when an eclipse is occurring on the Earth, but it does not determine if it is visible at a given location. To determine if it is visible for the observer, the algorithm needs to calculate the magnitude of the eclipse for several points around the calculated time.
 
 <code>time = now
 while time < maxDuration:
@@ -39,7 +37,7 @@ return NONE
 If any of the magnitudes are greater than zero, then an eclipse is visible to the observer, and the exact timing can be fine-tuned using a search for start, end, and peak. Trail Sense uses binary search to find these times. The following assumptions can be made to constrain the search:
 
 - Eclipse is not visible at minTime or maxTime
-- Eclipse is visible at eclipseTime (this is the known visible time we determined earlier)
+- Eclipse is visible at eclipseTime (this is the known visible time that was determined earlier)
 
 <code>function isEclipseVisible(time):
     if sun is set:
